@@ -218,6 +218,12 @@ header.autoshow.scrollOff {
     top: -120px;
 }
 
+.logo, .logo-2, .f-logo {
+    height: 40px;
+
+
+}
+
 header div#logo {
     font-family: "Oswald", sans-serif;
     color: white;
@@ -334,6 +340,8 @@ header.smaller.scroll-light .social-icons i {
 header.smaller.scroll-light #mainmenu li li a:hover {
     color: #ffffff;
 }
+
+
 
 .logo-smaller div#logo {
     width: 150px;
