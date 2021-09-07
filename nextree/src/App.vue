@@ -22,7 +22,7 @@
                 <div class="de-flex-col">
                   <!-- logo begin -->
                   <div id="logo">
-                    <a href="index.html">
+                    <a href="/">
                       <img
                         alt=""
                         class="logo"
