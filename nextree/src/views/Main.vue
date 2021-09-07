@@ -1010,7 +1010,7 @@ export default {
   components: {},
   data() {
     return {
-      Menu1: "잘되는지 파악",
+      Menu1: "잘되는지",
     };
   },
   setup() {},
