@@ -7,8 +7,9 @@
         id="section-hero"
         aria-label="section"
         class="no-top no-bottom vh-100"
-        data-bgimage="url(images/background/bg-shape-1.jpg) bottom"
+        style="--bg-image: url('images/background/bg-shape-1.jpg')"
       >
+        <!--  data-bgimage="url(images/background/bg-shape-1.jpg) bottom" -->
         <div class="v-center">
           <div class="container">
             <div class="row align-items-center">
@@ -31,7 +32,14 @@
                   href="explore.html"
                   class="btn-main wow fadeInUp lead"
                   data-wow-delay="1.25s"
-                  >Explore</a
+                  >Details</a
+                >
+                <a
+                  style="margin-left: 1em"
+                  href="explore.html"
+                  class="btn-main wow fadeInUp lead"
+                  data-wow-delay="1.25s"
+                  >Go to Metabus</a
                 >
                 <div class="mb-sm-30"></div>
               </div>
@@ -922,3 +930,12 @@ export default {
   methods: {},
 };
 </script>
+<style>
+section {
+  margin: 0px;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+</style>
