@@ -51,7 +51,7 @@
                 <!-- mainmenu begin -->
                 <ul id="mainmenu">
                   <li>
-                    <a href="index.html">Main<span></span></a>
+                    <a href="index.html">Donation Status<span></span></a>
                     <ul>
                       <li>
                         <a href="03_grey-index.html">New: Homepage Grey</a>
@@ -63,7 +63,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="explore">Explore<span></span></a>
+                    <a href="explore">About<span></span></a>
                     <ul>
                       <li><a href="explore.html">Explore</a></li>
                       <li><a href="collection.html">Collections</a></li>
@@ -71,7 +71,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#">Pages<span></span></a>
+                    <a href="#">Artist<span></span></a>
                     <ul>
                       <li><a href="author.html">Author</a></li>
                       <li><a href="wallet.html">Wallet</a></li>
@@ -85,10 +85,10 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="activity.html">Activity<span></span></a>
+                    <a href="activity.html">Collection<span></span></a>
                   </li>
                   <li>
-                    <a href="#">Elements<span></span></a>
+                    <a href="#">My Page<span></span></a>
                     <ul>
                       <li><a href="icons-elegant.html">Elegant Icons</a></li>
                       <li><a href="icons-etline.html">Etline Icons</a></li>
