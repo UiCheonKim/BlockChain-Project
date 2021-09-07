@@ -73,7 +73,8 @@
             >
               <h2 style="font-size: 2em">What We Do?</h2>
               <hr class="section_line" />
-              <button style="width: 6em; height: 2em">More</button>
+              <!-- <button style="width: 6em; height: 2em">More</button> -->
+              <a href="#" class="btn">More</a>
             </div>
             <!-- <div class="section_line">What We Do?</div> -->
             <div class="col-lg-4 col-md-6 mb-sm-30">
@@ -973,7 +974,7 @@ hr.section_line {
   width: 70%;
   border: solid 2px green;
   unicode-bidi: isolate;
-  margin-block-start: 1em;
+  margin-block-start: 1.5em;
   margin-block-end: 1em;
   margin-inline-start: auto;
   margin-inline-end: auto;
@@ -1000,4 +1001,12 @@ hr.section_line {
   margin-inline-start: auto;
   margin-inline-end: auto;
 } */
+a.btn {
+  display: block;
+  width: 80px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+}
 </style>
