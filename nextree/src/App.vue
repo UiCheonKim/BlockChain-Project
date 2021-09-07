@@ -36,11 +36,14 @@
                 </div>
                 <div class="de-flex-col">
                   <input
+                    v-show="mymetamaskaddr_selec == true"
                     id="quick_search"
                     class="xs-hide"
                     name="quick_search"
-                    placeholder="search item here..."
+                    placeholder="mymetamask_addr"
+                    v-model="mymetamask_addr"
                     type="text"
+                    disabled
                   />
                 </div>
               </div>
@@ -48,7 +51,7 @@
                 <!-- mainmenu begin -->
                 <ul id="mainmenu">
                   <li>
-                    <a href="index.html">{{ url }}<span></span></a>
+                    <a href="index.html">Main<span></span></a>
                     <ul>
                       <li>
                         <a href="03_grey-index.html">New: Homepage Grey</a>
@@ -128,9 +131,18 @@ export default {
   data() {
     return {
       url: true,
+      addr_variable: "",
+      mymetamask_addr: "need to log in to the meta mask",
+      mymetamaskaddr_selec: false,
     };
   },
   setup() {},
+  //캐싱 해놓았다가 필요한 부분에 다시 재 사용
+  // computed: {
+  //   mymetamask_addr() {
+  //     return this.$store.state.addr;
+  //   },
+  // },
   created() {},
   mounted() {},
   unmounted() {},
@@ -150,7 +162,10 @@ export default {
           // Acccounts now exposed
           web3.eth.getAccounts().then((accounts) => {
             // state.addr = accounts[0];
-            // this.$store.commit("addrset", accounts[0]);
+            this.$store.commit("addrset", accounts[0]);
+            if (accounts[0] == null) console.log("Asdfasfddafasdfasfadsfads");
+            this.mymetamask_addr = this.$store.state.addr;
+            this.mymetamaskaddr_selec = true;
             console.log(accounts[0]);
             //getContract();
           });
