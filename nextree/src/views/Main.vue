@@ -55,9 +55,27 @@
           </div>
         </div>
       </section>
+      <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
       <section id="section-intro" class="no-top no-bottom">
         <div class="container">
           <div class="row">
+            <!-- <div class="col-lg-12">
+              <inline style="padding-top: 14em">asdf</inline>
+              <hr class="section_line" />
+            </div> -->
+            <div
+              style="
+                display: flex;
+                text-align: center;
+                margin-top: 2em;
+                margin-bottom: 2em;
+              "
+            >
+              <h2 style="font-size: 2em">What We Do?</h2>
+              <hr class="section_line" />
+              <button style="width: 6em; height: 2em">More</button>
+            </div>
+            <!-- <div class="section_line">What We Do?</div> -->
             <div class="col-lg-4 col-md-6 mb-sm-30">
               <div class="feature-box f-boxed style-3">
                 <i class="wow fadeInUp bg-color-2 i-boxed icon_wallet"></i>
@@ -938,4 +956,36 @@ section {
   background-size: cover;
   background-position: center;
 }
+hr.section_line {
+  overflow: hidden;
+  width: 70%;
+  border: solid 2px green;
+  unicode-bidi: isolate;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+/* .section_line::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
+.section_line {
+  display: flex;
+  flex-basis: 90%;
+  align-items: center;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 8px 0px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+} */
 </style>
