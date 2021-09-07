@@ -1,4 +1,4 @@
-# nf_tree
+# next_tree
 
 ## Project setup
 ```
