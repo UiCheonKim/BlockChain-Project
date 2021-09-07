@@ -1010,7 +1010,7 @@ export default {
   components: {},
   data() {
     return {
-      Menu1: "테스트테스트",
+      Menu1: "잘되나확인",
     };
   },
   setup() {},
