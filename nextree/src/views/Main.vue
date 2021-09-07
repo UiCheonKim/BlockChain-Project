@@ -922,7 +922,7 @@
                   <a href="index.html">
                     <img alt="" class="f-logo" src="images/logo.png" /><span
                       class="copy"
-                      >&copy; Copyright 2021 - Team. DEUS EX MACHINA</span
+                      >&copy; Copyright 2021 - Team2. Kim Jung Hong Choi</span
                     >
                   </a>
                 </div>
