@@ -125,10 +125,22 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <div class="text-center">
+              <div
+                style="
+                  display: flex;
+                  text-align: center;
+                  margin-top: 2em;
+                  margin-bottom: 2em;
+                "
+              >
+                <h2 style="font-size: 2em">Donate Rank</h2>
+                <hr class="section_line" />
+                <button style="width: 6em; height: 2em">More</button>
+              </div>
+              <!-- <div class="text-center">
                 <h2>Hot Collections</h2>
                 <div class="small-border bg-color-2"></div>
-              </div>
+              </div> -->
             </div>
             <div id="collection-carousel" class="owl-carousel wow fadeIn">
               <div class="nft_coll">
