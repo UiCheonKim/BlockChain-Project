@@ -137,12 +137,6 @@ export default {
     };
   },
   setup() {},
-  //캐싱 해놓았다가 필요한 부분에 다시 재 사용
-  // computed: {
-  //   mymetamask_addr() {
-  //     return this.$store.state.addr;
-  //   },
-  // },
   created() {},
   mounted() {},
   unmounted() {},
