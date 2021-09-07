@@ -35,14 +35,14 @@
                 >
                 <div class="mb-sm-30"></div>
               </div>
-              <div class="col-md-6 xs-hide">
+              <!-- <div class="col-md-6 xs-hide">
                 <img
                   src="images/misc/nft.png"
                   class="lazy img-fluid wow fadeIn"
                   data-wow-delay="1.25s"
                   alt=""
                 />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
