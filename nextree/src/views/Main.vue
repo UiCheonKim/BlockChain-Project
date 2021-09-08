@@ -1,13 +1,17 @@
 <template>
+
   <div>
     <!-- content begin -->
+
+   
+    
     <div class="no-bottom no-top" id="content">
       <div id="top"></div>
       <section
         id="section-hero"
         aria-label="section"
         class="no-top no-bottom vh-100"
-        style="--bg-image: url('images/background/bg-shape-1.jpg')"
+        style="--bg-image: url('images/background/bg-shape-1.png')"
       >
         <!--  data-bgimage="url(images/background/bg-shape-1.jpg) bottom" -->
         <div class="v-center">
@@ -962,6 +966,7 @@ export default {
 };
 </script>
 <style>
+
 section {
   margin: 0px;
   background-image: var(--bg-image);
