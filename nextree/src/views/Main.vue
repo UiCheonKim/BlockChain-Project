@@ -7,8 +7,9 @@
         id="section-hero"
         aria-label="section"
         class="no-top no-bottom vh-100"
-        data-bgimage="url(images/background/bg-shape-1.jpg) bottom"
+        style="--bg-image: url('images/background/bg-shape-1.jpg')"
       >
+        <!--  data-bgimage="url(images/background/bg-shape-1.jpg) bottom" -->
         <div class="v-center">
           <div class="container">
             <div class="row align-items-center">
@@ -31,25 +32,51 @@
                   href="explore.html"
                   class="btn-main wow fadeInUp lead"
                   data-wow-delay="1.25s"
-                  >Explore</a
+                  >Details</a
+                >
+                <a
+                  style="margin-left: 1em"
+                  href="explore.html"
+                  class="btn-main wow fadeInUp lead"
+                  data-wow-delay="1.25s"
+                  >Go to Metabus</a
                 >
                 <div class="mb-sm-30"></div>
               </div>
-              <div class="col-md-6 xs-hide">
+              <!-- <div class="col-md-6 xs-hide">
                 <img
                   src="images/misc/nft.png"
                   class="lazy img-fluid wow fadeIn"
                   data-wow-delay="1.25s"
                   alt=""
                 />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
+      <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
       <section id="section-intro" class="no-top no-bottom">
         <div class="container">
           <div class="row">
+            <!-- <div class="col-lg-12">
+              <inline style="padding-top: 14em">asdf</inline>
+              <hr class="section_line" />
+            </div> -->
+            <div
+              style="
+                display: flex;
+                text-align: center;
+                margin-top: 2em;
+                margin-bottom: 2em;
+              "
+            >
+              <h2 style="font-size: 2em">What We Do?</h2>
+              <hr class="section_line" />
+              <!-- <button style="width: 6em; height: 2em">More</button> -->
+              <a href="#" class="btn">More</a>
+            </div>
+            <!-- <div class="section_line">What We Do?</div> -->
             <div class="col-lg-4 col-md-6 mb-sm-30">
               <div class="feature-box f-boxed style-3">
                 <i class="wow fadeInUp bg-color-2 i-boxed icon_wallet"></i>
@@ -99,10 +126,22 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <div class="text-center">
+              <div
+                style="
+                  display: flex;
+                  text-align: center;
+                  margin-top: 2em;
+                  margin-bottom: 2em;
+                "
+              >
+                <h2 style="font-size: 2em">Donate Rank</h2>
+                <hr class="section_line" />
+                <button style="width: 6em; height: 2em">More</button>
+              </div>
+              <!-- <div class="text-center">
                 <h2>Hot Collections</h2>
                 <div class="small-border bg-color-2"></div>
-              </div>
+              </div> -->
             </div>
             <div id="collection-carousel" class="owl-carousel wow fadeIn">
               <div class="nft_coll">
@@ -798,8 +837,8 @@
         </div>
       </section>
       <!-- footer begin -->
-      <footer class="footer-light">
-        <div class="container">
+      <!-- <footer class="footer-light"> -->
+      <!-- <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-1">
               <div class="widget">
@@ -873,35 +912,35 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="subfooter">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="de-flex">
-                  <div class="de-flex-col">
-                    <a href="index.html">
-                      <img alt="" class="f-logo" src="images/logo.png" /><span
-                        class="copy"
-                        >&copy; Copyright 2021 - Gigaland by Designesia</span
-                      >
-                    </a>
-                  </div>
-                  <div class="de-flex-col">
-                    <div class="social-icons">
-                      <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                    </div>
+        </div> -->
+      <div class="subfooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="de-flex">
+                <div class="de-flex-col">
+                  <a href="index.html">
+                    <img alt="" class="f-logo" src="images/logo.png" /><span
+                      class="copy"
+                      >&copy; Copyright 2021 - Team2. Kim Jung Hong Choi</span
+                    >
+                  </a>
+                </div>
+                <div class="de-flex-col">
+                  <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                    <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                    <a href="#"><i class="fa fa-rss fa-lg"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+      <!-- </footer> -->
       <!-- footer close -->
     </div>
   </div>
@@ -922,3 +961,52 @@ export default {
   methods: {},
 };
 </script>
+<style>
+section {
+  margin: 0px;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+hr.section_line {
+  overflow: hidden;
+  width: 70%;
+  border: solid 2px green;
+  unicode-bidi: isolate;
+  margin-block-start: 1.5em;
+  margin-block-end: 1em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+/* .section_line::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
+.section_line {
+  display: flex;
+  flex-basis: 90%;
+  align-items: center;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 8px 0px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+} */
+a.btn {
+  display: block;
+  width: 80px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+}
+</style>
