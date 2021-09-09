@@ -9,9 +9,9 @@
       }"
     > -->
     <header
-      class="transparent"
+      class="non-transparent"
       :class="{
-        'transparent header-light scroll-light': url,
+        'non-transparent header-light scroll-light': url,
       }"
     >
       <div class="container">
