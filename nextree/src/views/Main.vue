@@ -1,22 +1,82 @@
 <template>
-
   <div>
     <!-- content begin -->
-
-
-
-   
-    
     <div class="no-bottom no-top" id="content">
       <div id="top"></div>
-      <section
-        id="section-hero"
-        aria-label="section"
-        class="no-top no-bottom vh-100"
-        style="--bg-image: url('images/background/bg-shape-1.png')"
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
       >
-        <!--  data-bgimage="url(images/background/bg-shape-1.jpg) bottom" -->
-        <div class="v-center">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <!-- <img src="@/assets/1.jpg" class="d-block w-100" alt="..." /> -->
+            <article
+              class="no-top no-bottom vh-100"
+              style="--bg-image: url('images/background/6.jpg')"
+            >
+              aasdfasfasdf
+            </article>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <article
+              class="no-top no-bottom vh-100"
+              style="--bg-image: url('images/background/1.jpg')"
+            >
+              aasdfasfasdf
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article
+              class="no-top no-bottom vh-100"
+              style="--bg-image: url('images/background/2.jpg')"
+            >
+              aasdfasfasdf
+            </article>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- <div class="v-center">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-6">
@@ -49,18 +109,17 @@
                 >
                 <div class="mb-sm-30"></div>
               </div>
-              <!-- <div class="col-md-6 xs-hide">
+              <div class="col-md-6 xs-hide">
                 <img
                   src="images/misc/nft.png"
                   class="lazy img-fluid wow fadeIn"
                   data-wow-delay="1.25s"
                   alt=""
                 />
-              </div> -->
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div> -->
       <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
       <section id="section-intro" class="no-top no-bottom">
         <div class="container">
@@ -968,8 +1027,14 @@ export default {
 };
 </script>
 <style>
-
 section {
+  margin: 0px;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+}
+article {
   margin: 0px;
   background-image: var(--bg-image);
   background-repeat: no-repeat;

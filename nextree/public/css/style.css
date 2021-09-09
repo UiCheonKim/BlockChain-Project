@@ -126,7 +126,6 @@ header {
     z-index: 1001;
     background: #2b313f;
     margin: 0;
-    height:
         /*border-bottom:solid 1px rgba(255,255,255,0);*/
 }
 
@@ -14061,6 +14060,7 @@ img {
 	/* ================================================== */
 
 @media (min-width: 768px) and (max-width: 979px) {
+
     .slider_text {
         padding-top: 0px;
     }
@@ -15158,6 +15158,13 @@ img {
         background-size: auto 100%;
         background-attachment: scroll;
     }
+    article {
+        -webkit-background-size: auto 100%;
+        -moz-background-size: auto 100%;
+        -o-background-size: auto 100%;
+        background-size: auto 100%;
+        background-attachment: scroll;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -15172,6 +15179,13 @@ img {
 
 @media only screen and (max-width: 992px) {
     section {
+        -webkit-background-size: auto 100%;
+        -moz-background-size: auto 100%;
+        -o-background-size: auto 100%;
+        background-size: auto 100%;
+        background-attachment: scroll;
+    }
+    article {
         -webkit-background-size: auto 100%;
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;

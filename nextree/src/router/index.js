@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Main from "../views/Main.vue";
 import Explore from "../views/Explore.vue";
 import dappTest from "../views/dappTest.vue";
+import asdf from "../views/asdf.vue";
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/dappTest",
     name: "dappTest",
     component: dappTest,
+  },
+  {
+    path: "/asdf",
+    name: "asdf",
+    component: asdf,
   },
   // {
   //   path: "/about",
