@@ -47,26 +47,27 @@
                       </h6>
                       <div class="spacer-10"></div>
                       <h1 class="wow fadeInUp" data-wow-delay=".75s">
-                        Create, sell or collect digital items.
+                        우리 함께 나무를 심어요.                     
                       </h1>
                       <p class="wow fadeInUp lead" data-wow-delay="1s">
-                        Unit of data stored on a digital ledger, called a
-                        blockchain, that certifies a digital asset to be unique
-                        and therefore not interchangeable
+                        환경오염으로 황폐화되고 있는 지구에는 나무가 필요합니다. <br>
+                        넥스트리는 묘목 기부로 건강한 숲, 지속가능한 사회를 만듭니다.<br>
+                        넥스트리는 매일 성장하고 있습니다. 그만큼 지구도 건강해지고 있어요. <br>
+                        기부를 통해 아티스트의 NFT와 나무 NFT도 얻을수 있습니다.                        
                       </p>
                       <div class="spacer-10"></div>
                       <a
                         href="explore.html"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
-                        >Details</a
+                        >기부하기</a
                       >
                       <a
                         style="margin-left: 1em"
                         href="explore.html"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
-                        >Go to Metabus</a
+                        >자세히보기</a
                       >
                       <div class="mb-sm-30"></div>
                     </div>
@@ -256,44 +257,6 @@
           </div>
         </div> -->
       <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
-      <section class="no top no bottom">
-<div class="container-sm">
-<div class="row">
-  <div class="col-sm-3 BG-radius">
-    Join to Donation
-    <div class="row gy-5 ">
-    <div class="col-6">
-      <button class="p-3 border bg-warning Radius">1 Tree</button>
-    </div>
-    <div class="col-6">
-      <button class="p-3 border bg-warning Radius">5 Tree</button>
-    </div>
-    <div class="col-6">
-      <button class="p-3 border bg-warning Radius">10 Tree</button>
-    </div>
-    <div class="col-6">
-      <button class="p-3 border bg-warning Radius">50 Tree</button>
-    </div>
-    <input type="text" placeholder="Order Amount" id="TreeAmount">
-
-    <button class="bg-warning Radius" @click="getContract()">NEXT</button>
-  </div></div>
-    <div class="col-sm-9">
-      <div class="row BG-radius">
-      <div class="col-8 col-sm-6 videoTeduri">
-        <iframe class="Radius_round" width="560" height="315" src="https://www.youtube.com/embed/ucZl6vQ_8Uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-      </div>
-        <div class="col-4 col-sm-6">text Area
-          <div class="row"> <p>test</p>
-          test write</div>
-        </div>
-        </div>
-      </div>    
-  </div>
-  </div>
-  
-      </section>
       <section id="section-intro" class="no-top no-bottom">
         <div class="container">
           <div class="row">
@@ -374,7 +337,7 @@
               >
                 <h2 style="font-size: 2em">Donate Rank</h2>
                 <hr class="section_line" />
-                <a href="#" class="btn">More</a>
+                <button style="width: 6em; height: 2em">More</button>
               </div>
               <!-- <div class="text-center">
                 <h2>Hot Collections</h2>
@@ -1184,41 +1147,19 @@
   </div>
 </template>
 <script>
-import Web3 from "web3";
-import test1 from "../dapp/test";
 export default {
   name: "",
   components: {},
   data() {
     return {
       Menu1: "잘되나확인",
-      contract:"",
     };
   },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {
-    async getContract() {
-      if (window.ethereum) {
-        web3 = new Web3(window.ethereum);
-        try {
-          // Request account access if needed
-          await window.ethereum.enable();
-          this.contract = new web3.eth.Contract(dapptest.ABI, dapptest.ADDRESS);
-          console.log(this.contract);
-          console.log(this.$store.state.addr);
-        } catch (error) {}
-      }
-      // Legacy dapp browsers...
-      else if (window.web3) {
-        // Use Mist/MetaMask's provider.
-        web3 = window.web3;
-        console.log("Injected web3 detected.");
-      }
-    },
-  },
+  methods: {},
 };
 </script>
 <style>
@@ -1275,29 +1216,5 @@ a.btn {
   text-align: center;
   background-color: #222;
   color: #fff;
-}
-.videoTeduri {
-  position: relative;
-  padding: 28% 0% 28% 0%;
-  height: 0;
-  
-}
-.videoTeduri iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60%;
-  padding: 5%
-}
-.BG-radius {
-  border-radius: 40px 80px / 80px 40px;
-  background-color: #f2effc;
-}
-.Radius {
-  border-radius: 40px 80px / 80px 40px;
-}
-.Radius_round {
-  border-radius: 40px 40px / 40px 40px;
 }
 </style>
