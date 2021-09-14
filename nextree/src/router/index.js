@@ -1,7 +1,4 @@
-import {
-  createRouter,
-  createWebHistory
-} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Main from "../views/Main.vue";
 import Explore from "../views/Explore.vue";
 import dappTest from "../views/dappTest.vue";
@@ -9,7 +6,10 @@ import asdf from "../views/asdf.vue";
 import Mypage from "../views/Mypage.vue";
 import Artist from "../views/Artist.vue";
 import collection from "../views/collection.vue";
-const routes = [{
+import about from "../views/about.vue";
+
+const routes = [
+  {
     path: "/",
     name: "main",
     component: Main,
@@ -44,6 +44,12 @@ const routes = [{
     name: "collection",
     component: collection,
   },
+  {
+    path: "/about",
+    name: "about",
+    component: about,
+  },
+
   // {
   //   path: "/about",
   //   name: "About",
