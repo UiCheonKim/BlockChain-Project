@@ -38,11 +38,33 @@
               style="--bg-image: url('images/background/bg-shape-1.png')"
             >
               <div class="v-center">
+                <div class="bird-container bird-container--one">
+                  <div class="bird bird--one"></div>
+                </div>
+
+                <div class="bird-container bird-container--two">
+                  <div class="bird bird--two"></div>
+                </div>
+
+                <div class="bird-container bird-container--three">
+                  <div class="bird bird--three"></div>
+                </div>
+
+                <div class="bird-container bird-container--four">
+                  <div class="bird bird--four"></div>
+                </div>
                 <div class="container">
                   <div class="row align-items-center">
                     <div class="col-md-6">
                       <div class="spacer-single"></div>
                       <h6 class="wow fadeInUp" data-wow-delay=".5s">
+                        <span
+                          class="slider-icon"
+                          v-bind:style="kim"
+                          style="
+                            --bg-image: url('images/background/bg-shape-1.png');
+                          "
+                        ></span>
                         <span class="text-uppercase id-color-2">Next Tree</span>
                       </h6>
                       <div class="spacer-10"></div>
@@ -1127,11 +1149,16 @@ export default {
   data() {
     return {
       Menu1: "잘되나확인",
+      kim: "visibility: hidden",
     };
   },
   setup() {},
   created() {},
-  mounted() {},
+  mounted() {
+    setTimeout(() => {
+      this.kim = "visibility:visible ";
+    }, 200);
+  },
   unmounted() {},
   methods: {},
 };
@@ -1207,5 +1234,29 @@ a.btn {
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
+}
+.slider-icon {
+  width: 92px;
+  height: 89px;
+  text-align: center;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /* opacity: 0; */
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  display: block;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease 1.9s;
+  transition: all 0.2s ease 1.9s;
 }
 </style>
