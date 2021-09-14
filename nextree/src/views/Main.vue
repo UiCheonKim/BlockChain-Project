@@ -49,7 +49,7 @@
                       <h1 class="wow fadeInUp" data-wow-delay=".75s">
                         우리 함께 나무를 심어요.                     
                       </h1>
-                      <p class="wow fadeInUp lead" data-wow-delay="1s">
+                      <p class="wow fadeInUp lead mainp" data-wow-delay="1s">
                         환경오염으로 황폐화되고 있는 지구에는 나무가 필요합니다. <br>
                         넥스트리는 묘목 기부로 건강한 숲, 지속가능한 사회를 만듭니다.<br>
                         넥스트리는 매일 성장하고 있습니다. 그만큼 지구도 건강해지고 있어요. <br>
