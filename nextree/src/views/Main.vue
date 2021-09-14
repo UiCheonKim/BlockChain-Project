@@ -62,7 +62,7 @@
                           class="slider-icon"
                           v-bind:style="kim"
                           style="
-                            --bg-image: url('images/background/bg-shape-1.png');
+                            --bg-image: url('images/misc/main-leaf.svg');
                           "
                         ></span>
                         <span class="text-uppercase id-color-2">Next Tree</span>
