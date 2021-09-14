@@ -142,8 +142,9 @@ export default {
   unmounted() {},
   watch: {
     $route(to, from) {
+      console.log(to.name);
       if (to.name == "Explore") this.url = false;
-      // else if (to.name == "about") this.url = false;
+      else if (to.name == "about") this.url = false;
       // else this.url = true;
     },
   },

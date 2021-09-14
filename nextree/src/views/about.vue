@@ -12,7 +12,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h1>User Login</h1>
+              <h1>About</h1>
               <p>Anim pariatur cliche reprehenderit</p>
             </div>
             <div class="clearfix"></div>
