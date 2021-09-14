@@ -1,7 +1,15 @@
 :root {
-  --primary-color: #403f83;
-  --primary-color-rgb: 64, 63, 131;
+  --primary-color: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  --primary-color-rgb: 16, 108, 189;
 
-  --secondary-color: #8364E2;
-  --secondary-color-rgb: 131, 100, 226;
+  --secondary-color: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  --secondary-color-rgb: 64, 208, 230; 
+
+  original--primary: #403f83;
+  orignal-color-rgb: 64, 63, 131;
+  original--secondary: #8364E2;
+  orignal-color-rgb: 131, 100, 226; 
+
+  green-gradient: linear-gradient(to bottom, #00C853, #B2FF59);
+
 }

@@ -29,9 +29,25 @@
 @import url("../fonts/et-line-font/style.css");
 @import url("../fonts/icofont/icofont.min.css");
 
-* {
-    --body-font: "DM Sans", Helvetica, Arial, sans-serif;
-    --title-font: "DM Sans", Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@font-face {
+    font-family: "Cafe24SsurroundAir";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  * {
+    --body-font: "Jua", sans-serif;
+    --title-font: "Jua", sans-serif;
+}
+
+.orange {
+    background: linear-gradient(to bottom, #FFB319, #FF2442) !important;
+
+
 }
 
 /* ================================================== */
@@ -2695,6 +2711,7 @@ button.btn-main:hover,
     -moz-box-shadow: 3px 3px 30px 0px rgba(var(--secondary-color-rgb), 0.5);
     box-shadow: 3px 3px 30px 0px rgba(var(--secondary-color-rgb), 0.5);
 }
+
 
 a.btn-slider:hover:after {
     color: #222;

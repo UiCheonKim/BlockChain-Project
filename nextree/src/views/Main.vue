@@ -71,6 +71,13 @@
                       <h1 class="wow fadeInUp" data-wow-delay=".75s">
                         우리 함께 나무를 심어요.
                       </h1>
+<<<<<<< HEAD
+                      <p class="wow fadeInUp lead mainp" data-wow-delay="1s">
+                        환경오염으로 황폐화되고 있는 지구에는 나무가 필요합니다. <br>
+                        넥스트리는 묘목 기부로 건강한 숲, 지속가능한 사회를 만듭니다.<br>
+                        넥스트리는 매일 성장하고 있습니다. 그만큼 지구도 건강해지고 있어요. <br>
+                        기부를 통해 아티스트의 NFT와 나무 NFT도 얻을수 있습니다.                        
+=======
                       <p class="wow fadeInUp lead" data-wow-delay="1s">
                         환경오염으로 황폐화되고 있는 지구에는 나무가 필요합니다.
                         <br />
@@ -79,6 +86,7 @@
                         넥스트리는 매일 성장하고 있습니다. 그만큼 지구도
                         건강해지고 있어요. <br />
                         기부를 통해 아티스트의 NFT와 나무 NFT도 얻을수 있습니다.
+>>>>>>> 5944637c37cb521879f31035df33e4cf4378b9f6
                       </p>
                       <div class="spacer-10"></div>
                       <a
