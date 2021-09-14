@@ -9,7 +9,7 @@
       }"
     > -->
     <header
-      class="non-transparent"
+      class="transparent"
       :class="{
         'non-transparent header-light scroll-light': url,
       }"
@@ -79,7 +79,7 @@
                       <li><a href="news.html">News</a></li>
                       <li><a href="gallery.html">Gallery</a></li>
                       <li><a href="login.html">Login</a></li>
-                      <li><a href="login-2.html">Login 2</a></li>
+                      <li><a href="about">about</a></li>
                       <li><a href="register.html">Register</a></li>
                       <li><a href="contact.html">Contact Us</a></li>
                     </ul>
@@ -144,6 +144,8 @@ export default {
     $route(to, from) {
       console.log(to.name);
       if (to.name == "Explore") this.url = false;
+      else if (to.name == "about") this.url = false;
+      // else this.url = true;
     },
   },
   methods: {

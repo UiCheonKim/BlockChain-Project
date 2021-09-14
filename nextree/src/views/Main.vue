@@ -61,16 +61,11 @@
                         <span
                           class="slider-icon shake2"
                           v-bind:style="kim"
-                          style="
-                            --bg-image: url('images/misc/main-leaf.svg');
-                          "
+                          style="--bg-image: url('images/misc/main-leaf.svg')"
                         ></span>
                         <span
                           class="slider-icon2"
-                          
-                          style="
-                            --bg-image: url('images/misc/main-soil.png');
-                          "
+                          style="--bg-image: url('images/misc/main-soil.png')"
                         ></span>
                         <!-- <span class="text-uppercase id-color-2">Next Tree</span> -->
                       </h6>
@@ -142,10 +137,19 @@
             </article>
           </div>
           <div class="carousel-item">
-            <article
+            <!-- <article
               class="no-top no-bottom vh-100"
               style="--bg-image: url('images/background/team.jpg')"
+            > -->
+            <video
+              autoplay
+              muted
+              loop
+              id="myVideo"
+              class="no-top no-bottom vh-100"
             >
+              <source src="@/assets/forest.mp4" type="video/mp4" />
+
               <div class="v-center">
                 <div class="container">
                   <div class="row align-items-center">
@@ -193,7 +197,7 @@
                   </div>
                 </div>
               </div>
-            </article>
+            </video>
           </div>
         </div>
         <button
@@ -1269,7 +1273,7 @@ a.btn {
   margin-left: 50px;
 }
 
-/* .shake2 { 
+/* .shake2 {
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
   display: block;
@@ -1297,7 +1301,5 @@ a.btn {
   -webkit-background-size: cover;
   background-size: cover;
   display: block;
-
-
 }
 </style>
