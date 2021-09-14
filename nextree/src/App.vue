@@ -108,7 +108,7 @@
                   </li>
                 </ul>
                 <div class="menu_side_area">
-                  <button class="btn-main orange" @click="metamasklogin()">
+                  <button class="btn-main wallet" @click="metamasklogin()">
                     Connect Wallet
                   </button>
                   <span id="menu-btn"></span>
