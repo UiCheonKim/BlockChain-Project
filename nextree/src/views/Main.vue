@@ -61,10 +61,9 @@
                         <span
                           class="slider-icon shake2"
                           v-bind:style="kim"
-                          style="
-                            --bg-image: url('images/misc/main-leaf.svg');
-                          "
+                          style="--bg-image: url('images/misc/main-leaf.svg')"
                         ></span>
+<<<<<<< HEAD
                         <span
                           class="slider-icon2"
                           
@@ -73,6 +72,14 @@
                           "
                         ></span>
                         <!-- <span class="text-uppercase id-color-2">Next Tree</span> -->
+=======
+                        <span class="text-uppercase id-color-2">
+                          <img
+                            src="@/assets/cogi.jpg"
+                            style="width: 6em; height: 1em"
+                          />
+                        </span>
+>>>>>>> e7668cc94965a3e9555c7986870c09baf9153d58
                       </h6>
                       <div class="spacer-10"></div>
                       <h1 class="wow fadeInUp" data-wow-delay=".75s">
