@@ -66,7 +66,7 @@
                     <a href="explore">About<span></span></a>
                     <ul>
                       <li><a href="explore.html">Explore</a></li>
-                      <li><a href="collection.html">Collections</a></li>
+                      <li><a href="collection">Collections</a></li>
                       <li><a href="item-details.html">Item Details</a></li>
                     </ul>
                   </li>
