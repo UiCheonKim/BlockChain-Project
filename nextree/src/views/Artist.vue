@@ -157,10 +157,10 @@ export default {
   methods: {},
 };
 </script>
-<style scoped>
+<style>
 @import "../css/artist/style.css";
 </style>
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../css/artist/scss/portfolio.scss";
 @import "../css/artist/scss/style.scss";
 </style>
