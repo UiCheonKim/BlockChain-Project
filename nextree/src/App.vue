@@ -71,7 +71,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#">Artist<span></span></a>
+                    <a href="/artist">Artist<span></span></a>
                     <ul>
                       <li><a href="author.html">Author</a></li>
                       <li><a href="wallet.html">Wallet</a></li>
