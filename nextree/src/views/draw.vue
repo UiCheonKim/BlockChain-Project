@@ -87,12 +87,10 @@
             </div>
           </div>
 
-          <div class="box-continer">
-            <div
-              v-if="show"
-              class="ranbox-shake"
-              style="--bg-image: url('images/items/ranbox.png')"
-            ></div>
+          <div class="open-box ranbox-shake2" v-if="show">
+           
+
+            <lottie-player src="js/box_lottie.js"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  ></lottie-player>
           </div>
 
             <!-- <div class="bottom"> -->
