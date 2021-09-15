@@ -31,7 +31,7 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
+          <div class="carousel-item active" data-bs-interval="4500">
             <!-- <img src="@/assets/1.jpg" class="d-block w-100" alt="..." /> -->
             <article
               class="no-top no-bottom vh-100"
@@ -72,7 +72,7 @@
                       </h6>
                       <div class="spacer-10"></div>
                       <h1 class="wow fadeInUp" data-wow-delay=".75s">
-                        우리 함께 나무를 심어요.
+                        우리 함께 나무 심어요.
                       </h1>
                       <p class="wow fadeInUp lead mainp" data-wow-delay="1s">
                         환경오염으로 황폐화되고 있는 지구에는 나무가 필요합니다.
@@ -81,7 +81,7 @@
                         만듭니다.<br />
                         넥스트리는 매일 성장하고 있습니다. 그만큼 지구도
                         건강해지고 있어요. <br />
-                        기부를 통해 아티스트의 NFT와 나무 NFT도 얻을수 있습니다.
+                        기부를 통해 아티스트의 NFT와 나무 NFT도 얻을 수 있습니다.
                       </p>
                       <div class="spacer-10"></div>
                       <a
@@ -92,7 +92,7 @@
                       >
                       <a
                         style="margin-left: 1em"
-                        href="explore.html"
+                        href="/about"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
                         >자세히보기</a
@@ -112,7 +112,7 @@
               </div>
             </article>
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-item" data-bs-interval="4000">
             <article
               class="no-top no-bottom vh-100"
               style="--bg-image: url('images/background/mini.jpg')"
@@ -137,7 +137,8 @@
               </div>
             </article>
           </div>
-          <div class="carousel-item">
+
+          <div class="carousel-item"  data-bs-interval="4000">
             <!-- <article
               class="no-top no-bottom vh-100"
               style="--bg-image: url('images/background/team.jpg')"

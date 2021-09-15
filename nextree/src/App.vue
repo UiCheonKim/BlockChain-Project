@@ -63,7 +63,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="explore">About<span></span></a>
+                    <a href="/about">About<span></span></a>
                     <ul>
                       <li><a href="explore.html">Explore</a></li>
                       <li><a href="collection">Collections</a></li>
@@ -79,7 +79,7 @@
                       <li><a href="news.html">News</a></li>
                       <li><a href="gallery.html">Gallery</a></li>
                       <li><a href="login.html">Login</a></li>
-                      <li><a href="about">about</a></li>
+                      <li><a href="/about">about</a></li>
                       <li><a href="register.html">Register</a></li>
                       <li><a href="contact.html">Contact Us</a></li>
                       <li><a href="/draw">Draw</a></li>
