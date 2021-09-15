@@ -1,6 +1,8 @@
 <template>
   <div class="no-bottom no-top" id="content">
     <div id="top"></div>
+    
+   
 
     <!-- section begin -->
     <!-- <section
@@ -86,10 +88,10 @@
               ></lottie-player>
             </div>
           </div>
-
+          
           <div class="open-box ranbox-shake2" v-if="show">
+            
            
-
             <lottie-player src="js/box_lottie.js"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  ></lottie-player>
           </div>
 
@@ -163,14 +165,18 @@
         <div class="col-lg-6 offset-lg-3 text-center">
           <small> 상자가 열리기까지 4분이 소요됩니다.</small>
         </div>
+        
       </div>
     </section>
   </div>
 </template>
 <script>
+import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue"; // import lottie-vuejs
 export default {
   name: "",
-  components: {},
+  components: {
+    LottieAnimation
+  },
   data() {
     return {
       sampleData: "",
