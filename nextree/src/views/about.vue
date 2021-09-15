@@ -227,8 +227,6 @@
 </template>
 
 <script>
-import $ from "jquery";
-
 export default {
   name: "",
   components: {},
