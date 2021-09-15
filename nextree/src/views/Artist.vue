@@ -52,91 +52,137 @@
         </div>
         <!-- End About Section -->
 
-        <!-- portfolio section -->
+        <!-- portpolio section -->
         <div class="probootstrap-section">
-          <div class="containerr">
+          <div class="container text-center">
             <div class="row">
-              <div class="col-md-12 col-md-offset-6 mb40 text-center">
-                <h2>Artist <span style="color: red">KIM SEOK KI</span></h2>
-                <p style="width: 100%; align: center">
-                  개인전 42회 (루브르까루젤, 갤러리B.D.M.C. 갤러리KENY.
-                  몽테송아트센터) <br />
-                  국제전 41회 (프랑스, 미국, 그리스, 벨기에, 이태리, 스페인,
-                  일본, 중국) <br />
-                  국내전 451회 (한국미협, 창조회, 후소회, 신수회, 회토회,
-                  목우회, 동질성회복전)
+              <div class="col-md-6 col-md-offset-3 mb40">
+                <h2>I'm a photographer</h2>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                  Separated they live in Bookmarksgrove right at the coast of
+                  the Semantics, a large language ocean.
                 </p>
               </div>
-              <div class="container col-md-8 col-md-offset-4 mb40">
-                <p class="header">- 2021.09 The Light of the East -</p>
-                <div class="content">
-                  <div class="wrapper">
-                    <div class="box vintage">
-                      <img src="@/assets/artist/img_1.jpg" alt="EMMYLOU" />
-                      <h2>EMMYLOU</h2>
-                      <p>I'll be your Emmylou and I'll be your June</p>
-                    </div>
+            </div>
+
+            <div class="row probootstrap-gutter16">
+              <div
+                class="col-md-4 probootstrap-animate"
+                data-animate-effect="fadeIn"
+              >
+                <a
+                  href="single-page.html"
+                  class="img-bg"
+                  style="background-image: url(@/assets/artist/img_1.jpg)"
+                >
+                  <div class="probootstrap-photo-details">
+                    <h2>A turquoise colored sea</h2>
+                    <p>Landscape</p>
                   </div>
-                  <div class="wrapper">
-                    <div class="box w-content">
-                      <img
-                        src="@/assets/artist/img_2.jpg"
-                        alt="Jenny of Oldstones"
-                      />
-                      <div class="frame">
-                        <h2>Jenny of Oldstones</h2>
-                      </div>
-                    </div>
+                </a>
+              </div>
+              <div
+                class="col-md-8 probootstrap-animate"
+                data-animate-effect="fadeIn"
+              >
+                <a
+                  href="single-page.html"
+                  class="img-bg"
+                  style="background-image: url(@/assets/artist/img_2.jpg)"
+                >
+                  <div class="probootstrap-photo-details">
+                    <h2>Frozen Mount</h2>
+                    <p>Landscape</p>
                   </div>
-                  <div class="wrapper">
-                    <div class="box postcard">
-                      <img src="@/assets/artist/img_3.jpg" alt="BOX" />
-                      <h2>
-                        The Pursuit of
-                        <p class="hide">HAPPINESS</p>
-                      </h2>
-                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="row probootstrap-gutter16">
+              <div
+                class="col-md-5 probootstrap-animate"
+                data-animate-effect="fadeIn"
+              >
+                <a
+                  href="single-page.html"
+                  class="img-bg"
+                  style="background-image: url(@/assets/artist/img_3.jpg)"
+                >
+                  <div class="probootstrap-photo-details">
+                    <h2>Earthly Clay</h2>
+                    <p>Landscape</p>
                   </div>
-                  <div class="wrapper">
-                    <div class="box zoom-in">
-                      <img
-                        src="@/assets/artist/img_4.jpg"
-                        alt="Postcards From Italy"
-                      />
-                      <h2>Postcards From Italy</h2>
-                      <p>And I will love to see that day</p>
-                    </div>
+                </a>
+              </div>
+              <div
+                class="col-md-3 probootstrap-animate"
+                data-animate-effect="fadeIn"
+              >
+                <a
+                  href="single-page.html"
+                  class="img-bg"
+                  style="background-image: url(@/assets/artist/img_5.jpg)"
+                >
+                  <div class="probootstrap-photo-details">
+                    <h2>Man Captured</h2>
+                    <p>Landscape</p>
                   </div>
-                  <div class="wrapper">
-                    <div class="box blury-card">
-                      <img
-                        src="@/assets/artist/img_5.jpg"
-                        alt="Blue Ridge Mountains"
-                      />
-                      <div class="frame">
-                        <h2>Blue Ridge</h2>
-                        <p>MOUNTAINS</p>
-                      </div>
-                    </div>
+                </a>
+              </div>
+              <div
+                class="col-md-4 probootstrap-animate"
+                data-animate-effect="fadeIn"
+              >
+                <a
+                  href="single-page.html"
+                  class="img-bg"
+                  style="background-image: url(@/assets/artist/img_4.jpg)"
+                >
+                  <div class="probootstrap-photo-details">
+                    <h2>Mountain with pines</h2>
+                    <p>Landscape</p>
                   </div>
-                  <div class="wrapper">
-                    <div class="box zoom-out">
-                      <img src="@/assets/artist/img_6.jpg" alt="Melody Noir" />
-                      <div class="frame">
-                        <h2>MELODY <span>NOIR</span></h2>
-                        <p>
-                          Tell me where the wind is blowing 'cause that's where
-                          the music's going
-                        </p>
-                      </div>
-                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="row probootstrap-gutter16">
+              <div
+                class="col-md-8 probootstrap-animate"
+                data-animate-effect="fadeIn"
+              >
+                <a
+                  href="single-page.html"
+                  class="img-bg"
+                  style="background-image: url(@/assets/artist/img_7.jpg)"
+                >
+                  <div class="probootstrap-photo-details">
+                    <h2>Mountains</h2>
+                    <p>Landscape</p>
                   </div>
-                </div>
+                </a>
+              </div>
+              <div
+                class="col-md-4 probootstrap-animate"
+                data-animate-effect="fadeIn"
+              >
+                <a
+                  href="single-page.html"
+                  class="img-bg"
+                  style="background-image: url(@/assets/artist/img_6.jpg)"
+                >
+                  <div class="probootstrap-photo-details">
+                    <h2>Beautiful Sunset</h2>
+                    <p>Landscape</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <!-- End portfolio Section-->
+        <!-- End portpolio Section-->
       </section>
     </div>
   </div>
@@ -152,13 +198,13 @@ export default {
   },
   setup() {},
   created() {},
-  mounted() {},
+  mounted() {
+    require("@/css/artist/style.css");
+  },
   unmounted() {},
   methods: {},
 };
 </script>
 <style lang="scss">
-// @import "@/css/artist/scss/style.scss";
-@import "../css/artist/style.css";
-@import "../css/artist/scss/portfolio.scss";
+@import "@/css/artist/scss/style.scss";
 </style>
