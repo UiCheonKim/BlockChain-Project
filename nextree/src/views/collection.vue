@@ -15,8 +15,6 @@
       <section aria-label="section" class="d_coll no-top">
         <div class="container">
           <div class="row">
-            
-
             <div class="col-md-12">
               <div class="de_tab mt-3">
                 <ul class="de_nav">
