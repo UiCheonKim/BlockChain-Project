@@ -276,13 +276,19 @@
                   margin-bottom: 2em;
                 "
               >
-                <h2 style="font-size: 2em" class="mx-2">Donate</h2>
+              
+                <h2 style="font-size: 2em" class="mx-2">Donate </h2>
+                
                 <hr class="section_line" />
               </div>
               <div class="container">
+                
                 <div class="row Radius BG-ytb align-items-center">
+                  
                   <div class="col-md-4">
+                    
                     <div class="videoTeduri">
+                      
                       <iframe
                         class="Radius_round"
                         width="560"
@@ -1418,6 +1424,35 @@ a.btn {
   animation-iteration-count: infinite;
 }
 
+.ranbox-shake2 {
+  text-align: center;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /* opacity: 0; */
+  -webkit-transition: all 4s ease 0s;
+  transition: all 4s ease 0s;
+  display: block;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-name: headShake;
+  animation-name: headShake;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease 1.9s;
+  transition: all 0.2s ease 1.9s;
+  position: relative;
+
+  /* margin-left: 35%; */
+  display: block;
+  margin: 0px auto;
+  animation-iteration-count: infinite;
+}
+
 
 
 .open-box {
@@ -1427,8 +1462,11 @@ a.btn {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  margin-left:24%;
+  /* margin-left:22%; */
   position: relative;
+
+  justify-content: center;
+  display: flex;
 }
 
 .box-center {

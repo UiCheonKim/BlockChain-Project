@@ -76,6 +76,16 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="section-title--3 text-center">
+                <div class="open-box">
+                  <lottie-player
+                    src="https://assets1.lottiefiles.com/packages/lf20_dUbSb3.json"
+                    background="transparent"
+                    speed="3"
+                    style="width: 150px; height: 150px"
+                    loop
+                    autoplay
+                  ></lottie-player>
+                </div>
                 <h3 class="title">OUR SERVICES</h3>
               </div>
             </div>
@@ -85,7 +95,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
               <div class="service">
                 <h4 class="title">Photography</h4>
-                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <!-- <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" /> -->
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -99,7 +109,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
               <div class="service">
                 <h4 class="title">Digital Makerting</h4>
-                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <!-- <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" /> -->
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -113,7 +123,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
               <div class="service">
                 <h4 class="title">Web Development</h4>
-                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <!-- <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" /> -->
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -127,7 +137,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
               <div class="service">
                 <h4 class="title">Grapgic Design</h4>
-                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <!-- <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" /> -->
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -141,7 +151,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
               <div class="service">
                 <h4 class="title">Web Development</h4>
-                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <!-- <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" /> -->
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -155,7 +165,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
               <div class="service">
                 <h4 class="title">Photography</h4>
-                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <!-- <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" /> -->
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -168,6 +178,96 @@
         </div>
       </div>
       <!-- End About Area -->
+      <div class="team">
+        <div class="container">
+          <div class="section-header text-center section-title--3">
+            <!-- <h2>Intro</h2> -->
+            <h1 style="padding-bottom: 2em" class="title">team Deus</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 mt-30">
+              <div class="member pos-r">
+                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <div class="member-info text-center f1">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-twitter"></i> </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-facebook"></i> </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-linkedin"></i> </a>
+                    </li>
+                  </ul>
+                  <h2 class="fw-7 c4">김의천</h2>
+                  <p class="fw-4">UiCheon Kim</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-30">
+              <div class="member pos-r">
+                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <div class="member-info text-center f1">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-twitter"></i> </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-facebook"></i> </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-linkedin"></i> </a>
+                    </li>
+                  </ul>
+                  <h2 class="fw-7 c4">정재승</h2>
+                  <p class="fw-4">JaeSeung Jung</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-30">
+              <div class="member pos-r">
+                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <div class="member-info text-center f1">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-twitter"></i> </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-facebook"></i> </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-linkedin"></i> </a>
+                    </li>
+                  </ul>
+                  <h2 class="fw-7 c4">홍대의</h2>
+                  <p class="fw-4">HongDae Eui</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-30">
+              <div class="member pos-r">
+                <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
+                <div class="member-info text-center f1">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-twitter"></i> </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-facebook"></i> </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="c4 fa fa-linkedin"></i> </a>
+                    </li>
+                  </ul>
+                  <h2 class="fw-7 c4">최재람</h2>
+                  <p class="fw-4">Jaeram Choi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-12" style="text-align: center">
           <div></div>
