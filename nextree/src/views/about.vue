@@ -12,7 +12,7 @@
           <div class="row">
             <div class="col-md-12 text-center">
               <h1>About</h1>
-              <p>Anim pariatur cliche reprehenderit</p>
+              <p>Anim pariatur cliche reprehenderdddit</p>
             </div>
             <div class="clearfix"></div>
           </div>
@@ -252,6 +252,6 @@ section {
   background-position: center;
 }
 </style>
-<style lang="css">
+<style lang="css" scoped>
 @import "../assets/teststyle.css";
 </style>
