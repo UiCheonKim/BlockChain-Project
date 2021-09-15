@@ -115,14 +115,14 @@
 
                  <div class="action" style="margin-top: 0px">
             <a
-              href="#top"
+              href="#"
               class="btn-main large-btn font24"
               v-bind:style="display_switch"
               style=""
               >Draw</a
             >
             <a
-              href="#top"
+              href="#"
               class="btn-main large-btn font24"
               style="margin-left: 20px"
               @click="toggleShow"
