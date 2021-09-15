@@ -8,6 +8,7 @@ import Artist from "../views/Artist.vue";
 import collection from "../views/collection.vue";
 import about from "../views/about.vue";
 import draw from "../views/draw.vue";
+import Detail from "../views/Detail.vue";
 
 const routes = [
   {
@@ -55,6 +56,12 @@ const routes = [
     path: "/draw",
     name: "draw",
     component: draw,
+  },
+
+  {
+    path: "/detail",
+    name: "Detail",
+    component: Detail,
   },
 
   // {

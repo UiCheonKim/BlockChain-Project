@@ -85,16 +85,15 @@
                       />
                       <div class="frame">
                         <h2>Jenny of Oldstones</h2>
+                        <p>lovely story</p>
                       </div>
                     </div>
                   </div>
                   <div class="wrapper">
                     <div class="box postcard">
                       <img src="@/assets/artist/img_3.jpg" alt="BOX" />
-                      <h2>
-                        The Pursuit of
-                        <p class="hide">HAPPINESS</p>
-                      </h2>
+                      <h2>The Pursuit of</h2>
+                      <p>HAPPINESS</p>
                     </div>
                   </div>
                   <div class="wrapper">
@@ -157,10 +156,10 @@ export default {
   methods: {},
 };
 </script>
-<style scoped>
-@import "../css/artist/style.css";
-</style>
 <style lang="scss" scoped>
 @import "../css/artist/scss/portfolio.scss";
 @import "../css/artist/scss/style.scss";
+</style>
+<style scoped>
+@import "../css/artist/style.css";
 </style>
