@@ -3,7 +3,7 @@
     <div id="top"></div>
 
     <!-- section begin -->
-    <section
+    <!-- <section
       id="subheader"
       class="text-light"
       data-bgimage="url(images/background/subheader-dark.jpg) top"
@@ -19,11 +19,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
+  <br />
+  <br />
+
   <section>
     <div class="row sequence">
-      <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow">
+      <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow">
         <div class="pricing-s1 mb30">
           <div class="top">
             <h2></h2>
@@ -54,9 +57,12 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-12 col-sm-12 sq-item wow">
+      <div class="col-lg-6 col-md-12 col-sm-12 sq-item wow">
         <div class="pricing-s1 mb40">
-          <div class="mid text-light bg-color"></div>
+          <div class="mid text-light bg-color">
+            <span class="icon_key icon-mid"> </span>
+            <div style="margin-top: 10px"><h4>100개</h4></div>
+          </div>
 
           <div class="top">
             <h2>뽑기</h2>
@@ -67,39 +73,47 @@
             <div
               class="ranbox-shake"
               style="--bg-image: url('images/items/ranbox.png')"
-            ></div>
-            <div class="mid text-light">
-              <!-- <p class="price"> -->
-              <!-- <span class="currency"></span>
-              <span class="m opt-1"></span>
-              <span class="y opt-2"></span>
-              <span class="month"></span> -->
-              <!-- </p> -->
+            >
+              <div
+                class="de_countdown de_countdown_center"
+                data-year="2021"
+                data-month="9"
+                data-day="16"
+                data-hour="8"
+              ></div>
             </div>
           </div>
-          <div class="bottom">
-            <ul>
-              <!-- <li><i class="fa fa-check"></i>Up to 2 devices</li>
+
+          <!-- <div class="bottom"> -->
+          <!-- <ul> -->
+          <!-- <li><i class="fa fa-check"></i>Up to 2 devices</li>
               <li><i class="fa fa-check"></i>Daily reminder</li>
               <li><i class="fa fa-check"></i>Detailed reporting</li>
               <li><i class="fa fa-check"></i>Interactive dashboard</li>
               <li><i class="fa fa-check"></i>Email and SMS notification</li>
               <li><i class="fa fa-check"></i>24/7 Customer Support</li> -->
-            </ul>
-          </div>
+          <!-- </ul> -->
+          <!-- </div> -->
+          <!-- <div
+            class="de_countdown"
+            data-year="2021"
+            data-month="9"
+            data-day="16"
+            data-hour="8"
+          ></div> -->
 
-          <div class="action" style="margin-top: 100px">
-            <a href="register.html" class="btn-main large-btn">Draw</a>
+          <div class="action" style="margin-top: 0px">
+            <a href="#top" class="btn-main large-btn font24">Draw</a>
             <a
-              href="register.html"
-              class="btn-main large-btn"
+              href="#top"
+              class="btn-main large-btn font24"
               style="margin-left: 20px"
               >Check</a
             >
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow">
+      <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow">
         <div class="pricing-s1 mb30">
           <div class="top">
             <h2></h2>

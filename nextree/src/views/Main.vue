@@ -1383,8 +1383,11 @@ a.btn {
 }
 
 .ranbox-shake {
-  width: 368px;
+  /* width: 368px;
   height: 376px;
+   */
+  width: 250px;
+  height: 250px;
   text-align: center;
   background-image: var(--bg-image);
   background-repeat: no-repeat;
