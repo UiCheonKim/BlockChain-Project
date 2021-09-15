@@ -777,6 +777,6 @@ export default {
         console.log(this.treeInfo);
       };
     },
-  },
-};
+  }
+}
 </script>
