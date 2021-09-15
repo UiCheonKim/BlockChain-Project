@@ -7,6 +7,7 @@ import Mypage from "../views/Mypage.vue";
 import Artist from "../views/Artist.vue";
 import collection from "../views/collection.vue";
 import about from "../views/about.vue";
+import draw from "../views/draw.vue";
 
 const routes = [
   {
@@ -48,6 +49,12 @@ const routes = [
     path: "/about",
     name: "about",
     component: about,
+  },
+
+  {
+    path: "/draw",
+    name: "draw",
+    component: draw,
   },
 
   // {
