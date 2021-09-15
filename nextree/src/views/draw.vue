@@ -60,7 +60,6 @@
               <div style="margin-top: 10px"><h4>100개</h4></div>
             </div>
 
-<<<<<<< Updated upstream
             <div class="top">
               <h2>뽑기</h2>
               <p class="plan-tagline">뭐가 나올까요?</p>
@@ -80,42 +79,6 @@
                 ></div>
               </div>
             </div>
-=======
-          <div class="top">
-            <h2 style="color: black">뽑기</h2>
-            <p class="plan-tagline" style="color: black">뭐가 나올까요?</p>
-          </div>
-          <div
-            class="de_countdown de_countdown_center"
-            data-year="2021"
-            data-month="9"
-            data-day="16"
-            data-hour="8"
-          ></div>
-          <div
-            v-if="show2"
-            class="box-continer box-center"
-            style="display: inline"
-          >
-            <div class="open-box">
-              <lottie-player
-                src="js/box_lottie.js"
-                background="transparent"
-                speed="1.5"
-                style="width: 500px; height: 500px"
-                autoplay
-              ></lottie-player>
-            </div>
-          </div>
-
-          <div class="box-continer">
-            <div
-              v-if="show"
-              class="ranbox-shake"
-              style="--bg-image: url('images/items/ranbox.png')"
-            ></div>
-          </div>
->>>>>>> Stashed changes
 
             <!-- <div class="bottom"> -->
             <!-- <ul> -->
@@ -135,7 +98,6 @@
             data-hour="8"
           ></div> -->
 
-<<<<<<< Updated upstream
             <div class="action" style="margin-top: 0px">
               <a href="#top" class="btn-main large-btn font24">Draw</a>
               <a
@@ -145,23 +107,6 @@
                 >Check</a
               >
             </div>
-=======
-          <div class="action" style="margin-top: 0px">
-            <a
-              href="#top"
-              class="btn-main large-btn font24"
-              v-bind:style="display_switch"
-              style=""
-              >Draw</a
-            >
-            <a
-              href="#top"
-              class="btn-main large-btn font24"
-              style="margin-left: 20px"
-              @click="toggleShow"
-              >Check</a
-            >
->>>>>>> Stashed changes
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow">
@@ -209,20 +154,12 @@ export default {
   data() {
     return {
       sampleData: "",
-      display_switch: "visibility: visible",
-      show: true,
-      show2: false,
     };
   },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {
-    toggleShow() {
-      this.show = !this.show;
-      this.show2 = !this.show2;
-    },
-  },
+  methods: {},
 };
 </script>

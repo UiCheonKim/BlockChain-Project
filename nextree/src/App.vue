@@ -47,7 +47,6 @@
                   />
                 </div>
               </div>
-
               <div class="de-flex-col header-col-mid">
                 <!-- mainmenu begin -->
                 <ul id="mainmenu">
