@@ -22,7 +22,7 @@
     </section> -->
     <section>
       <div class="row sequence">
-        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow">
+        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow sidebox">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
@@ -131,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow">
+        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow sidebox">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
@@ -192,4 +192,14 @@ export default {
     },
   },
 };
+
+
 </script>
+
+
+
+<style>
+.sidebox {
+  visibility: hidden !important;
+}
+</style>
