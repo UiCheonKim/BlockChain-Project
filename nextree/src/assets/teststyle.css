@@ -4634,3 +4634,127 @@
   padding-left: 100px;
   padding-right: 100px;
 }
+/************************************/
+/* 13 - TEAM START */
+/************************************/
+.team {
+  position: relative;
+  z-index: 2;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.team::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: calc(100% + 20px);
+  /* background: url(img/bg/13.png) no-repeat center center; */
+  -webkit-background-size: cover;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about-page .team::before {
+  display: none;
+}
+
+.about-page .team {
+  padding-bottom: 112px;
+}
+
+.member-info {
+  position: relative;
+}
+
+.member-info h2 {
+  font-size: 22px;
+  line-height: 30px;
+  padding-top: 12px;
+}
+
+.member-info p {
+  font-size: 18px;
+  line-height: 10px;
+  color: #737373;
+}
+
+.member-info ul {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(calc(-100% - 10px));
+  -ms-transform: translateY(calc(-100% - 10px));
+  -o-transform: translateY(calc(-100% - 10px));
+  transform: translateY(calc(-100% - 10px));
+}
+
+.member-info ul a {
+  width: 44px;
+  height: 44px;
+  display: block;
+  text-align: center;
+  line-height: 44px;
+  /* background: url(img/icon-holder/09.png) no-repeat center center; */
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.member-info ul a:hover {
+  /* background: url(img/icon-holder/03.png) no-repeat center center !important; */
+}
+
+.member-info ul a:hover .fa {
+  color: #fff !important;
+}
+
+.member-info ul li {
+  -webkit-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+  transform: translateX(-10px);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.member-info ul li:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+.member-info ul li:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.member-info ul li:last-of-type {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.member-info ul a i {
+  font-size: 16px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.member:hover li {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.fw-4 {
+  padding-bottom: 2em;
+}
+
+/************************************/
+/* 13 - TEAM END */
+/************************************/
