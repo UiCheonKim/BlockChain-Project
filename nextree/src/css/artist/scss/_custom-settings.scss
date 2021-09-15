@@ -1,12 +1,6 @@
 // Import font(s) from google.
 
 // Mixins
-@font-face {
-  font-family: "icomoon";
-
-  font-weight: normal;
-  font-style: normal;
-}
 
 @mixin icomoon() {
   font-family: "icomoon";
