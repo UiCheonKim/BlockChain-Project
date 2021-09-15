@@ -2741,7 +2741,7 @@ button.btn-main:hover,
     -webkit-box-shadow: 3px 3px 30px 0px rgba(var(--secondary-color-rgb), 0.5);
     -moz-box-shadow: 3px 3px 30px 0px rgba(var(--secondary-color-rgb), 0.5);
     box-shadow: 3px 3px 30px 0px rgba(var(--secondary-color-rgb), 0.5);
-    background-position: right; 
+    background-position: right;
 
 }
 
@@ -5275,7 +5275,7 @@ i.font60 {
   background-size: 150% !important;
   background-position: left !important;
   transition: 300ms background-position ease-in-out !important;
-  
+
 }
 
 .wallet{
@@ -5291,7 +5291,7 @@ i.font60 {
 }
 
 .btn-main:hover{
-    background-position: right !important; 
+    background-position: right !important;
 }
 
 .pricing-s2 .bottom {
