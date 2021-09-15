@@ -154,12 +154,20 @@ export default {
   data() {
     return {
       sampleData: "",
+      display_switch: "visibility: visible",
+      show: true,
+      show2: false,
     };
   },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {},
+  methods: {
+    toggleShow() {
+      this.show = !this.show;
+      this.show2 = !this.show2;
+    },
+  },
 };
 </script>
