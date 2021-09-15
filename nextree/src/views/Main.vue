@@ -276,46 +276,123 @@
               >
                 <h2 style="font-size: 2em" class="mx-2">Donate</h2>
                 <hr class="section_line" />
-                
               </div>
               <div class="container">
-<div class="row Radius BG-ytb align-items-center">
-    <div class="col-md-4">
-      <div class="videoTeduri">
-        <iframe class="Radius_round" width="560" height="349" src="https://www.youtube.com/embed/ucZl6vQ_8Uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe></div>
-      </div>
-       <div class="col-md-4">
-      <h4 class="text-center">Join Us!</h4>
-    <div class="row gy-3 justify-content-around">
-    <div class="col-4 p-2 border tree-btn Radius ms-2 text-center"> <img src="../images/items/Tree1.png" class="rounded"> <h6>1 Tree</h6> </div>
-    <div class="col-4 p-2 border tree-btn Radius ms-2 text-center"> <img src="../images/items/Tree2.png" class="rounded">  <h6>5 Tree</h6> </div>
-     
-    <div class="col-4 p-2 border tree-btn Radius ms-2 text-center"> <img src="../images/items/Tree3.png" class="rounded">  <h6>10 Tree </h6> </div>
-    <div class="col-4 p-2 border tree-btn Radius ms-2 text-center"> <img src="../images/items/Tree4.png" class="rounded">  <h6>50 Tree </h6> </div>
-    <input type="number" class="Radius" placeholder="Order Amount" id="TreeAmount" v-model.number="Amount">
+                <div class="row Radius BG-ytb align-items-center">
+                  <div class="col-md-4">
+                    <div class="videoTeduri">
+                      <iframe
+                        class="Radius_round"
+                        width="560"
+                        height="349"
+                        src="https://www.youtube.com/embed/ucZl6vQ_8Uo"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      >
+                      </iframe>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4 class="text-center">Join Us!</h4>
+                    <div class="row gy-3 justify-content-around">
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                      >
+                        <img src="../images/items/Tree1.png" class="rounded" />
+                        <h6>1 Tree</h6>
+                      </div>
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                      >
+                        <img src="../images/items/Tree2.png" class="rounded" />
+                        <h6>5 Tree</h6>
+                      </div>
 
-    <button class="tree-btn Radius" @click="donate()">Donate</button>
-  </div></div>
-        <div class="col-md-4 float-sm-start">
-          <h4>text Area</h4>
-          <h5>project name</h5>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
-            </p>
-        </div>
-        
-      
-  </div>
-  </div>
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                      >
+                        <img src="../images/items/Tree3.png" class="rounded" />
+                        <h6>10 Tree</h6>
+                      </div>
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                      >
+                        <img src="../images/items/Tree4.png" class="rounded" />
+                        <h6>50 Tree</h6>
+                      </div>
+                      <input
+                        type="number"
+                        class="Radius"
+                        placeholder="Order Amount"
+                        id="TreeAmount"
+                        v-model.number="Amount"
+                      />
+
+                      <button class="tree-btn Radius" @click="donate()">
+                        Donate
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-4 float-sm-start">
+                    <h4>text Area</h4>
+                    <h5>project name</h5>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <!-- <div class="text-center">
                 <h2>Hot Collections</h2>
                 <div class="small-border bg-color-2"></div>
               </div> -->
             </div>
-</div>
+          </div>
         </div>
       </section>
-      
+
       <section id="section-intro" class="no-top no-bottom">
         <div class="container">
           <div class="row">
@@ -334,7 +411,7 @@
               <h2 style="font-size: 2em">What We Do?</h2>
               <hr class="section_line" />
               <!-- <button style="width: 6em; height: 2em">More</button> -->
-              <button class="btn-main">More </button>
+              <button class="btn-main">More</button>
             </div>
             <!-- <div class="section_line">What We Do?</div> -->
             <div class="col-lg-4 col-md-6 mb-sm-30">
@@ -396,95 +473,121 @@
               >
                 <h2 style="font-size: 2em">Donate Rank</h2>
                 <hr class="section_line" />
-                <button class="btn-main">More </button>
+                <button class="btn-main">More</button>
               </div>
-              
             </div>
             <div class="container">
               <div class="row">
-              <div class="col-lg-12 mb-4">
-                <div class="row">
-                <div class="col-lg-6 mb-4">
-                   <table class="table">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Value</th>
-      <th scope="col">Address</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>~ tree</td>
-      <td>0xc0fb13d9c0e235f81b8</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>John</td>
-      <td>~ tree</td>
-      <td>0xd4388fe792aa5e2fb13</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Doe</td>
-      <td>~ tree</td>
-      <td>0x6d35014e8458704752d</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Jane</td>
-      <td>~ tree</td>
-      <td>0x7Ea810082118ebF206c</td>
-    </tr>
-  </tbody>
-</table> 
-</div>
-                            
-                            <div class="col-lg-6 mb-4">
-                                <div class="py-3">
-                                    </div>
-                                <div class="container">
-                                  <h4 class="small font-weight-bold">Mark <span
-                                            class="float-right"></span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">John <span
-                                            class="float-right"></span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 60%"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Doe <span
-                                            class="float-right"></span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
-                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Jane <span
-                                            class="float-right"></span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>                                  
-                                    
-                                    <!-- <h4 class="small font-weight-bold">Account Setup <span
+                <div class="col-lg-12 mb-4">
+                  <div class="row">
+                    <div class="col-lg-6 mb-4">
+                      <table class="table">
+                        <thead class="thead-light">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Value</th>
+                            <th scope="col">Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>~ tree</td>
+                            <td>0xc0fb13d9c0e235f81b8</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>John</td>
+                            <td>~ tree</td>
+                            <td>0xd4388fe792aa5e2fb13</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Doe</td>
+                            <td>~ tree</td>
+                            <td>0x6d35014e8458704752d</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Jane</td>
+                            <td>~ tree</td>
+                            <td>0x7Ea810082118ebF206c</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                      <div class="py-3"></div>
+                      <div class="container">
+                        <h4 class="small font-weight-bold">
+                          Mark <span class="float-right"></span>
+                        </h4>
+                        <div class="progress mb-4">
+                          <div
+                            class="progress-bar bg-info"
+                            role="progressbar"
+                            style="width: 80%"
+                            aria-valuenow="80"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <h4 class="small font-weight-bold">
+                          John <span class="float-right"></span>
+                        </h4>
+                        <div class="progress mb-4">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 60%"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <h4 class="small font-weight-bold">
+                          Doe <span class="float-right"></span>
+                        </h4>
+                        <div class="progress mb-4">
+                          <div
+                            class="progress-bar bg-warning"
+                            role="progressbar"
+                            style="width: 40%"
+                            aria-valuenow="40"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <h4 class="small font-weight-bold">
+                          Jane <span class="float-right"></span>
+                        </h4>
+                        <div class="progress mb-4">
+                          <div
+                            class="progress-bar bg-danger"
+                            role="progressbar"
+                            style="width: 20%"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+
+                        <!-- <h4 class="small font-weight-bold">Account Setup <span
                                             class="float-right">Complete!</span></h4>
                                     <div class="progress">
                                         <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div> -->
-                                </div>
-                            </div>
-</div>
-                        </div>
-                        </div>
-</div>
-</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1279,6 +1382,40 @@ a.btn {
   margin-left: 50px;
 }
 
+.ranbox-shake {
+  /* width: 368px;
+  height: 376px;
+   */
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /* opacity: 0; */
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  display: block;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease 1.9s;
+  transition: all 0.2s ease 1.9s;
+  position: relative;
+
+  /* margin-left: 35%; */
+  display: block;
+  margin: 0px auto;
+  animation-iteration-count: infinite;
+}
+
 /* .shake2 {
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
@@ -1314,7 +1451,6 @@ a.btn {
   height: 650px;
   align-items: center;
   display: flex;
-  
 }
 .videoTeduri iframe {
   position: relative;
@@ -1323,15 +1459,13 @@ a.btn {
   left: 0;
   width: 100%;
   height: 52%;
-  padding: 0%
-  
-
+  padding: 0%;
 }
 .BG-ytb {
-   background-color: #ecfafc;
+  background-color: #ecfafc;
 }
-.tree-btn{
-  background-color: #f4ff5f
+.tree-btn {
+  background-color: #f4ff5f;
 }
 .Radius {
   border-radius: 40px 80px / 80px 40px;
