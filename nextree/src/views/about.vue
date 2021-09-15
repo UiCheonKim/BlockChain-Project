@@ -252,6 +252,6 @@ section {
   background-position: center;
 }
 </style>
-<style lang="css">
+<style lang="css" scoped>
 @import "../assets/teststyle.css";
 </style>
