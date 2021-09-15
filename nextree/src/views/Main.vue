@@ -84,7 +84,7 @@
                       </p>
                       <div class="spacer-10"></div>
                       <a
-                        href="explore.html"
+                        href="#donate"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
                         >기부하기</a
@@ -262,7 +262,7 @@
           </div>
         </div> -->
       <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
-      <section id="section-collections" class="no-bottom">
+      <section id="donate" class="no-bottom">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -1416,23 +1416,25 @@ a.btn {
   animation-iteration-count: infinite;
 }
 
-/* .shake2 {
-  -webkit-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
+.open-box {
+  text-align: center;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  position: relative;
+
+  margin-left: 25%;
   display: block;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-name: bounceOutLeft;
-  animation-name: bounceOutLeft;
-  -webkit-animation-delay: 1.9s;
-  animation-delay: 1.9s;
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: all 0.2s ease 1.9s;
- transition: all 0.2s ease 1.9s;
-  position: absolute;
-  margin-left: 50px;
-} */
+}
+
+.box-center {
+  position: relative;
+  display: grid;
+  margin: 0px auto;
+}
 
 .slider-icon2 {
   width: 180px;
