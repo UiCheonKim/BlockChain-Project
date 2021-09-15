@@ -63,6 +63,7 @@
                           v-bind:style="kim"
                           style="--bg-image: url('images/misc/main-leaf.svg')"
                         ></span>
+                        
                         <span
                           class="slider-icon2"
                           style="--bg-image: url('images/misc/main-soil.png')"
@@ -1416,6 +1417,8 @@ a.btn {
   animation-iteration-count: infinite;
 }
 
+
+
 .open-box {
   text-align: center;
   background-image: var(--bg-image);
@@ -1434,7 +1437,6 @@ a.btn {
 }
   
 
-  margin-left: 25%;
 .slider-icon2 {
   width: 180px;
   height: 150px;
