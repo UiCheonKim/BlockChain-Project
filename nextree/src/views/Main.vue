@@ -276,13 +276,19 @@
                   margin-bottom: 2em;
                 "
               >
-                <h2 style="font-size: 2em" class="mx-2">Donate</h2>
+              
+                <h2 style="font-size: 2em" class="mx-2">Donate </h2>
+                
                 <hr class="section_line" />
               </div>
               <div class="container">
+                
                 <div class="row Radius BG-ytb align-items-center">
+                  
                   <div class="col-md-4">
+                    
                     <div class="videoTeduri">
+                      
                       <iframe
                         class="Radius_round"
                         width="560"
@@ -1456,8 +1462,11 @@ a.btn {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  margin-left:24%;
+  /* margin-left:22%; */
   position: relative;
+
+  justify-content: center;
+  display: flex;
 }
 
 .box-center {

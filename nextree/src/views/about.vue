@@ -7,6 +7,7 @@
       class="text-light"
       style="--bg-image: url('images/background/mini.jpg')"
     >
+
       <div class="center-y relative text-center">
         <div class="container">
           <div class="row">
@@ -30,7 +31,9 @@
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-12">
               <div class="about-content pr--50 pr_md--0 pr_sm--0">
-                <h2 class="mb--0">We Love Style</h2>
+                
+               
+                <h2 class="mb--0">We Love Style</h2>  
                 <div class="content mt--50 mt_sm--20 mt_md--20 mt_lg--20">
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -76,7 +79,10 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="section-title--3 text-center">
-                <h3 class="title">OUR SERVICES</h3>
+                 <div class="open-box"> 
+    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_dUbSb3.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop autoplay ></lottie-player>
+    </div>
+                <h3 class="title">OUR SERVICES</h3> 
               </div>
             </div>
           </div>
@@ -170,6 +176,7 @@
       <!-- End About Area -->
       <div class="row">
         <div class="col-lg-12" style="text-align: center">
+          
           <div></div>
           <!-- <div class="video-with-thumb text-center">
             <img src="@/assets/cutetest.jpg" />
