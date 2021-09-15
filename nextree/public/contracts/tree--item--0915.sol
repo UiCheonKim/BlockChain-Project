@@ -1,4 +1,3 @@
-// contracts/GameItems.sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -7,11 +6,13 @@ import "https://github.com/smartcontractkit/chainlink/blob/develop/contracts/src
 
 
 
-contract TreeItems_0913 is ERC1155, VRFConsumerBase{
+contract TreeItems is ERC1155, VRFConsumerBase{
     
     mapping(address => uint) public balances;
     mapping(address => uint) public ticket_Chekcer;
     mapping(address => uint) public isAdmin;
+    mapping(address => uint) public isArtist;
+    
 
     
     address public owner;
@@ -96,11 +97,55 @@ contract TreeItems_0913 is ERC1155, VRFConsumerBase{
         isAdmin[0x6D35014e8458704752D61e0e570C0A54b7f17676] = 1;
         isAdmin[0xA0e94126F66850704f446A173DeAF4af3061c068] = 1;
         isAdmin[0x15B21E6b74c88AC8cA39F9e3Ad4B2ff5Faccc513] = 1;
+        
+        isArtist[0x2BF5A2f4E77Ced2F6456d1b839b8e46E0E8e34E2] = 1;
+        isArtist[0x6D35014e8458704752D61e0e570C0A54b7f17676] = 1;
+        isArtist[0xA0e94126F66850704f446A173DeAF4af3061c068] = 1;
+        isArtist[0x15B21E6b74c88AC8cA39F9e3Ad4B2ff5Faccc513] = 1;
+        
+        //ganache test
+        isArtist[0x957135133e0c55861A696d7d68e0aA5588a4bFc2] = 1;
+        isAdmin[0x957135133e0c55861A696d7d68e0aA5588a4bFc2] = 1;
+        
+        isArtist[0xa48B4696638D6aDfFc89d5079CE2fecE70510a73] = 1;
+        isAdmin[0xa48B4696638D6aDfFc89d5079CE2fecE70510a73] = 1;
+        
+        //rinkeby test
+        isArtist[0x957135133e0c55861A696d7d68e0aA5588a4bFc2] = 1;
+        isAdmin[0x957135133e0c55861A696d7d68e0aA5588a4bFc2] = 1;
+        
+        isArtist[0xd4388fE792aa5e2fB131fF5E9F25954F27b54eEc] = 1;
+        isAdmin[0xd4388fE792aa5e2fB131fF5E9F25954F27b54eEc] = 1;
+        
+        isArtist[0xC0fb13D9c0E235f81b8D2851cBEd9F5a5ED29707] = 1;
+        isAdmin[0xC0fb13D9c0E235f81b8D2851cBEd9F5a5ED29707] = 1;
+        
+    
+        
+}
+
+    uint[] public prize_Box;
+
+    function art_Nft_Mint() public onlyArtist  { 
+    uint new_Mint_Id = item_ids.length;
+    item_ids.push(new_Mint_Id);
+    _mint(msg.sender, new_Mint_Id, 1, "");
+}
+
+    function prize_Assign(uint prize_Id) public onlyAdmin  { 
+    prize_Box.push(prize_Id);
+    _safeTransferFrom(msg.sender, owner, prize_Id, 1, "");
 }
     
     
         modifier onlyAdmin () {
         require(isAdmin[msg.sender] == 1);
+        _;
+}
+
+    
+        modifier onlyArtist () {
+        require(isArtist[msg.sender] == 1);
         _;
 }
 
@@ -235,6 +280,7 @@ contract TreeItems_0913 is ERC1155, VRFConsumerBase{
     
 
    function draw() public  {
+       require(prize_Box.length != 0, "prize_Box is empty");
             if (randomResult_chk[msg.sender].requestNumber == 0) {
         revert("randomResult is not generated yet");
             } else if (randomResult_chk[msg.sender].isRandomUsed  == 1) {
@@ -248,7 +294,9 @@ contract TreeItems_0913 is ERC1155, VRFConsumerBase{
      }   
      
        if(randomResult_chk[msg.sender].requestNumber>25) {
-            _safeTransferFrom(owner, msg.sender, 0, 2, "");
+            uint gift_Id = prize_Box[prize_Box.length - 1];
+            _safeTransferFrom(owner, msg.sender, gift_Id, 1, "");
+            prize_Box.pop();
             
      } 
       
