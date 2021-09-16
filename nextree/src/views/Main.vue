@@ -1430,6 +1430,32 @@ a.btn {
   animation-iteration-count: infinite;
 }
 
+.ranbox-shake2 {
+  /* width: 368px;
+  height: 376px;
+   */
+ 
+  /* opacity: 0; */
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  display: block;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: tada;
+  animation-name: tada;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease 1.9s;
+  transition: all 0.2s ease 1.9s;
+  position: relative;
+
+  /* margin-left: 35%; */
+  display: block;
+  margin: 0px auto;
+  animation-iteration-count: infinite;
+}
 
 
 .open-box {
