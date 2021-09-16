@@ -20,33 +20,26 @@
               <div class="d_profile de-flex">
                 <div class="de-flex-col">
                   <div class="profile_avatar">
-                    <img
-                      src="images/author_single/author_thumbnail.jpg"
-                      alt=""
-                    />
+                    <img :src="user_avatar" />
                     <i class="fa fa-check"></i>
                     <div class="profile_name">
                       <h4>
                         Monica Lucas
-                        <span class="profile_username">@monicaaa</span>
+                        <span class="profile_username"></span>
                         <span id="wallet" class="profile_wallet">{{
                           this.$store.state.addr
                         }}</span>
                         <button id="btn_copy" title="Copy Text">Copy</button>
                       </h4>
-                      <button @click="dappstart()">contract</button>
-                      <button @click="balanceOfBatch()">balanceofBatch</button>
-                      <button @click="tokenURIs()">tokenURIs</button>
-                      <button @click="getJson()">Json</button>
                     </div>
                   </div>
                 </div>
                 <div class="profile_follow de-flex">
                   <div class="de-flex-col">
-                    <div class="profile_follower">500 followers</div>
+                    <a href="#" class="mybtn-main">뽑기</a>
                   </div>
                   <div class="de-flex-col">
-                    <a href="#" class="btn-main">Follow</a>
+                    <a href="#" class="mybtn-main">합성</a>
                   </div>
                 </div>
               </div>
@@ -55,9 +48,8 @@
             <div class="col-md-12">
               <div class="de_tab">
                 <ul class="de_nav">
-                  <li class="active"><span>On Sale</span></li>
-                  <li><span>Created</span></li>
-                  <li><span>Liked</span></li>
+                  <li class="active"><span>나의 나무</span></li>
+                  <li><span>나의 작품</span></li>
                 </ul>
 
                 <div class="de_tab_content">
@@ -66,27 +58,16 @@
                       <!-- nft item begin -->
                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="nft__item">
-                          <div
-                            class="de_countdown"
-                            data-year="2021"
-                            data-month="9"
-                            data-day="16"
-                            data-hour="8"
-                          ></div>
                           <div class="author_list_pp">
                             <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="igmages/author/author-1.jp"
-                                alt=""
-                              />
+                              <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                :src="treeInfo.image"
+                                src="../assets/mypage/baby.jpg"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -94,16 +75,15 @@
                           </div>
                           <div class="nft__item_info">
                             <a href="item-details.html">
-                              <h4>{{ treeInfo.name }}</h4>
+                              <h4>Baby Tree</h4>
                             </a>
                             <div class="nft__item_price">
-                              {{ treeInfo.description }}
+                              베이비 트리는 활발하고 유쾌해서 친구들과 노는 것을
+                              제일 좋아해요.
                             </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
-                            </div>
+
                             <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>50</span>
+                              <i class="fa fa-tree"></i><span>50</span>
                             </div>
                           </div>
                         </div>
@@ -113,18 +93,14 @@
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-1.jpg"
-                                alt=""
-                              />
+                              <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="images/author_single/porto-2.jpg"
+                                src="../assets/mypage/iron.jpg"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -132,61 +108,14 @@
                           </div>
                           <div class="nft__item_info">
                             <a href="item-details.html">
-                              <h4>The Animals</h4>
+                              <h4>Iron tree</h4>
                             </a>
                             <div class="nft__item_price">
-                              0.06 ETH<span>1/22</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
+                              아이언 트리는 강하고 듬직해서 무슨 일이든 씩씩하게
+                              이겨내요.
                             </div>
                             <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>80</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="nft__item">
-                          <div
-                            class="de_countdown"
-                            data-year="2021"
-                            data-month="9"
-                            data-day="14"
-                            data-hour="8"
-                          ></div>
-                          <div class="author_list_pp">
-                            <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-1.jpg"
-                                alt=""
-                              />
-                              <i class="fa fa-check"></i>
-                            </a>
-                          </div>
-                          <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                src="images/author_single/porto-3.jpg"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                          <div class="nft__item_info">
-                            <a href="item-details.html">
-                              <h4>Three Donuts</h4>
-                            </a>
-                            <div class="nft__item_price">
-                              0.05 ETH<span>1/11</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
-                            </div>
-                            <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>97</span>
+                              <i class="fa fa-tree"></i><span>80</span>
                             </div>
                           </div>
                         </div>
@@ -196,18 +125,14 @@
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-1.jpg"
-                                alt=""
-                              />
+                              <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="images/author_single/porto-4.jpg"
+                                src="../assets/mypage/bronze.jpg"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -215,16 +140,46 @@
                           </div>
                           <div class="nft__item_info">
                             <a href="item-details.html">
-                              <h4>Graffiti Colors</h4>
+                              <h4>Bronze Tree</h4>
                             </a>
                             <div class="nft__item_price">
-                              0.02 ETH<span>1/15</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
+                              브론즈 트리는 착하고 순해서 항상 여러 친구들의
+                              고민을 들어줘요.
                             </div>
                             <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>73</span>
+                              <i class="fa fa-tree"></i><span>97</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- nft item begin -->
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="nft__item">
+                          <div class="author_list_pp">
+                            <a href="author.html">
+                              <img class="lazy" :src="user_avatar" alt="" />
+                              <i class="fa fa-check"></i>
+                            </a>
+                          </div>
+                          <div class="nft__item_wrap">
+                            <a href="item-details.html">
+                              <img
+                                src="../assets/mypage/silver.jpg"
+                                class="lazy nft__item_preview"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                          <div class="nft__item_info">
+                            <a href="item-details.html">
+                              <h4>Silver Tree</h4>
+                            </a>
+                            <div class="nft__item_price">
+                              실버 트리는 우아하고 고풍스러운 매력을 지녔어요.
+                              춤을 잘 춘답니다.
+                            </div>
+                            <div class="nft__item_like">
+                              <i class="fa fa-tree"></i><span>73</span>
                             </div>
                           </div>
                         </div>
@@ -237,20 +192,9 @@
                       <!-- nft item begin -->
                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="nft__item">
-                          <div
-                            class="de_countdown"
-                            data-year="2021"
-                            data-month="9"
-                            data-day="14"
-                            data-hour="8"
-                          ></div>
                           <div class="author_list_pp">
                             <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-1.jpg"
-                                alt=""
-                              />
+                              <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
@@ -267,12 +211,7 @@
                             <a href="item-details.html">
                               <h4>Three Donuts</h4>
                             </a>
-                            <div class="nft__item_price">
-                              0.05 ETH<span>1/11</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
-                            </div>
+                            <div class="nft__item_price">Artist : suryanto</div>
                             <div class="nft__item_like">
                               <i class="fa fa-heart"></i><span>97</span>
                             </div>
@@ -291,11 +230,7 @@
                           ></div>
                           <div class="author_list_pp">
                             <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-1.jpg"
-                                alt=""
-                              />
+                              <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
@@ -313,10 +248,7 @@
                               <h4>Pinky Ocean</h4>
                             </a>
                             <div class="nft__item_price">
-                              0.08 ETH<span>1/20</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
+                              Artist : studiocara
                             </div>
                             <div class="nft__item_like">
                               <i class="fa fa-heart"></i><span>50</span>
@@ -329,11 +261,7 @@
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-1.jpg"
-                                alt=""
-                              />
+                              <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
@@ -350,12 +278,7 @@
                             <a href="item-details.html">
                               <h4>The Animals</h4>
                             </a>
-                            <div class="nft__item_price">
-                              0.06 ETH<span>1/22</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
-                            </div>
+                            <div class="nft__item_price">Artist : praier</div>
                             <div class="nft__item_like">
                               <i class="fa fa-heart"></i><span>80</span>
                             </div>
@@ -367,11 +290,7 @@
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-1.jpg"
-                                alt=""
-                              />
+                              <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
@@ -389,184 +308,10 @@
                               <h4>Graffiti Colors</h4>
                             </a>
                             <div class="nft__item_price">
-                              0.02 ETH<span>1/15</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
+                              Artist : lovert began
                             </div>
                             <div class="nft__item_like">
                               <i class="fa fa-heart"></i><span>73</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tab-3">
-                    <div class="row">
-                      <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6">
-                        <div class="nft__item">
-                          <div class="author_list_pp">
-                            <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-1.jpg"
-                                alt=""
-                              />
-                              <i class="fa fa-check"></i>
-                            </a>
-                          </div>
-                          <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                src="images/items/anim-4.webp"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                          <div class="nft__item_info">
-                            <a href="item-details.html">
-                              <h4>The Truth</h4>
-                            </a>
-                            <div class="nft__item_price">
-                              0.06 ETH<span>1/20</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
-                            </div>
-                            <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>26</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6">
-                        <div class="nft__item">
-                          <div
-                            class="de_countdown"
-                            data-year="2021"
-                            data-month="9"
-                            data-day="20"
-                            data-hour="8"
-                          ></div>
-                          <div class="author_list_pp">
-                            <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-2.jpg"
-                                alt=""
-                              />
-                              <i class="fa fa-check"></i>
-                            </a>
-                          </div>
-                          <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                src="images/items/anim-2.webp"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                          <div class="nft__item_info">
-                            <a href="item-details.html">
-                              <h4>Running Puppets</h4>
-                            </a>
-                            <div class="nft__item_price">
-                              0.03 ETH<span>1/24</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
-                            </div>
-                            <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>45</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6">
-                        <div class="nft__item">
-                          <div class="author_list_pp">
-                            <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-3.jpg"
-                                alt=""
-                              />
-                              <i class="fa fa-check"></i>
-                            </a>
-                          </div>
-                          <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                src="images/items/anim-1.webp"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                          <div class="nft__item_info">
-                            <a href="item-details.html">
-                              <h4>USA Wordmation</h4>
-                            </a>
-                            <div class="nft__item_price">
-                              0.09 ETH<span>1/25</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
-                            </div>
-                            <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>76</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6">
-                        <div class="nft__item">
-                          <div
-                            class="de_countdown"
-                            data-year="2021"
-                            data-month="9"
-                            data-day="29"
-                            data-hour="8"
-                          ></div>
-                          <div class="author_list_pp">
-                            <a href="author.html">
-                              <img
-                                class="lazy"
-                                src="images/author/author-4.jpg"
-                                alt=""
-                              />
-                              <i class="fa fa-check"></i>
-                            </a>
-                          </div>
-                          <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                src="images/items/anim-5.webp"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                          <div class="nft__item_info">
-                            <a href="item-details.html">
-                              <h4>Loop Donut</h4>
-                            </a>
-                            <div class="nft__item_price">
-                              0.09 ETH<span>1/14</span>
-                            </div>
-                            <div class="nft__item_action">
-                              <a href="#">Place a bid</a>
-                            </div>
-                            <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>94</span>
                             </div>
                           </div>
                         </div>
@@ -702,16 +447,14 @@ export default {
     return {
       babyTree: "",
       treeInfo: "",
-      // description: "Baby",
-      // external_url: "https://testnets.opensea.io/3",
-      // image:
-      //   "http://s3.ap-northeast-2.amazonaws.com/whitecotton/images/godo/goods/19/07/28/1000004275/1000004275_main_082.jpg",
-      // name: "Baby",
+      user_avatar: "",
     };
   },
   watch: {},
   setup() {},
-  created() {},
+  created() {
+    this.userAvatar();
+  },
   mounted() {},
   unmounted() {},
   methods: {
@@ -777,6 +520,15 @@ export default {
         console.log(this.treeInfo);
       };
     },
+    userAvatar() {
+      this.user_avatar =
+        "https://identicon-api.herokuapp.com/" +
+        this.$store.state.addr +
+        "/200?format=png";
+    },
   },
 };
 </script>
+<style lang="css" scoped>
+@import "../css/mypage/style.css";
+</style>
