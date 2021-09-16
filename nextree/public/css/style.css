@@ -45,6 +45,10 @@
     font-style: normal;
 }
 
+@font-face { font-family: 'Malssami815'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff'); 
+    font-weight: normal; font-style: normal; }
+
 
   * {
     --body-font: 'GmarketSansMedium';
