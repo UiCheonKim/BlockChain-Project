@@ -9,6 +9,8 @@ import collection from "../views/collection.vue";
 import about from "../views/about.vue";
 import draw from "../views/draw.vue";
 import Detail from "../views/Detail.vue";
+import rankUp from "../views/rankUp.vue";
+
 
 const routes = [
   {
@@ -62,6 +64,12 @@ const routes = [
     path: "/detail",
     name: "Detail",
     component: Detail,
+  },
+
+  {
+    path: "/rankUp",
+    name: "rankUp",
+    component: rankUp,
   },
 
   // {

@@ -83,6 +83,10 @@
                       <li><a href="register.html">Register</a></li>
                       <li><a href="contact.html">Contact Us</a></li>
                       <li><a href="/draw">Draw</a></li>
+                      <li><a href="/rankUp">Rank Up</a></li>
+
+
+                      
                     </ul>
                   </li>
                   <li>
