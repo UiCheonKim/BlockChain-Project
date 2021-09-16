@@ -36,10 +36,10 @@
                 </div>
                 <div class="profile_follow de-flex">
                   <div class="de-flex-col">
-                    <a href="#" class="mybtn-main">뽑기</a>
+                    <a href="/Draw" class="mybtn-main">뽑기</a>
                   </div>
                   <div class="de-flex-col">
-                    <a href="#" class="mybtn-main">합성</a>
+                    <a href="/rankUp" class="mybtn-main">합성</a>
                   </div>
                 </div>
               </div>
