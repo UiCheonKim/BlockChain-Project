@@ -51,7 +51,7 @@
                 <!-- mainmenu begin -->
                 <ul id="mainmenu">
                   <li>
-                    <a href="index.html">Donation Status<span></span></a>
+                    <a href="Status">Donation Status<span></span></a>
                     <ul>
                       <li>
                         <a href="03_grey-index.html">New: Homepage Grey</a>
