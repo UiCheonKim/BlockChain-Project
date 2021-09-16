@@ -92,7 +92,7 @@
                       >
                       <a
                         style="margin-left: 1em"
-                        href="/about"
+                        href="explore.html"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
                         >자세히보기</a
@@ -172,17 +172,17 @@
                     </p>
                     <div class="spacer-10"></div>
                     <a
-                      href="#donation-section"
+                      href="explore.html"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
-                      >기부하기</a
+                      >Details</a
                     >
                     <a
                       style="margin-left: 1em"
-                      href="/about"
+                      href="explore.html"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
-                      >자세히보기</a
+                      >Go to Metabus</a
                     >
                     <div class="mb-sm-30"></div>
                   </div>
@@ -1500,37 +1500,6 @@ a.btn {
   animation-iteration-count: infinite;
 }
 
-<<<<<<< HEAD
-=======
-.ranbox-shake2 {
-  /* width: 368px;
-  height: 376px;
-   */
- 
-  /* opacity: 0; */
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  display: block;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-name: tada;
-  animation-name: tada;
-  -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s;
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: all 0.2s ease 1.9s;
-  transition: all 0.2s ease 1.9s;
-  position: relative;
-
-  /* margin-left: 35%; */
-  display: block;
-  margin: 0px auto;
-  animation-iteration-count: infinite;
-}
-
-
->>>>>>> 836210b4d2e9374359a311fc704779623b5bd867
 .open-box {
   text-align: center;
   background-image: var(--bg-image);
@@ -1538,15 +1507,8 @@ a.btn {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-<<<<<<< HEAD
   margin-left: 24%;
-=======
-  /* margin-left:5%; */
->>>>>>> 836210b4d2e9374359a311fc704779623b5bd867
   position: relative;
-      display: flex;
-    justify-content: center;
-
 }
 
 .box-center {

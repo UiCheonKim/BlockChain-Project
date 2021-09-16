@@ -22,7 +22,7 @@
     </section> -->
     <section>
       <div class="row sequence">
-        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox">
+        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow sidebox">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
@@ -53,14 +53,14 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 sq-item wow">
+        <div class="col-lg-6 col-md-12 col-sm-12 sq-item wow">
           <div class="pricing-s1 mb40">
-            <div class="mid text-light bg-color" style="padding: 20px 20px 0px">
+            <div class="mid text-light bg-color">
               <span class="icon_key icon-mid"> </span>
-              <div style="margin-top: 5px"><h4>100개</h4></div>
+              <div style="margin-top: 10px"><h4>100개</h4></div>
             </div>
 
-             <div class="top" style="padding: 15px 15px 0px">
+             <div class="top">
             <h2 style="color: black">뽑기</h2>
             <p class="plan-tagline" style="color: black">뭐가 나올까요?</p>
           </div>
@@ -76,7 +76,7 @@
             class="box-continer box-center"
             style="display: inline"
           >
-            <div class="open-box justify-content-around">
+            <div class="open-box">
               <lottie-player
                 src="js/box_lottie.js"
                 background="transparent"
@@ -111,7 +111,7 @@
             data-hour="8"
           ></div> -->
 
-                 <div class="action" style="margin-top: 0px; padding:20px 0px;">
+                 <div class="action" style="margin-top: 0px">
             <a
               href="#"
               class="btn-main large-btn font24"
@@ -129,7 +129,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox">
+        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow sidebox">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
