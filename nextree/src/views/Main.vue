@@ -59,8 +59,7 @@
                       <div class="spacer-single"></div>
                       <h6 class="wow fadeInUp" data-wow-delay=".5s">
                         <span
-                          class="slider-icon shake2"
-                          v-bind:style="kim"
+                          class="slider-icon"
                           style="--bg-image: url('images/misc/main-leaf.svg')"
                         ></span>
                         
@@ -1430,17 +1429,31 @@ a.btn {
   animation-iteration-count: infinite;
 }
 
+.ranbox-shake2 {
+ 
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: tada;
+  animation-name: tada;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease 1.9s;
+  transition: all 0.2s ease 1.9s;
+  animation-iteration-count: infinite;
+
+}
 
 
 .open-box {
-  text-align: center;
-  background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  margin-left:24%;
-  position: relative;
+
+ display: flex;
+justify-content: center;
+
+
 }
 
 .box-center {
