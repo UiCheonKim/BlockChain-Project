@@ -14,6 +14,11 @@ import draw from "../views/draw.vue";
 import Detail from "../views/Detail.vue";
 import rankUp from "../views/rankUp.vue";
 import Status from "../views/Status.vue";
+import banners from "../views/banners.vue";
+
+
+
+
 
 
 const routes = [{
@@ -79,6 +84,14 @@ const routes = [{
     name: "Status",
     component: Status,
   },
+
+  {
+    path: "/banners",
+    name: "banners",
+    component: banners,
+  },
+
+
 
   // {
   //   path: "/about",
