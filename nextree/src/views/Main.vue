@@ -92,7 +92,7 @@
                       >
                       <a
                         style="margin-left: 1em"
-                        href="explore.html"
+                        href="/about"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
                         >자세히보기</a
@@ -172,17 +172,17 @@
                     </p>
                     <div class="spacer-10"></div>
                     <a
-                      href="explore.html"
+                      href="#donation-section"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
-                      >Details</a
+                      >기부하기</a
                     >
                     <a
                       style="margin-left: 1em"
-                      href="explore.html"
+                      href="/about"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
-                      >Go to Metabus</a
+                      >자세히보기</a
                     >
                     <div class="mb-sm-30"></div>
                   </div>
