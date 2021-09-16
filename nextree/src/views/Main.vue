@@ -281,7 +281,7 @@
                 <div class="row Radius BG-ytb align-items-center">
                   <div class="col-md-4">
                     <div class="videoTeduri">
-                      <iframe
+                      <!-- <iframe
                         class="Radius_round"
                         width="560"
                         height="349"
@@ -291,7 +291,57 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                       >
-                      </iframe>
+                      </iframe> -->
+
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+                      나무심어요 나무심어요
+
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -375,7 +425,9 @@
                     </div>
                   </div>
                   <div class="col-md-4 float-sm-start">
-                    <h4>text Area</h4>
+            <lottie-player src="json/earth3.json"  background="transparent"  speed="1.2"  style="width: 500px; height: 500px;" autoplay loop ></lottie-player>
+
+                    <!-- <h4>text Area</h4>
                     <h5>project name</h5>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and
@@ -387,7 +439,7 @@
                       remaining essentially unchanged. It was popularised in the
                       1960s with the release of Letraset sheets containing Lorem
                       Ipsum passages.
-                    </p>
+                    </p> -->
                   </div>
                 </div>
               </div>

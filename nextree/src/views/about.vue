@@ -54,9 +54,11 @@
             <div class="col-lg-6 col-md-12 col-12 mt_md--40 mt_sm--80">
 
               <div class="thumbnail">
-            <lottie-player src="json/earth.json"  background="transparent"  speed="1.2"  style="width: 500px; height: 500px;" autoplay  ></lottie-player>
+                <div class="col">
+            <lottie-player src="json/earth.json"  background="transparent"  speed="1.2"  style="width: 500px; height: 500px;" autoplay loop ></lottie-player>
 
 
+</div>
                 
                 <!-- <iframe
                   width="560"
