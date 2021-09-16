@@ -5,7 +5,7 @@
    
     <section>
       <div class="row sequence">
-        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow sidebox">
+        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
@@ -30,9 +30,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 sq-item wow">
+
+        <div class="col-lg-4 col-md-12 col-sm-12 sq-item wow">
           <div class="pricing-s1 mb40">
-            <div class="mid text-light bg-color">
+            <div class="mid text-light bg-color" style="padding: 20px 20px 5px">
+
             <h2 >랭크 업 !</h2>
             <p class="plan-tagline" style="color: black">나무 카드 10장을 사용하여 다음 등급 카드 1장을 획득합니다.</p>
 
@@ -74,7 +76,8 @@
   </div>
 </div> -->
 
-                 <div class="action" style="margin-top: 0px">
+                 <div class="action" style="margin-top: 0px; padding:20px 0px;">
+
             <!-- <a
               href="#"
               class="btn-main large-btn font24"
@@ -118,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow sidebox">
+        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>

@@ -1439,8 +1439,11 @@ a.btn {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  margin-left:24%;
+  /* margin-left:5%; */
   position: relative;
+      display: flex;
+    justify-content: center;
+
 }
 
 .box-center {
