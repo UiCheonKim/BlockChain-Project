@@ -146,6 +146,7 @@
               class="no-top no-bottom vh-100"
               style="--bg-image: url('images/background/team.jpg')"
             >
+<<<<<<< Updated upstream
               <div class="v-center">
                 <div class="container">
                   <div class="row align-items-center">
@@ -184,6 +185,43 @@
                     </div>
                     <div class="col-md-6 xs-hide">
                       <!-- <img
+=======
+              <source src="@/assets/forest.mp4" type="video/mp4" />
+            </video>
+            <div class="v-center">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <div class="spacer-single"></div>
+                    <h6 class="wow fadeInUp" data-wow-delay=".5s">
+                      <span class="text-uppercase id-color-2">Next Tree</span>
+                    </h6>
+                    <div class="spacer-10"></div>
+                    <h1 class="wow fadeInUp text-white" data-wow-delay=".75s">
+                      다음 세대를 생각합니다.
+                    </h1>
+                    <p class="wow fadeInUp lead text-white" data-wow-delay="1s">
+                     넥스트리는 다음 세대가 신선한 공기를 마실 수 있도록 나무를 심습니다.
+                    </p>
+                    <div class="spacer-10"></div>
+                    <a
+                      href="#donation-section"
+                      class="btn-main wow fadeInUp lead"
+                      data-wow-delay="1.25s"
+                      >기부하기</a
+                    >
+                    <a
+                      style="margin-left: 1em"
+                      href="/about"
+                      class="btn-main wow fadeInUp lead"
+                      data-wow-delay="1.25s"
+                      >자세히보기</a
+                    >
+                    <div class="mb-sm-30"></div>
+                  </div>
+                  <div class="col-md-6 xs-hide">
+                    <!-- <img
+>>>>>>> Stashed changes
                         src="images/misc/nft.png"
                         class="lazy img-fluid wow fadeIn"
                         data-wow-delay="1.25s"
