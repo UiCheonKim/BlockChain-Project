@@ -63,7 +63,7 @@
                           v-bind:style="kim"
                           style="--bg-image: url('images/misc/main-leaf.svg')"
                         ></span>
-
+                        
                         <span
                           class="slider-icon2"
                           style="--bg-image: url('images/misc/main-soil.png')"
@@ -262,186 +262,134 @@
             </div>
           </div>
         </div> -->
-      <section id="donation-section" class="pb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="text-center">
-                <h2>Donate</h2>
-                <div class="small-border bg-color-2"></div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div id="donation-section-donate">
-                <h4 class="text-center pb-4 pt-5">Join Us!</h4>
-                <!-- <div class="row gy-3 justify-content-around"> -->
-                <div class="row gy-3 justify-content-around mb-5">
-                  <div
-                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                    type="button"
-                    @click="incTreeAmount(1)"
-                  >
-                    <img src="../images/items/Tree1.png" class="rounded" />
-                    <h6>1 Tree</h6>
-                  </div>
-                  <div
-                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                    type="button"
-                    @click="incTreeAmount(5)"
-                  >
-                    <img src="../images/items/Tree2.png" class="rounded" />
-                    <h6>5 Tree</h6>
-                  </div>
-                </div>
-                <div class="row gy-3 justify-content-around mb-5">
-                  <div
-                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                    type="button"
-                    @click="incTreeAmount(10)"
-                  >
-                    <img src="../images/items/Tree3.png" class="rounded" />
-                    <h6>10 Tree</h6>
-                  </div>
-                  <div
-                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                    type="button"
-                    @click="incTreeAmount(50)"
-                  >
-                    <img src="../images/items/Tree4.png" class="rounded" />
-                    <h6>50 Tree</h6>
-                  </div>
-                </div>
-                <div class="row gy-3 justify-content-around mb-5">
-                  <input
-                    type="number"
-                    class="Radius text-center mb-2"
-                    placeholder="Order Amount"
-                    v-model="treeAmount"
-                  />
-                  <button class="tree-btn Radius" @click="donate()">
-                    Donate
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-8 pt-5">
-              <div style="text-align: center">
-                <!-- <iframe
-                  class="Radius_round"
-                  width="50%"
-                  height="200"
-                  src="https://www.youtube.com/embed/ucZl6vQ_8Uo"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                >
-                </iframe> -->
-                <img
-                  src="@/assets/cogi.jpg"
-                  style="width: 90%; height: 300px"
-                  alt=""
-                />
-                <div class="mt-5">세계의 나무는 줄고 있습니다</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
       <section id="donation-section" class="no-bottom">
         <div class="container">
           <div class="row">
             <div class="col">
-              <div style="display: flex; text-align: center">
-                <div class="col-lg-12">
-                  <div class="text-center">
-                    <h2>Donate</h2>
-                    <div class="small-border bg-color-2"></div>
-                  </div>
-                </div>
-                <!-- <hr class="section_line" /> -->
+              <div
+                style="
+                  display: flex;
+                  text-align: center;
+                  margin-top: 2em;
+                  margin-bottom: 2em;
+                "
+              >
+                <h2 style="font-size: 2em" class="mx-2">Donate</h2>
+                <hr class="section_line" />
               </div>
-              <div class="row Radius align-items-center">
-                <div class="col-md-4">
-                  <h4 class="text-center">Join Us!</h4>
-                  <div class="row gy-3 justify-content-around">
-                    <div
-                      class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                      type="button"
-                      @click="incTreeAmount(1)"
-                    >
-                      <img src="../images/items/Tree1.png" class="rounded" />
-                      <h6>1 Tree</h6>
+              <div class="container">
+                <div class="row Radius BG-ytb align-items-center">
+                  <div class="col-md-4">
+                    <div class="videoTeduri">
+                      <iframe
+                        class="Radius_round"
+                        width="560"
+                        height="349"
+                        src="https://www.youtube.com/embed/ucZl6vQ_8Uo"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      >
+                      </iframe>
                     </div>
-                    <div
-                      class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                      type="button"
-                      @click="incTreeAmount(5)"
-                    >
-                      <img src="../images/items/Tree2.png" class="rounded" />
-                      <h6>5 Tree</h6>
-                    </div>
-
-                    <div
-                      class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                      type="button"
-                      @click="incTreeAmount(10)"
-                    >
-                      <img src="../images/items/Tree3.png" class="rounded" />
-                      <h6>10 Tree</h6>
-                    </div>
-                    <div
-                      class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                      type="button"
-                      @click="incTreeAmount(50)"
-                    >
-                      <img src="../images/items/Tree4.png" class="rounded" />
-                      <h6>50 Tree</h6>
-                    </div>
-                    <input
-                      type="number"
-                      class="Radius text-center"
-                      placeholder="Order Amount"
-                      v-model="treeAmount"
-                    />
-
-                    <button class="tree-btn Radius" @click="donate()">
-                      Donate
-                    </button>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="videoTeduri">
-                    <iframe
-                      class="Radius_round"
-                      width="560"
-                      height="349"
-                      src="https://www.youtube.com/embed/ucZl6vQ_8Uo"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    >
-                    </iframe>
-                  </div>
-                </div>
+                  <div class="col-md-4">
+                    <h4 class="text-center">Join Us!</h4>
+                    <div class="row gy-3 justify-content-around">
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                        type="button"
+                        @click="incTreeAmount(1)"
+                      >
+                        <img src="../images/items/Tree1.png" class="rounded" />
+                        <h6>1 Tree</h6>
+                      </div>
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                        type="button"
+                        @click="incTreeAmount(5)"
+                      >
+                        <img src="../images/items/Tree2.png" class="rounded" />
+                        <h6>5 Tree</h6>
+                      </div>
 
-                <div class="col-md-4 float-sm-start">
-                  <h4>text Area</h4>
-                  <h5>project name</h5>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages.
-                  </p>
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                        type="button"
+                        @click="incTreeAmount(10)"
+                      >
+                        <img src="../images/items/Tree3.png" class="rounded" />
+                        <h6>10 Tree</h6>
+                      </div>
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                        type="button"
+                        @click="incTreeAmount(50)"
+                      >
+                        <img src="../images/items/Tree4.png" class="rounded" />
+                        <h6>50 Tree</h6>
+                      </div>
+                      <input
+                        type="number"
+                        class="Radius text-center"
+                        placeholder="Order Amount"
+                        v-model="treeAmount"
+                      >
+
+                      <button class="tree-btn Radius" @click="donate()">
+                        Donate
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-4 float-sm-start">
+                    <h4>text Area</h4>
+                    <h5>project name</h5>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages.
+                    </p>
+                  </div>
                 </div>
               </div>
               <!-- <div class="text-center">
@@ -452,7 +400,7 @@
           </div>
         </div>
       </section>
-      <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
+
       <section id="section-intro" class="no-top no-bottom">
         <div class="container">
           <div class="row">
@@ -533,7 +481,6 @@
               >
                 <h2 style="font-size: 2em">Donate Rank</h2>
                 <hr class="section_line" />
-                <!-- <button style="width: 6em; height: 2em">More</button> -->
                 <button class="btn-main">More</button>
               </div>
             </div>
@@ -581,18 +528,14 @@
                     </div>
 
                     <div class="col-lg-6 mb-4">
+                      
                       <div class="container">
                         <h4 class="small font-weight-bold">
                           Mark <span class="float-right"></span>
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="
-                              progress-bar
-                              progress-bar-striped
-                              progress-bar-animated
-                              bg-info
-                            "
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-info"
                             role="progressbar"
                             style="width: 80%"
                             aria-valuenow="75"
@@ -605,11 +548,7 @@
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="
-                              progress-bar
-                              progress-bar-striped
-                              progress-bar-animated
-                            "
+                            class="progress-bar progress-bar-striped progress-bar-animated"
                             role="progressbar"
                             style="width: 60%"
                             aria-valuenow="60"
@@ -622,12 +561,7 @@
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="
-                              progress-bar
-                              progress-bar-striped
-                              progress-bar-animated
-                              bg-warning
-                            "
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                             role="progressbar"
                             style="width: 40%"
                             aria-valuenow="40"
@@ -640,12 +574,7 @@
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="
-                              progress-bar
-                              progress-bar-striped
-                              progress-bar-animated
-                              bg-danger
-                            "
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                             role="progressbar"
                             style="width: 20%"
                             aria-valuenow="20"
@@ -1350,6 +1279,7 @@ export default {
       Menu1: "잘되나확인",
       kim: "visibility: hidden",
       treeAmount: 0,
+      
     };
   },
   setup() {},
@@ -1362,8 +1292,8 @@ export default {
   unmounted() {},
   methods: {
     incTreeAmount(addValue) {
-      this.treeAmount += parseInt(addValue);
-    },
+      this.treeAmount += parseInt(addValue)
+    }
   },
 };
 </script>
@@ -1500,6 +1430,8 @@ a.btn {
   animation-iteration-count: infinite;
 }
 
+
+
 .open-box {
   text-align: center;
   background-image: var(--bg-image);
@@ -1507,7 +1439,7 @@ a.btn {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  margin-left: 24%;
+  margin-left:24%;
   position: relative;
 }
 
@@ -1516,6 +1448,7 @@ a.btn {
   display: grid;
   margin: 0px auto;
 }
+  
 
 .slider-icon2 {
   width: 180px;
@@ -1555,10 +1488,5 @@ a.btn {
 }
 .Radius_round {
   border-radius: 40px 40px / 40px 40px;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
 }
 </style>
