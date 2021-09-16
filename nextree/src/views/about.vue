@@ -52,15 +52,20 @@
               </div>
             </div>
             <div class="col-lg-6 col-md-12 col-12 mt_md--40 mt_sm--80">
+
               <div class="thumbnail">
-                <iframe
+            <lottie-player src="json/earth.json"  background="transparent"  speed="1.2"  style="width: 500px; height: 500px;" autoplay  ></lottie-player>
+
+
+                
+                <!-- <iframe
                   width="560"
                   height="315"
                   class="youtube-video"
                   src="https://www.youtube.com/embed/5nI2i84hZP0"
                   frameborder="0"
                   allowfullscreen
-                ></iframe>
+                ></iframe> -->
               </div>
             </div>
           </div>
