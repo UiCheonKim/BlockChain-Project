@@ -5,7 +5,7 @@
    
     <section>
       <div class="row sequence">
-        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow sidebox">
+        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
@@ -30,7 +30,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 sq-item wow">
+        <div class="col-lg-4 col-md-12 col-sm-12 sq-item wow">
           <div class="pricing-s1 mb40">
             <div class="mid text-light bg-color">
             <h2 >랭크 업 !</h2>
@@ -47,9 +47,11 @@
             style="display: inline"
           >
             <div class="open-box">
-            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_o2hGVm.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px margin:0px paddig:0px;"    autoplay></lottie-player>
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_o2hGVm.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px margin:0px paddig:0px; position: relative; left: 70px;  top: 0px;"    autoplay></lottie-player>
+            <h3 style="position: relative; left: -250px;  top: 400px;">  Rank Up Completed! </h3>
+            
             </div>
-            <h3 style="text-align:center">  Rank Up Completed ! </h3>
+            
 
           </div>
 
@@ -118,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 sq-item wow sidebox">
+        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
