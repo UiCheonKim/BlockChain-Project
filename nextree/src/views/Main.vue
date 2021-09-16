@@ -31,7 +31,7 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="4500">
+          <div class="carousel-item active" data-bs-interval="5000">
             <!-- <img src="@/assets/1.jpg" class="d-block w-100" alt="..." /> -->
             <article
               class="no-top no-bottom vh-100"
@@ -72,7 +72,7 @@
                       </h6>
                       <div class="spacer-10"></div>
                       <h1 class="wow fadeInUp" data-wow-delay=".75s">
-                        우리 함께 나무 심어요.
+                        우리 함께 나무를 심어요.
                       </h1>
                       <p class="wow fadeInUp lead mainp" data-wow-delay="1s">
                         환경오염으로 황폐화되고 있는 지구에는 나무가 필요합니다.
@@ -81,7 +81,7 @@
                         만듭니다.<br />
                         넥스트리는 매일 성장하고 있습니다. 그만큼 지구도
                         건강해지고 있어요. <br />
-                        기부를 통해 아티스트의 NFT와 나무 NFT도 얻을 수 있습니다.
+                        기부를 통해 아티스트의 NFT와 나무 NFT도 얻을수 있습니다.
                       </p>
                       <div class="spacer-10"></div>
                       <a
@@ -92,7 +92,7 @@
                       >
                       <a
                         style="margin-left: 1em"
-                        href="/about"
+                        href="explore.html"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
                         >자세히보기</a
@@ -112,7 +112,7 @@
               </div>
             </article>
           </div>
-          <div class="carousel-item" data-bs-interval="4000">
+          <div class="carousel-item" data-bs-interval="3000">
             <article
               class="no-top no-bottom vh-100"
               style="--bg-image: url('images/background/mini.jpg')"
@@ -137,8 +137,7 @@
               </div>
             </article>
           </div>
-
-          <div class="carousel-item"  data-bs-interval="4000">
+          <div class="carousel-item">
             <!-- <article
               class="no-top no-bottom vh-100"
               style="--bg-image: url('images/background/team.jpg')"
@@ -276,19 +275,13 @@
                   margin-bottom: 2em;
                 "
               >
-              
-                <h2 style="font-size: 2em" class="mx-2">Donate </h2>
-                
+                <h2 style="font-size: 2em" class="mx-2">Donate</h2>
                 <hr class="section_line" />
               </div>
               <div class="container">
-                
                 <div class="row Radius BG-ytb align-items-center">
-                  
                   <div class="col-md-4">
-                    
                     <div class="videoTeduri">
-                      
                       <iframe
                         class="Radius_round"
                         width="560"
@@ -315,6 +308,8 @@
                           ms-2
                           text-center
                         "
+                        type="button"
+                        @click="incTreeAmount(1)"
                       >
                         <img src="../images/items/Tree1.png" class="rounded" />
                         <h6>1 Tree</h6>
@@ -329,6 +324,8 @@
                           ms-2
                           text-center
                         "
+                        type="button"
+                        @click="incTreeAmount(5)"
                       >
                         <img src="../images/items/Tree2.png" class="rounded" />
                         <h6>5 Tree</h6>
@@ -344,6 +341,8 @@
                           ms-2
                           text-center
                         "
+                        type="button"
+                        @click="incTreeAmount(10)"
                       >
                         <img src="../images/items/Tree3.png" class="rounded" />
                         <h6>10 Tree</h6>
@@ -358,17 +357,18 @@
                           ms-2
                           text-center
                         "
+                        type="button"
+                        @click="incTreeAmount(50)"
                       >
                         <img src="../images/items/Tree4.png" class="rounded" />
                         <h6>50 Tree</h6>
                       </div>
                       <input
                         type="number"
-                        class="Radius"
+                        class="Radius text-center"
                         placeholder="Order Amount"
-                        id="TreeAmount"
-                        v-model.number="Amount"
-                      />
+                        v-model="treeAmount"
+                      >
 
                       <button class="tree-btn Radius" @click="donate()">
                         Donate
@@ -528,17 +528,17 @@
                     </div>
 
                     <div class="col-lg-6 mb-4">
-                      <div class="py-3"></div>
+                      
                       <div class="container">
                         <h4 class="small font-weight-bold">
                           Mark <span class="float-right"></span>
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="progress-bar bg-info"
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-info"
                             role="progressbar"
                             style="width: 80%"
-                            aria-valuenow="80"
+                            aria-valuenow="75"
                             aria-valuemin="0"
                             aria-valuemax="100"
                           ></div>
@@ -548,7 +548,7 @@
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="progress-bar"
+                            class="progress-bar progress-bar-striped progress-bar-animated"
                             role="progressbar"
                             style="width: 60%"
                             aria-valuenow="60"
@@ -561,7 +561,7 @@
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="progress-bar bg-warning"
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                             role="progressbar"
                             style="width: 40%"
                             aria-valuenow="40"
@@ -574,7 +574,7 @@
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="progress-bar bg-danger"
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                             role="progressbar"
                             style="width: 20%"
                             aria-valuenow="20"
@@ -1278,6 +1278,8 @@ export default {
     return {
       Menu1: "잘되나확인",
       kim: "visibility: hidden",
+      treeAmount: 0,
+      
     };
   },
   setup() {},
@@ -1288,7 +1290,11 @@ export default {
     }, 200);
   },
   unmounted() {},
-  methods: {},
+  methods: {
+    incTreeAmount(addValue) {
+      this.treeAmount += parseInt(addValue)
+    }
+  },
 };
 </script>
 <style>
@@ -1424,35 +1430,6 @@ a.btn {
   animation-iteration-count: infinite;
 }
 
-.ranbox-shake2 {
-  text-align: center;
-  background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  /* opacity: 0; */
-  -webkit-transition: all 4s ease 0s;
-  transition: all 4s ease 0s;
-  display: block;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-name: headShake;
-  animation-name: headShake;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: all 0.2s ease 1.9s;
-  transition: all 0.2s ease 1.9s;
-  position: relative;
-
-  /* margin-left: 35%; */
-  display: block;
-  margin: 0px auto;
-  animation-iteration-count: infinite;
-}
-
 
 
 .open-box {
@@ -1462,11 +1439,8 @@ a.btn {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  /* margin-left:22%; */
+  margin-left:24%;
   position: relative;
-
-  justify-content: center;
-  display: flex;
 }
 
 .box-center {
