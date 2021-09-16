@@ -61,16 +61,12 @@
                         <span
                           class="slider-icon shake2"
                           v-bind:style="kim"
-                          style="
-                            --bg-image: url('images/misc/main-leaf.svg');
-                          "
+                          style="--bg-image: url('images/misc/main-leaf.svg')"
                         ></span>
+                        
                         <span
                           class="slider-icon2"
-                          
-                          style="
-                            --bg-image: url('images/misc/main-soil.png');
-                          "
+                          style="--bg-image: url('images/misc/main-soil.png')"
                         ></span>
                         <!-- <span class="text-uppercase id-color-2">Next Tree</span> -->
                       </h6>
@@ -89,7 +85,7 @@
                       </p>
                       <div class="spacer-10"></div>
                       <a
-                        href="explore.html"
+                        href="#donation-section"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
                         >기부하기</a
@@ -142,50 +138,19 @@
             </article>
           </div>
           <div class="carousel-item">
-            <article
+            <!-- <article
               class="no-top no-bottom vh-100"
               style="--bg-image: url('images/background/team.jpg')"
+            > -->
+            <video
+              autoplay
+              muted
+              loop
+              preload="auto"
+              id="myVideo"
+              style="width: 100%; object-fit: fill; position: absolute"
+              class="no-top no-bottom vh-100"
             >
-<<<<<<< Updated upstream
-              <div class="v-center">
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-md-6">
-                      <div class="spacer-single"></div>
-                      <h6 class="wow fadeInUp" data-wow-delay=".5s">
-                        <span class="text-uppercase id-color-2">Next Tree</span>
-                      </h6>
-                      <div class="spacer-10"></div>
-                      <h1 class="wow fadeInUp text-white" data-wow-delay=".75s">
-                        Create, sell or collect digital items.
-                      </h1>
-                      <p
-                        class="wow fadeInUp lead text-white"
-                        data-wow-delay="1s"
-                      >
-                        Unit of data stored on a digital ledger, called a
-                        blockchain, that certifies a digital asset to be unique
-                        and therefore not interchangeable
-                      </p>
-                      <div class="spacer-10"></div>
-                      <a
-                        href="explore.html"
-                        class="btn-main wow fadeInUp lead"
-                        data-wow-delay="1.25s"
-                        >Details</a
-                      >
-                      <a
-                        style="margin-left: 1em"
-                        href="explore.html"
-                        class="btn-main wow fadeInUp lead"
-                        data-wow-delay="1.25s"
-                        >Go to Metabus</a
-                      >
-                      <div class="mb-sm-30"></div>
-                    </div>
-                    <div class="col-md-6 xs-hide">
-                      <!-- <img
-=======
               <source src="@/assets/forest.mp4" type="video/mp4" />
             </video>
             <div class="v-center">
@@ -198,40 +163,40 @@
                     </h6>
                     <div class="spacer-10"></div>
                     <h1 class="wow fadeInUp text-white" data-wow-delay=".75s">
-                      다음 세대를 생각합니다.
+                      Create, sell or collect digital items.
                     </h1>
                     <p class="wow fadeInUp lead text-white" data-wow-delay="1s">
-                     넥스트리는 다음 세대가 신선한 공기를 마실 수 있도록 나무를 심습니다.
+                      Unit of data stored on a digital ledger, called a
+                      blockchain, that certifies a digital asset to be unique
+                      and therefore not interchangeable
                     </p>
                     <div class="spacer-10"></div>
                     <a
-                      href="#donation-section"
+                      href="explore.html"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
-                      >기부하기</a
+                      >Details</a
                     >
                     <a
                       style="margin-left: 1em"
-                      href="/about"
+                      href="explore.html"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
-                      >자세히보기</a
+                      >Go to Metabus</a
                     >
                     <div class="mb-sm-30"></div>
                   </div>
                   <div class="col-md-6 xs-hide">
                     <!-- <img
->>>>>>> Stashed changes
                         src="images/misc/nft.png"
                         class="lazy img-fluid wow fadeIn"
                         data-wow-delay="1.25s"
                         alt=""
                       /> -->
-                    </div>
                   </div>
                 </div>
               </div>
-            </article>
+            </div>
           </div>
         </div>
         <button
@@ -298,6 +263,144 @@
           </div>
         </div> -->
       <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
+      <section id="donation-section" class="no-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div
+                style="
+                  display: flex;
+                  text-align: center;
+                  margin-top: 2em;
+                  margin-bottom: 2em;
+                "
+              >
+                <h2 style="font-size: 2em" class="mx-2">Donate</h2>
+                <hr class="section_line" />
+              </div>
+              <div class="container">
+                <div class="row Radius BG-ytb align-items-center">
+                  <div class="col-md-4">
+                    <div class="videoTeduri">
+                      <iframe
+                        class="Radius_round"
+                        width="560"
+                        height="349"
+                        src="https://www.youtube.com/embed/ucZl6vQ_8Uo"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      >
+                      </iframe>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4 class="text-center">Join Us!</h4>
+                    <div class="row gy-3 justify-content-around">
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                        type="button"
+                        @click="incTreeAmount(1)"
+                      >
+                        <img src="../images/items/Tree1.png" class="rounded" />
+                        <h6>1 Tree</h6>
+                      </div>
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                        type="button"
+                        @click="incTreeAmount(5)"
+                      >
+                        <img src="../images/items/Tree2.png" class="rounded" />
+                        <h6>5 Tree</h6>
+                      </div>
+
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                        type="button"
+                        @click="incTreeAmount(10)"
+                      >
+                        <img src="../images/items/Tree3.png" class="rounded" />
+                        <h6>10 Tree</h6>
+                      </div>
+                      <div
+                        class="
+                          col-4
+                          p-2
+                          border
+                          tree-btn
+                          Radius
+                          ms-2
+                          text-center
+                        "
+                        type="button"
+                        @click="incTreeAmount(50)"
+                      >
+                        <img src="../images/items/Tree4.png" class="rounded" />
+                        <h6>50 Tree</h6>
+                      </div>
+                      <input
+                        type="number"
+                        class="Radius text-center"
+                        placeholder="Order Amount"
+                        v-model="treeAmount"
+                      >
+
+                      <button class="tree-btn Radius" @click="donate()">
+                        Donate
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-4 float-sm-start">
+                    <h4>text Area</h4>
+                    <h5>project name</h5>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="text-center">
+                <h2>Hot Collections</h2>
+                <div class="small-border bg-color-2"></div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="section-intro" class="no-top no-bottom">
         <div class="container">
           <div class="row">
@@ -316,7 +419,7 @@
               <h2 style="font-size: 2em">What We Do?</h2>
               <hr class="section_line" />
               <!-- <button style="width: 6em; height: 2em">More</button> -->
-              <a href="#" class="btn">More</a>
+              <button class="btn-main">More</button>
             </div>
             <!-- <div class="section_line">What We Do?</div> -->
             <div class="col-lg-4 col-md-6 mb-sm-30">
@@ -378,137 +481,117 @@
               >
                 <h2 style="font-size: 2em">Donate Rank</h2>
                 <hr class="section_line" />
-                <button style="width: 6em; height: 2em">More</button>
+                <button class="btn-main">More</button>
               </div>
-              <!-- <div class="text-center">
-                <h2>Hot Collections</h2>
-                <div class="small-border bg-color-2"></div>
-              </div> -->
             </div>
-            <div id="collection-carousel" class="owl-carousel wow fadeIn">
-              <div class="nft_coll">
-                <div class="nft_wrap">
-                  <a href="collection.html"
-                    ><img
-                      src="images/collections/coll-1.jpg"
-                      class="lazy img-fluid"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="nft_coll_pp">
-                  <a href="collection.html"
-                    ><img class="lazy" src="images/author/author-1.jpg" alt=""
-                  /></a>
-                  <i class="fa fa-check"></i>
-                </div>
-                <div class="nft_coll_info">
-                  <a href="collection.html"><h4>Abstraction</h4></a>
-                  <span>ERC-192</span>
-                </div>
-              </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 mb-4">
+                  <div class="row">
+                    <div class="col-lg-6 mb-4">
+                      <table class="table">
+                        <thead class="thead-light">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Value</th>
+                            <th scope="col">Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>~ tree</td>
+                            <td>0xc0fb13d9c0e235f81b8</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>John</td>
+                            <td>~ tree</td>
+                            <td>0xd4388fe792aa5e2fb13</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Doe</td>
+                            <td>~ tree</td>
+                            <td>0x6d35014e8458704752d</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Jane</td>
+                            <td>~ tree</td>
+                            <td>0x7Ea810082118ebF206c</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
 
-              <div class="nft_coll">
-                <div class="nft_wrap">
-                  <a href="collection.html"
-                    ><img
-                      src="images/collections/coll-2.jpg"
-                      class="lazy img-fluid"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="nft_coll_pp">
-                  <a href="collection.html"
-                    ><img class="lazy" src="images/author/author-2.jpg" alt=""
-                  /></a>
-                  <i class="fa fa-check"></i>
-                </div>
-                <div class="nft_coll_info">
-                  <a href="collection.html"><h4>Patternlicious</h4></a>
-                  <span>ERC-61</span>
-                </div>
-              </div>
+                    <div class="col-lg-6 mb-4">
+                      
+                      <div class="container">
+                        <h4 class="small font-weight-bold">
+                          Mark <span class="float-right"></span>
+                        </h4>
+                        <div class="progress mb-4">
+                          <div
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                            role="progressbar"
+                            style="width: 80%"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <h4 class="small font-weight-bold">
+                          John <span class="float-right"></span>
+                        </h4>
+                        <div class="progress mb-4">
+                          <div
+                            class="progress-bar progress-bar-striped progress-bar-animated"
+                            role="progressbar"
+                            style="width: 60%"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <h4 class="small font-weight-bold">
+                          Doe <span class="float-right"></span>
+                        </h4>
+                        <div class="progress mb-4">
+                          <div
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                            role="progressbar"
+                            style="width: 40%"
+                            aria-valuenow="40"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <h4 class="small font-weight-bold">
+                          Jane <span class="float-right"></span>
+                        </h4>
+                        <div class="progress mb-4">
+                          <div
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                            role="progressbar"
+                            style="width: 20%"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
 
-              <div class="nft_coll">
-                <div class="nft_wrap">
-                  <a href="collection.html"
-                    ><img
-                      src="images/collections/coll-3.jpg"
-                      class="lazy img-fluid"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="nft_coll_pp">
-                  <a href="collection.html"
-                    ><img class="lazy" src="images/author/author-3.jpg" alt=""
-                  /></a>
-                  <i class="fa fa-check"></i>
-                </div>
-                <div class="nft_coll_info">
-                  <a href="collection.html"><h4>Skecthify</h4></a>
-                  <span>ERC-126</span>
-                </div>
-              </div>
-
-              <div class="nft_coll">
-                <div class="nft_wrap">
-                  <a href="collection.html"
-                    ><img
-                      src="images/collections/coll-4.jpg"
-                      class="lazy img-fluid"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="nft_coll_pp">
-                  <a href="collection.html"
-                    ><img class="lazy" src="images/author/author-4.jpg" alt=""
-                  /></a>
-                  <i class="fa fa-check"></i>
-                </div>
-                <div class="nft_coll_info">
-                  <a href="collection.html"><h4>Cartoonism</h4></a>
-                  <span>ERC-73</span>
-                </div>
-              </div>
-
-              <div class="nft_coll">
-                <div class="nft_wrap">
-                  <a href="collection.html"
-                    ><img
-                      src="images/collections/coll-5.jpg"
-                      class="lazy img-fluid"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="nft_coll_pp">
-                  <a href="collection.html"
-                    ><img class="lazy" src="images/author/author-5.jpg" alt=""
-                  /></a>
-                  <i class="fa fa-check"></i>
-                </div>
-                <div class="nft_coll_info">
-                  <a href="collection.html"><h4>Virtuland</h4></a>
-                  <span>ERC-85</span>
-                </div>
-              </div>
-
-              <div class="nft_coll">
-                <div class="nft_wrap">
-                  <a href="collection.html"
-                    ><img
-                      src="images/collections/coll-6.jpg"
-                      class="lazy img-fluid"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="nft_coll_pp">
-                  <a href="collection.html"
-                    ><img class="lazy" src="images/author/author-6.jpg" alt=""
-                  /></a>
-                  <i class="fa fa-check"></i>
-                </div>
-                <div class="nft_coll_info">
-                  <a href="collection.html"><h4>Papercut</h4></a>
-                  <span>ERC-42</span>
+                        <!-- <h4 class="small font-weight-bold">Account Setup <span
+                                            class="float-right">Complete!</span></h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div> -->
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1195,6 +1278,8 @@ export default {
     return {
       Menu1: "잘되나확인",
       kim: "visibility: hidden",
+      treeAmount: 0,
+      
     };
   },
   setup() {},
@@ -1205,7 +1290,11 @@ export default {
     }, 200);
   },
   unmounted() {},
-  methods: {},
+  methods: {
+    incTreeAmount(addValue) {
+      this.treeAmount += parseInt(addValue)
+    }
+  },
 };
 </script>
 <style>
@@ -1307,23 +1396,59 @@ a.btn {
   margin-left: 50px;
 }
 
-/* .shake2 { 
-  -webkit-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
+.ranbox-shake {
+  /* width: 368px;
+  height: 376px;
+   */
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /* opacity: 0; */
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
   display: block;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-name: bounceOutLeft;
-  animation-name: bounceOutLeft;
-  -webkit-animation-delay: 1.9s;
-  animation-delay: 1.9s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
   visibility: visible;
   opacity: 1;
   -webkit-transition: all 0.2s ease 1.9s;
- transition: all 0.2s ease 1.9s;
-  position: absolute;
-  margin-left: 50px;
-} */
+  transition: all 0.2s ease 1.9s;
+  position: relative;
+
+  /* margin-left: 35%; */
+  display: block;
+  margin: 0px auto;
+  animation-iteration-count: infinite;
+}
+
+
+
+.open-box {
+  text-align: center;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-left:24%;
+  position: relative;
+}
+
+.box-center {
+  position: relative;
+  display: grid;
+  margin: 0px auto;
+}
+  
 
 .slider-icon2 {
   width: 180px;
@@ -1335,7 +1460,33 @@ a.btn {
   -webkit-background-size: cover;
   background-size: cover;
   display: block;
-
-
+}
+.videoTeduri {
+  position: relative;
+  padding: 10% 0% 10% 0%;
+  height: 650px;
+  align-items: center;
+  display: flex;
+}
+.videoTeduri iframe {
+  position: relative;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52%;
+  padding: 0%;
+}
+.BG-ytb {
+  background-color: #ecfafc;
+}
+.tree-btn {
+  background-color: #f4ff5f;
+}
+.Radius {
+  border-radius: 40px 80px / 80px 40px;
+}
+.Radius_round {
+  border-radius: 40px 40px / 40px 40px;
 }
 </style>
