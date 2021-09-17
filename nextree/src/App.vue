@@ -84,9 +84,6 @@
                       <li><a href="contact.html">Contact Us</a></li>
                       <li><a href="/draw">Draw</a></li>
                       <li><a href="/rankUp">Rank Up</a></li>
-
-
-                      
                     </ul>
                   </li>
                   <li>
@@ -110,7 +107,7 @@
                       <li><a href="tabs.html">Tabs</a></li>
                       <li><a href="tooltips.html">Tooltips</a></li>
                       <li><a href="/banners">banners</a></li>
-
+                      <li><a href="/cards">cards</a></li>
                     </ul>
                   </li>
                 </ul>

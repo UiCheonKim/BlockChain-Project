@@ -1,7 +1,4 @@
-import {
-  createRouter,
-  createWebHistory
-} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Main from "../views/Main.vue";
 import Explore from "../views/Explore.vue";
 import dappTest from "../views/dappTest.vue";
@@ -15,13 +12,10 @@ import Detail from "../views/Detail.vue";
 import rankUp from "../views/rankUp.vue";
 import Status from "../views/Status.vue";
 import banners from "../views/banners.vue";
+import cards from "../views/cards.vue";
 
-
-
-
-
-
-const routes = [{
+const routes = [
+  {
     path: "/",
     name: "main",
     component: Main,
@@ -91,7 +85,11 @@ const routes = [{
     component: banners,
   },
 
-
+  {
+    path: "/cards",
+    name: "cards",
+    component: cards,
+  },
 
   // {
   //   path: "/about",
