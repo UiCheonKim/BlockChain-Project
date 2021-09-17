@@ -65,18 +65,66 @@
                             </a>
                           </div>
                           <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                v-bind:src="baby_img"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
+                            <img
+                              v-bind:src="baby_img"
+                              class="lazy nft__item_preview"
+                              alt=""
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal0"
+                            />
                           </div>
+
+                          <div
+                            class="modal fade"
+                            id="exampleModal0"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel0"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel0"
+                                  >
+                                    card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    v-bind:src="baby_img"
+                                    class="lazy nft__item_preview"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                           <div class="nft__item_info">
                             <a href="item-details.html">
                               <h4>Baby Tree</h4>
                             </a>
+
                             <div class="nft__item_price">
                               베이비 트리는 활발하고 유쾌해서 친구들과 노는 것을
                               제일 좋아해요.
@@ -98,14 +146,60 @@
                             </a>
                           </div>
                           <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                v-bind:src="iron_img"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
+                            <img
+                              v-bind:src="iron_img"
+                              class="lazy nft__item_preview"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal1"
+                              alt=""
+                            />
                           </div>
+                          <div
+                            class="modal fade"
+                            id="exampleModal1"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel1"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel1"
+                                  >
+                                    card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    v-bind:src="iron_img"
+                                    class="lazy nft__item_preview"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                           <div class="nft__item_info">
                             <a href="item-details.html">
                               <h4>Iron tree</h4>
@@ -134,13 +228,13 @@
                               v-bind:src="bronze_img"
                               class="lazy nft__item_preview"
                               data-bs-toggle="modal"
-                              data-bs-target="#exampleModal"
+                              data-bs-target="#exampleModal2"
                               alt=""
                             />
                           </div>
                           <div
                             class="modal fade"
-                            id="exampleModal"
+                            id="exampleModal2"
                             tabindex="-1"
                             aria-labelledby="exampleModalLabel2"
                             aria-hidden="true"
@@ -206,15 +300,63 @@
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
+
                           <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                v-bind:src="silver_img"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
+                            <!-- <a href="item-details.html"> -->
+                            <img
+                              v-bind:src="silver_img"
+                              class="lazy nft__item_preview"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                              alt=""
+                            />
                           </div>
+                          <div
+                            class="modal fade"
+                            id="exampleModal3"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel3"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel3"
+                                  >
+                                    card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    v-bind:src="silver_img"
+                                    class="lazy nft__item_preview"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                           <div class="nft__item_info">
                             <a href="item-details.html">
                               <h4>Silver Tree</h4>
