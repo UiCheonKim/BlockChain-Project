@@ -151,8 +151,8 @@
                   <select
                     class="form-select form-select-lg mb-3"
                     aria-label=".form-select-lg example"
-                    v-model="report_date"
-                    @change="change_date"
+                    v-model="report_num"
+                    @change="change_date()"
                   >
                     <option value="1">2021-06-28</option>
                     <option value="2">2021-07-21</option>
@@ -172,15 +172,243 @@
     </section>
 
     <!-- section close -->
-    <section class="no-top" v-if="report1"></section>
+    <section class="no-top" v-if="report_date == 0"></section>
 
     <!-- section begin -->
 
-    <section v-if="report2">
+    <section v-if="report_date == 1">
       <div class="container">
         <div class="row BG Radius p-4">
           <div class="col-md-8">
-            <h2>2020-08-01 Report</h2>
+            <h2>2021-06-28 Report</h2>
+            <div class="alert alert-" role="alert">
+              <h4 class="alert-heading">With Us!</h4>
+              <p>
+                Aww yeah, you successfully read this important message. This
+                example text is going to run a bit longer so that you can see
+                how spacing within an alert works with this kind of content.
+              </p>
+              <hr />
+              <p class="mb-0">
+                Whenever you need to, be sure to use margin utilities to keep
+                things nice and tidy.
+              </p>
+            </div>
+            <div class="blog-read">
+              <img
+                alt=""
+                src="../assets/cutetest.jpg"
+                class="img-fullwidth rounded"
+              />
+
+              <div class="post-text">
+                <p>
+                  Quis sunt quis do laboris eiusmod in sint dolore sit pariatur
+                  consequat commodo aliqua nulla ad dolor aliquip incididunt
+                  voluptate est aliquip adipisicing ea cupidatat nostrud
+                  incididunt aliquip dolore. Sed minim nisi duis laborum est
+                  labore nisi amet elit adipisicing proident do consectetur
+                  dolor labore sit nisi ad proident esse ad velit nisi irure
+                  reprehenderit ut et dolor labore veniam quis.
+                </p>
+
+                <blockquote>
+                  Design can be art. Design can be simple. That’s why it’s so
+                  complicated. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam.
+                </blockquote>
+
+                <p>
+                  Sunt duis laboris ex et quis laborum laborum cillum mollit
+                  voluptate culpa consequat ex cupidatat dolor eiusmod proident
+                  proident cillum pariatur sint adipisicing in nostrud do dolore
+                  consectetur quis incididunt minim consectetur. Exercitation
+                  elit proident dolor est id eiusmod dolor dolor incididunt ad
+                  voluptate laboris cupidatat est est sint veniam sint officia
+                  sint incididunt est sit ut tempor commodo pariatur ut proident
+                  et do.
+                </p>
+
+                <p>
+                  Sed eu in ut sint dolor irure fugiat minim veniam sed ea
+                  proident ullamco occaecat irure ut velit eu ullamco fugiat
+                  cupidatat dolore fugiat. Lorem ipsum id non deserunt id
+                  consequat duis voluptate amet aliqua pariatur laboris officia
+                  pariatur veniam velit reprehenderit sint nostrud cupidatat
+                  magna eiusmod mollit exercitation pariatur nulla minim laboris
+                  dolore aliqua consectetur cillum duis aute consectetur.
+                </p>
+
+                <span class="post-date">August 1, 2020</span>
+                <span class="post-comment">1</span>
+                <span class="post-like"></span>
+              </div>
+            </div>
+            <div class="spacer-single"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="padding40 bg-color text-light box-rounded Radius_round">
+              <h3>With ABC NGO</h3>
+              <address class="s1">
+                <span
+                  ><i class="fa fa-map-marker fa-lg"></i>100 Mainstreet Center,
+                  Sydney</span
+                >
+                <span><i class="fa fa-phone fa-lg"></i>+61 333 9296</span>
+                <span
+                  ><i class="fa fa-envelope-o fa-lg"></i
+                  ><a href="mailto:contact@example.com"
+                    >contact@example.com</a
+                  ></span
+                >
+                <span
+                  ><i class="fa fa-file-pdf-o fa-lg"></i
+                  ><a href="#">Download Brochure</a></span
+                >
+              </address>
+
+              <div class="spacer-single"></div>
+            </div>
+            <div class="widget widget-text mt-5">
+              <h4>ABC NGO</h4>
+              <div class="small-border"></div>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section close -->
+
+    <!-- report_date change -->
+
+    <!-- section begin -->
+
+    <section v-if="report_date == 2">
+      <div class="container">
+        <div class="row BG Radius p-4">
+          <div class="col-md-8">
+            <h2>2021-07-21 Report</h2>
+            <div class="alert alert-" role="alert">
+              <h4 class="alert-heading">With Us!</h4>
+              <p>
+                Aww yeah, you successfully read this important message. This
+                example text is going to run a bit longer so that you can see
+                how spacing within an alert works with this kind of content.
+              </p>
+              <hr />
+              <p class="mb-0">
+                Whenever you need to, be sure to use margin utilities to keep
+                things nice and tidy.
+              </p>
+            </div>
+            <div class="blog-read">
+              <img
+                alt=""
+                src="../assets/cutetest.jpg"
+                class="img-fullwidth rounded"
+              />
+
+              <div class="post-text">
+                <p>
+                  Quis sunt quis do laboris eiusmod in sint dolore sit pariatur
+                  consequat commodo aliqua nulla ad dolor aliquip incididunt
+                  voluptate est aliquip adipisicing ea cupidatat nostrud
+                  incididunt aliquip dolore. Sed minim nisi duis laborum est
+                  labore nisi amet elit adipisicing proident do consectetur
+                  dolor labore sit nisi ad proident esse ad velit nisi irure
+                  reprehenderit ut et dolor labore veniam quis.
+                </p>
+
+                <blockquote>
+                  Design can be art. Design can be simple. That’s why it’s so
+                  complicated. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam.
+                </blockquote>
+
+                <p>
+                  Sunt duis laboris ex et quis laborum laborum cillum mollit
+                  voluptate culpa consequat ex cupidatat dolor eiusmod proident
+                  proident cillum pariatur sint adipisicing in nostrud do dolore
+                  consectetur quis incididunt minim consectetur. Exercitation
+                  elit proident dolor est id eiusmod dolor dolor incididunt ad
+                  voluptate laboris cupidatat est est sint veniam sint officia
+                  sint incididunt est sit ut tempor commodo pariatur ut proident
+                  et do.
+                </p>
+
+                <p>
+                  Sed eu in ut sint dolor irure fugiat minim veniam sed ea
+                  proident ullamco occaecat irure ut velit eu ullamco fugiat
+                  cupidatat dolore fugiat. Lorem ipsum id non deserunt id
+                  consequat duis voluptate amet aliqua pariatur laboris officia
+                  pariatur veniam velit reprehenderit sint nostrud cupidatat
+                  magna eiusmod mollit exercitation pariatur nulla minim laboris
+                  dolore aliqua consectetur cillum duis aute consectetur.
+                </p>
+
+                <span class="post-date">August 1, 2020</span>
+                <span class="post-comment">1</span>
+                <span class="post-like"></span>
+              </div>
+            </div>
+            <div class="spacer-single"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="padding40 bg-color text-light box-rounded Radius_round">
+              <h3>With ABC NGO</h3>
+              <address class="s1">
+                <span
+                  ><i class="fa fa-map-marker fa-lg"></i>100 Mainstreet Center,
+                  Sydney</span
+                >
+                <span><i class="fa fa-phone fa-lg"></i>+61 333 9296</span>
+                <span
+                  ><i class="fa fa-envelope-o fa-lg"></i
+                  ><a href="mailto:contact@example.com"
+                    >contact@example.com</a
+                  ></span
+                >
+                <span
+                  ><i class="fa fa-file-pdf-o fa-lg"></i
+                  ><a href="#">Download Brochure</a></span
+                >
+              </address>
+
+              <div class="spacer-single"></div>
+            </div>
+            <div class="widget widget-text mt-5">
+              <h4>ABC NGO</h4>
+              <div class="small-border"></div>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section close -->
+
+    <!-- report_date change -->
+
+    <!-- section begin -->
+
+    <section v-if="report_date == 3">
+      <div class="container">
+        <div class="row BG Radius p-4">
+          <div class="col-md-8">
+            <h2>2021-08-25 Report</h2>
             <div class="alert alert-" role="alert">
               <h4 class="alert-heading">With Us!</h4>
               <p>
@@ -307,12 +535,7 @@ export default {
   unmounted() {},
   methods: {
     report_sel() {
-      if ((this.report_date = 1)) {
-        this.report1 = !this.report1;
-      }
-
-      this.report2 = !this.report2;
-      console.log(test);
+      this.report_date = this.report_num;
     },
     change_date() {
       console.log(this.report_date);
