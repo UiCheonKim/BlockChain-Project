@@ -52,7 +52,7 @@
                 <ul id="mainmenu">
                   <li>
                     <a href="Status">Donation Status<span></span></a>
-                    <ul>
+                    <!-- <ul>
                       <li>
                         <a href="03_grey-index.html">New: Homepage Grey</a>
                       </li>
@@ -60,19 +60,18 @@
                       <li><a href="index-2.html">Homepage 2</a></li>
                       <li><a href="index-3.html">Homepage 3</a></li>
                       <li><a href="index-4.html">Homepage 4</a></li>
-                    </ul>
+                    </ul> -->
                   </li>
                   <li>
-                    <a href="/about">About<span></span></a>
-                    <ul>
-                      <li><a href="explore.html">Explore</a></li>
-                      <li><a href="collection">Collections</a></li>
-                      <li><a href="item-details.html">Item Details</a></li>
-                    </ul>
+                    <a href="/about">About Us<span></span></a>
+                    <!-- <ul>
+                      <li><a href="/about">NexTree</a></li>
+                    </ul> -->
                   </li>
                   <li>
                     <a href="/artist">Artist<span></span></a>
-                    <ul>
+
+                    <!-- <ul>
                       <li><a href="author.html">Author</a></li>
                       <li><a href="wallet.html">Wallet</a></li>
                       <li><a href="create.html">Create</a></li>
@@ -81,18 +80,23 @@
                       <li><a href="login.html">Login</a></li>
                       <li><a href="/about">about</a></li>
                       <li><a href="register.html">Register</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="/draw">Draw</a></li>
-                      <li><a href="/rankUp">Rank Up</a></li>
+                      <li><a href="contact.html">Contact Us</a></li> 
+                    </ul> -->
+                  </li>
+                  <li>
+                    <a>NFT<span></span></a>
+                    <ul>
+                      <li><a href="/Explore">Explore</a></li>
+                      <li><a href="/Detail">Item Details</a></li>
                     </ul>
                   </li>
                   <li>
-                    <a href="activity.html">Collection<span></span></a>
-                  </li>
-                  <li>
-                    <a href="/myPage">My Page<span></span></a>
+                    <a>My Page<span></span></a>
                     <ul>
-                      <li><a href="icons-elegant.html">Elegant Icons</a></li>
+                      <li><a href="//myPage">My NFT</a></li>
+                      <li><a href="/draw">Draw</a></li>
+                      <li><a href="/rankUp">Rank Up</a></li>
+                      <!-- <li><a href="icons-elegant.html">Elegant Icons</a></li>
                       <li><a href="icons-etline.html">Etline Icons</a></li>
                       <li>
                         <a href="icons-font-awesome.html">Font Awesome Icons</a>
@@ -105,9 +109,9 @@
                       <li><a href="pricing-table.html">Pricing Table</a></li>
                       <li><a href="progress-bar.html">Progress Bar</a></li>
                       <li><a href="tabs.html">Tabs</a></li>
-                      <li><a href="tooltips.html">Tooltips</a></li>
-                      <li><a href="/banners">banners</a></li>
-                      <li><a href="/cards">cards</a></li>
+                      <li><a href="tooltips.html">Tooltips</a></li> -->
+                      <li><a href="/banners">Banners</a></li>
+                      <li><a href="/cards">Cards</a></li>
                     </ul>
                   </li>
                 </ul>
