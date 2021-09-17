@@ -164,19 +164,30 @@
                 <h2>For Teams</h2>
                 <p class="plan-tagline">Best for organization</p>
               </div>
-              <div class="mid text-light bg-color">
-                <p class="price">
+              <div class="mid text-light bg-color row">
+                <div class="price col">
                   <select
                     class="form-select form-select-lg mb-3"
                     aria-label=".form-select-lg example"
-                    v-model="report_num"
-                    @change="change_date()"
+                    v-model="report_year"
+                    @change="change_year()"
                   >
-                    <option value="1">2021-06-28</option>
-                    <option value="2">2021-07-21</option>
-                    <option value="3">2021-08-25</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
                   </select>
-                </p>
+                </div>
+                <div class="price col">
+                  <select
+                    class="form-select form-select-lg mb-3"
+                    aria-label=".form-select-lg example"
+                    v-model="report_month"
+                    @change="change_month()"
+                  >
+                    <option value="01">Jan</option>
+                    <option value="02">Feb</option>
+                    <option value="03">Mar</option>
+                  </select>
+                </div>
               </div>
               <div class="bottom"></div>
 
@@ -190,15 +201,16 @@
     </section>
 
     <!-- section close -->
-    <section class="no-top" v-if="report_date == 0"></section>
+    <section class="no-top" v-if="report_show == 0"></section>
 
     <!-- section begin -->
 
-    <section v-if="report_date == 1">
+    <section v-if="report_show == 1">
       <div class="container">
         <div class="row BG Radius p-4">
           <div class="col-md-8">
-            <h2>2021-06-28 Report</h2>
+            <!-- <h2>{{ report_year }}-{{ report_month }} Report</h2> -->
+            <h2>2021-01 Report</h2>
             <div class="alert alert-" role="alert">
               <h4 class="alert-heading">With Us!</h4>
               <p>
@@ -246,16 +258,6 @@
                   voluptate laboris cupidatat est est sint veniam sint officia
                   sint incididunt est sit ut tempor commodo pariatur ut proident
                   et do.
-                </p>
-
-                <p>
-                  Sed eu in ut sint dolor irure fugiat minim veniam sed ea
-                  proident ullamco occaecat irure ut velit eu ullamco fugiat
-                  cupidatat dolore fugiat. Lorem ipsum id non deserunt id
-                  consequat duis voluptate amet aliqua pariatur laboris officia
-                  pariatur veniam velit reprehenderit sint nostrud cupidatat
-                  magna eiusmod mollit exercitation pariatur nulla minim laboris
-                  dolore aliqua consectetur cillum duis aute consectetur.
                 </p>
 
                 <span class="post-date">August 1, 2020</span>
@@ -308,11 +310,12 @@
 
     <!-- section begin -->
 
-    <section v-if="report_date == 2">
+    <section v-if="report_show == 2">
       <div class="container">
         <div class="row BG Radius p-4">
           <div class="col-md-8">
-            <h2>2021-07-21 Report</h2>
+            <!-- <h2>{{ report_year }}-{{ report_month }} Report</h2> -->
+            <h2>2021-02 Report</h2>
             <div class="alert alert-" role="alert">
               <h4 class="alert-heading">With Us!</h4>
               <p>
@@ -360,16 +363,6 @@
                   voluptate laboris cupidatat est est sint veniam sint officia
                   sint incididunt est sit ut tempor commodo pariatur ut proident
                   et do.
-                </p>
-
-                <p>
-                  Sed eu in ut sint dolor irure fugiat minim veniam sed ea
-                  proident ullamco occaecat irure ut velit eu ullamco fugiat
-                  cupidatat dolore fugiat. Lorem ipsum id non deserunt id
-                  consequat duis voluptate amet aliqua pariatur laboris officia
-                  pariatur veniam velit reprehenderit sint nostrud cupidatat
-                  magna eiusmod mollit exercitation pariatur nulla minim laboris
-                  dolore aliqua consectetur cillum duis aute consectetur.
                 </p>
 
                 <span class="post-date">August 1, 2020</span>
@@ -422,11 +415,12 @@
 
     <!-- section begin -->
 
-    <section v-if="report_date == 3">
+    <section v-if="report_show == 3">
       <div class="container">
         <div class="row BG Radius p-4">
           <div class="col-md-8">
-            <h2>2021-08-25 Report</h2>
+            <!-- <h2>{{ report_year }}-{{ report_month }} Report</h2> -->
+            <h2>2021-03 Report</h2>
             <div class="alert alert-" role="alert">
               <h4 class="alert-heading">With Us!</h4>
               <p>
@@ -474,16 +468,6 @@
                   voluptate laboris cupidatat est est sint veniam sint officia
                   sint incididunt est sit ut tempor commodo pariatur ut proident
                   et do.
-                </p>
-
-                <p>
-                  Sed eu in ut sint dolor irure fugiat minim veniam sed ea
-                  proident ullamco occaecat irure ut velit eu ullamco fugiat
-                  cupidatat dolore fugiat. Lorem ipsum id non deserunt id
-                  consequat duis voluptate amet aliqua pariatur laboris officia
-                  pariatur veniam velit reprehenderit sint nostrud cupidatat
-                  magna eiusmod mollit exercitation pariatur nulla minim laboris
-                  dolore aliqua consectetur cillum duis aute consectetur.
                 </p>
 
                 <span class="post-date">August 1, 2020</span>
@@ -545,7 +529,9 @@ export default {
       display_switch: "visibility: visible",
       report1: true,
       report2: false,
-      report_date: "0",
+      report_month: "0",
+      report_year: "0",
+      report_show: "0",
     };
   },
   setup() {},
@@ -556,10 +542,21 @@ export default {
   unmounted() {},
   methods: {
     report_sel() {
-      this.report_date = this.report_num;
+      if ((this.report_year == 0) | (this.report_month == 0)) {
+        this.report_show = 0;
+      } else if ((this.report_year == 2021) & (this.report_month == 1)) {
+        this.report_show = 1;
+      } else if ((this.report_year == 2021) & (this.report_month == 2)) {
+        this.report_show = 2;
+      } else if ((this.report_year == 2021) & (this.report_month == 3)) {
+        this.report_show = 3;
+      }
     },
-    change_date() {
-      console.log(this.report_date);
+    change_month() {
+      console.log(this.report_month);
+    },
+    change_year() {
+      console.log(this.report_year);
     },
     initMap() {
       var maps = document.getElementById("svgMapGPD");
