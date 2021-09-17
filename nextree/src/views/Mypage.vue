@@ -334,7 +334,7 @@
                                     aria-label="Close"
                                   ></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body card-Rotation">
                                   <img
                                     v-bind:src="silver_img"
                                     class="lazy nft__item_preview"
@@ -727,4 +727,20 @@ export default {
 
 <style lang="css" scoped>
 @import "../css/mypage/style.css";
+
+.card-Rotation {
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: flipInY;
+  animation-name: flipInY;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease 1.9s;
+  transition: all 0.2s ease 1.9s;
+  animation-iteration-count: none;
+}
 </style>

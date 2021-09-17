@@ -28,9 +28,7 @@
               <h2></h2>
               <p class="plan-tagline"></p>
             </div>
-            <div>
-             
-            </div>
+            <div></div>
 
             <div class="bottom">
               <ul>
@@ -50,46 +48,46 @@
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 sq-item wow">
           <div class="pricing-s1 mb40">
-                        <div class="mid text-light bg-color" style="padding: 20px 20px 0px">
-
+            <div class="mid text-light bg-color" style="padding: 20px 20px 0px">
               <span class="icon_key icon-mid"> </span>
-                         <div style="margin-top: 5px"><h4>100개</h4></div>
-
+              <div style="margin-top: 5px"><h4>100개</h4></div>
             </div>
 
-                         <div class="top" style="padding: 15px 15px 0px">
+            <div class="top" style="padding: 15px 15px 0px">
+              <h2 style="color: black">뽑기</h2>
+              <p class="plan-tagline" style="color: black">뭐가 나올까요?</p>
+            </div>
+            <div
+              class="de_countdown de_countdown_center"
+              data-year="2021"
+              data-month="9"
+              data-day="16"
+              data-hour="8"
+            ></div>
+            <div
+              v-if="show2"
+              class="box-continer box-center"
+              style="display: inline"
+            >
+              <div class="open-box">
+                <lottie-player
+                  src="js/box_lottie.js"
+                  background="transparent"
+                  speed="1.5"
+                  style="width: 500px; height: 500px"
+                  autoplay
+                ></lottie-player>
+              </div>
+            </div>
 
-            <h2 style="color: black">뽑기</h2>
-            <p class="plan-tagline" style="color: black">뭐가 나올까요?</p>
-          </div>
-          <div
-            class="de_countdown de_countdown_center"
-            data-year="2021"
-            data-month="9"
-            data-day="16"
-            data-hour="8"
-          ></div>
-          <div
-            v-if="show2"
-            class="box-continer box-center"
-            style="display: inline"
-          >
-            <div class="open-box">
+            <div class="open-box ranbox-shake2" v-if="show">
               <lottie-player
                 src="js/box_lottie.js"
                 background="transparent"
-                speed="1.5"
+                speed="1"
                 style="width: 500px; height: 500px"
-                autoplay
               ></lottie-player>
             </div>
-          </div>
-
-          <div class="open-box ranbox-shake2" v-if="show">
-           
-
-            <lottie-player src="js/box_lottie.js"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  ></lottie-player>
-          </div>
 
             <!-- <div class="bottom"> -->
             <!-- <ul> -->
@@ -109,22 +107,21 @@
             data-hour="8"
           ></div> -->
 
-                                 <div class="action" style="margin-top: 0px; padding:20px 0px;">
-
-            <a
-              href="#"
-              class="btn-main large-btn font24"
-              v-bind:style="display_switch"
-              style=""
-              >Draw</a
-            >
-            <a
-              href="#"
-              class="btn-main large-btn font24"
-              style="margin-left: 20px"
-              @click="toggleShow"
-              >Check</a
-            >
+            <div class="action" style="margin-top: 0px; padding: 20px 0px">
+              <a
+                href="#"
+                class="btn-main large-btn font24"
+                v-bind:style="display_switch"
+                style=""
+                >Draw</a
+              >
+              <a
+                href="#"
+                class="btn-main large-btn font24"
+                style="margin-left: 20px"
+                @click="toggleShow"
+                >Check</a
+              >
             </div>
           </div>
         </div>
@@ -189,11 +186,7 @@ export default {
     },
   },
 };
-
-
 </script>
-
-
 
 <style>
 .sidebox {
