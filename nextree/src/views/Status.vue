@@ -18,6 +18,24 @@
       </div>
     </section>
 
+    <!-- section svgMap -->
+    <section id="section-fun-facts" class="pt60 pb60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <span class="p-title invert">Status</span><br />
+            <h2>살아 숨쉬는 지구</h2>
+            <div class="small-border sm-left"></div>
+            <p>현재 기부된 묘목을 전세계 지역별로 확인해 보세요.</p>
+          </div>
+          <div class="demo-wrapper">
+            <div id="svgMapGPD"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End section svgMap -->
+
     <!-- section begin -->
     <section id="section-fun-facts" class="pt60 pb60">
       <div class="container">
@@ -517,6 +535,7 @@
 </template>
 <script>
 // import * from '../js/statusNum.js'
+
 export default {
   name: "",
   components: {},
@@ -531,7 +550,9 @@ export default {
   },
   setup() {},
   created() {},
-  mounted() {},
+  mounted() {
+    this.initMap();
+  },
   unmounted() {},
   methods: {
     report_sel() {
@@ -539,6 +560,15 @@ export default {
     },
     change_date() {
       console.log(this.report_date);
+    },
+    initMap() {
+      var maps = document.getElementById("svgMapGPD");
+      maps = new svgMap({
+        targetElementID: "svgMapGPD",
+        data: svgMapDataGPD,
+        mouseWheelZoomEnabled: true,
+        mouseWheelZoomWithKey: true,
+      });
     },
   },
 };
@@ -553,4 +583,9 @@ export default {
 .BG {
   background-color: #ecfafc;
 }
+</style>
+
+<style>
+@import "../css/status/demo.css";
+@import "../css/status/svgMap.css";
 </style>
