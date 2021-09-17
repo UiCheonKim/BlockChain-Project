@@ -67,7 +67,7 @@
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="/images/svg/baby.svg"
+                                v-bind:src="baby_img"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -100,7 +100,7 @@
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="/images/svg/iron.svg"
+                                v-bind:src="iron_img"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -130,13 +130,58 @@
                             </a>
                           </div>
                           <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                src="/images/svg/bronze.svg"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
+                            <img
+                              v-bind:src="bronze_img"
+                              class="lazy nft__item_preview"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="modal fade"
+                            id="exampleModal"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel2"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel2"
+                                  >
+                                    card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    v-bind:src="bronze_img"
+                                    class="lazy nft__item_preview"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                           <div class="nft__item_info">
                             <a href="item-details.html">
@@ -164,7 +209,7 @@
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="/images/svg/silver.svg"
+                                v-bind:src="silver_img"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -448,6 +493,14 @@ export default {
       babyTree: "",
       treeInfo: "",
       user_avatar: "",
+      baby_img: "/images/svg/baby.svg",
+      iron_img: "/images/svg/iron.svg",
+      bronze_img: "/images/svg/bronze.svg",
+      silver_img: "/images/svg/silver.svg",
+      gold_img: "/images/svg/gold.svg",
+      platinum_img: "/images/svg/platinum.svg",
+      diamond_img: "/images/svg/diamond.svg",
+      key_img: "/images/svg/key.svg",
     };
   },
   watch: {},
@@ -529,6 +582,7 @@ export default {
   },
 };
 </script>
+
 <style lang="css" scoped>
 @import "../css/mypage/style.css";
 </style>

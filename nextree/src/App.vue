@@ -90,7 +90,7 @@
                     <a href="activity.html">Collection<span></span></a>
                   </li>
                   <li>
-                    <a href="#">My Page<span></span></a>
+                    <a href="/myPage">My Page<span></span></a>
                     <ul>
                       <li><a href="icons-elegant.html">Elegant Icons</a></li>
                       <li><a href="icons-etline.html">Etline Icons</a></li>
