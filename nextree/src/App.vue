@@ -93,7 +93,7 @@
                   <li>
                     <a>My Page<span></span></a>
                     <ul>
-                      <li><a href="//myPage">My NFT</a></li>
+                      <li><a href="/Mypage">My NFT</a></li>
                       <li><a href="/draw">Draw</a></li>
                       <li><a href="/rankUp">Rank Up</a></li>
                       <!-- <li><a href="icons-elegant.html">Elegant Icons</a></li>
