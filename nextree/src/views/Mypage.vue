@@ -67,7 +67,7 @@
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="../assets/mypage/baby.jpg"
+                                src="/images/svg/baby.svg"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -100,7 +100,7 @@
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="../assets/mypage/iron.jpg"
+                                src="/images/svg/iron.svg"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -132,7 +132,7 @@
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="../assets/mypage/bronze.jpg"
+                                src="/images/svg/bronze.svg"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -164,7 +164,7 @@
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="../assets/mypage/silver.jpg"
+                                src="/images/svg/silver.svg"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
