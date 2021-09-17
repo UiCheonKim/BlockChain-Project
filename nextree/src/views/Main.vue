@@ -62,7 +62,7 @@
                           class="slider-icon"
                           style="--bg-image: url('images/misc/main-leaf.svg')"
                         ></span>
-                        
+
                         <span
                           class="slider-icon2"
                           style="--bg-image: url('images/misc/main-soil.png')"
@@ -293,55 +293,26 @@
                       >
                       </iframe> -->
 
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-                      나무심어요 나무심어요
-
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
+                      나무심어요
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -417,7 +388,7 @@
                         class="Radius text-center"
                         placeholder="Order Amount"
                         v-model="treeAmount"
-                      >
+                      />
 
                       <button class="tree-btn Radius" @click="donate()">
                         Donate
@@ -425,7 +396,14 @@
                     </div>
                   </div>
                   <div class="col-md-4 float-sm-start">
-            <lottie-player src="json/earth3.json"  background="transparent"  speed="1.2"  style="width: 500px; height: 500px;" autoplay loop ></lottie-player>
+                    <lottie-player
+                      src="json/earth3.json"
+                      background="transparent"
+                      speed="1.2"
+                      style="width: 500px; height: 500px"
+                      autoplay
+                      loop
+                    ></lottie-player>
 
                     <!-- <h4>text Area</h4>
                     <h5>project name</h5>
@@ -579,14 +557,18 @@
                     </div>
 
                     <div class="col-lg-6 mb-4">
-                      
                       <div class="container">
                         <h4 class="small font-weight-bold">
                           Mark <span class="float-right"></span>
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                            class="
+                              progress-bar
+                              progress-bar-striped
+                              progress-bar-animated
+                              bg-info
+                            "
                             role="progressbar"
                             style="width: 80%"
                             aria-valuenow="75"
@@ -599,7 +581,11 @@
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="progress-bar progress-bar-striped progress-bar-animated"
+                            class="
+                              progress-bar
+                              progress-bar-striped
+                              progress-bar-animated
+                            "
                             role="progressbar"
                             style="width: 60%"
                             aria-valuenow="60"
@@ -612,7 +598,12 @@
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                            class="
+                              progress-bar
+                              progress-bar-striped
+                              progress-bar-animated
+                              bg-warning
+                            "
                             role="progressbar"
                             style="width: 40%"
                             aria-valuenow="40"
@@ -625,7 +616,12 @@
                         </h4>
                         <div class="progress mb-4">
                           <div
-                            class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                            class="
+                              progress-bar
+                              progress-bar-striped
+                              progress-bar-animated
+                              bg-danger
+                            "
                             role="progressbar"
                             style="width: 20%"
                             aria-valuenow="20"
@@ -1330,7 +1326,6 @@ export default {
       Menu1: "잘되나확인",
       kim: "visibility: hidden",
       treeAmount: 0,
-      
     };
   },
   setup() {},
@@ -1343,8 +1338,8 @@ export default {
   unmounted() {},
   methods: {
     incTreeAmount(addValue) {
-      this.treeAmount += parseInt(addValue)
-    }
+      this.treeAmount += parseInt(addValue);
+    },
   },
 };
 </script>
@@ -1482,7 +1477,6 @@ a.btn {
 }
 
 .ranbox-shake2 {
- 
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   -webkit-animation-duration: 2s;
@@ -1496,16 +1490,11 @@ a.btn {
   -webkit-transition: all 0.2s ease 1.9s;
   transition: all 0.2s ease 1.9s;
   animation-iteration-count: infinite;
-
 }
 
-
 .open-box {
-
- display: flex;
-justify-content: center;
-
-
+  display: flex;
+  justify-content: center;
 }
 
 .box-center {
@@ -1513,7 +1502,6 @@ justify-content: center;
   display: grid;
   margin: 0px auto;
 }
-  
 
 .slider-icon2 {
   width: 180px;
