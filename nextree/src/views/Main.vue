@@ -269,7 +269,6 @@
                 <h2>Donate</h2>
                 <div class="small-border bg-color-2"></div>
               </div>
-<<<<<<< Updated upstream
               <div class="container">
                 <div class="row Radius BG-ytb align-items-center">
                   <div class="col-md-4">
@@ -411,58 +410,6 @@
                       1960s with the release of Letraset sheets containing Lorem
                       Ipsum passages.
                     </p> -->
-=======
-            </div>
-            <div class="col-lg-4 col-md-6 mb-sm-30">
-              <lottie-player
-                v-show="show"
-                src="json/earth3.json"
-                background="transparent"
-                speed="1.2"
-                style="width: 300px; height: 500px"
-                autoplay
-                loop
-              ></lottie-player>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-sm-30">
-              <div id="donation-section-donate">
-                <h4 class="text-center pb-4 pt-5">Join Us!</h4>
-                <!-- <div class="row gy-3 justify-content-around"> -->
-                <div class="row gy-3 justify-content-around mb-5">
-                  <div
-                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                    type="button"
-                    @click="incTreeAmount(1)"
-                  >
-                    <img src="../images/items/Tree1.png" class="rounded" />
-                    <h6>1 Tree</h6>
-                  </div>
-                  <div
-                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                    type="button"
-                    @click="incTreeAmount(5)"
-                  >
-                    <img src="../images/items/Tree2.png" class="rounded" />
-                    <h6>5 Tree</h6>
-                  </div>
-                </div>
-                <div class="row gy-3 justify-content-around mb-5">
-                  <div
-                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
-                    type="button"
-                    @click="incTreeAmount(10)"
-                  >
-                    <img src="../images/items/Tree3.png" class="rounded" />
-                    <h6>10 Tree</h6>
-                  </div>
-                  <div
-                    class="col-4 p-3 border tree-btn Radius ms-2 text-center"
-                    type="button"
-                    @click="incTreeAmount(50)"
-                  >
-                    <img src="../images/items/Tree4.png" class="rounded" />
-                    <h6>50 Tree</h6>
->>>>>>> Stashed changes
                   </div>
                 </div>
                 <!-- ♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡ -->
@@ -1601,10 +1548,6 @@ export default {
       Menu1: "잘되나확인",
       kim: "visibility: hidden",
       treeAmount: 0,
-<<<<<<< Updated upstream
-=======
-      show: false,
->>>>>>> Stashed changes
     };
   },
   setup() {},
@@ -1617,10 +1560,6 @@ export default {
   unmounted() {},
   methods: {
     incTreeAmount(addValue) {
-<<<<<<< Updated upstream
-=======
-      this.show = !this.show;
->>>>>>> Stashed changes
       this.treeAmount += parseInt(addValue);
     },
   },
