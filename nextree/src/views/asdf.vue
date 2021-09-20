@@ -1,23 +1,12 @@
 <template>
   <div style="padding-top: 15em">
-    <img src="@/assets/cogi.jpg" alt="" style="width: 7em; height: 7em" />
-    <div
-      id="carouselExampleSlidesOnly"
-      class="carousel slide"
-      data-bs-ride="carousel"
+    <!-- <button @click="corgi()" class="welsh">json파일 만들기</button> -->
+    <a
+      href="http://{{192.168.6.53}}:10084/UserList"
+      id="link"
+      download="sample.json"
+      >download</a
     >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
-        </div>
-        <div class="carousel-item">
-          <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
-        </div>
-        <div class="carousel-item">
-          <img src="@/assets/cogi.jpg" class="d-block w-100" alt="" />
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 <script>
@@ -31,6 +20,8 @@ export default {
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {},
+  methods: {
+    corgi() {},
+  },
 };
 </script>

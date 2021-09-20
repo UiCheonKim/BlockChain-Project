@@ -29,7 +29,7 @@
 @import url("../fonts/et-line-font/style.css");
 @import url("../fonts/icofont/icofont.min.css");
 
-@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 @font-face {
     font-family: "Cafe24SsurroundAir";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
@@ -45,14 +45,18 @@
     font-style: normal;
 }
 
-@font-face { font-family: 'Malssami815'; 
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff'); 
+@font-face { font-family: 'Malssami815';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff');
     font-weight: normal; font-style: normal; }
 
 
   * {
     --body-font: 'GmarketSansMedium';
     --title-font: 'GmarketSansMedium';
+} */
+* {
+    --body-font: "DM Sans", Helvetica, Arial, sans-serif;
+    --title-font: "DM Sans", Helvetica, Arial, sans-serif;
 }
 
 .orange {
