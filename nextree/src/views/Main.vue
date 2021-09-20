@@ -261,22 +261,15 @@
             </div>
           </div>
         </div> -->
-      <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
-      <section id="donation-section" class="no-bottom">
+      <section id="donation-section" class="pb-6">
         <div class="container">
           <div class="row">
-            <div class="col">
-              <div
-                style="
-                  display: flex;
-                  text-align: center;
-                  margin-top: 2em;
-                  margin-bottom: 2em;
-                "
-              >
-                <h2 style="font-size: 2em" class="mx-2">Donate</h2>
-                <hr class="section_line" />
+            <div class="col-lg-12">
+              <div class="text-center">
+                <h2>Donate</h2>
+                <div class="small-border bg-color-2"></div>
               </div>
+<<<<<<< Updated upstream
               <div class="container">
                 <div class="row Radius BG-ytb align-items-center">
                   <div class="col-md-4">
@@ -418,17 +411,89 @@
                       1960s with the release of Letraset sheets containing Lorem
                       Ipsum passages.
                     </p> -->
+=======
+            </div>
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+              <lottie-player
+                v-show="show"
+                src="json/earth3.json"
+                background="transparent"
+                speed="1.2"
+                style="width: 300px; height: 500px"
+                autoplay
+                loop
+              ></lottie-player>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+              <div id="donation-section-donate">
+                <h4 class="text-center pb-4 pt-5">Join Us!</h4>
+                <!-- <div class="row gy-3 justify-content-around"> -->
+                <div class="row gy-3 justify-content-around mb-5">
+                  <div
+                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                    type="button"
+                    @click="incTreeAmount(1)"
+                  >
+                    <img src="../images/items/Tree1.png" class="rounded" />
+                    <h6>1 Tree</h6>
+                  </div>
+                  <div
+                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                    type="button"
+                    @click="incTreeAmount(5)"
+                  >
+                    <img src="../images/items/Tree2.png" class="rounded" />
+                    <h6>5 Tree</h6>
                   </div>
                 </div>
+                <div class="row gy-3 justify-content-around mb-5">
+                  <div
+                    class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                    type="button"
+                    @click="incTreeAmount(10)"
+                  >
+                    <img src="../images/items/Tree3.png" class="rounded" />
+                    <h6>10 Tree</h6>
+                  </div>
+                  <div
+                    class="col-4 p-3 border tree-btn Radius ms-2 text-center"
+                    type="button"
+                    @click="incTreeAmount(50)"
+                  >
+                    <img src="../images/items/Tree4.png" class="rounded" />
+                    <h6>50 Tree</h6>
+>>>>>>> Stashed changes
+                  </div>
+                </div>
+                <!-- ♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡ -->
+                <div class="row gy-3 justify-content-around mb-5">
+                  <input
+                    type="number"
+                    class="text-center mb-2 Radius"
+                    placeholder="Order Amount"
+                    v-model="treeAmount"
+                  />
+                  <button class="tree-btn Radius" @click="donate()">
+                    Donate
+                  </button>
+                </div>
               </div>
-              <!-- <div class="text-center">
-                <h2>Hot Collections</h2>
-                <div class="small-border bg-color-2"></div>
-              </div> -->
+            </div>
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+              <lottie-player
+                v-show="show"
+                src="json/earth3.json"
+                background="transparent"
+                speed="1.2"
+                style="width: 500px; height: 500px"
+                autoplay
+                loop
+              ></lottie-player>
             </div>
           </div>
         </div>
       </section>
+      <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
 
       <section id="section-intro" class="no-top no-bottom">
         <div class="container">
@@ -495,8 +560,225 @@
           </div>
         </div>
       </section>
+      <section id="section-popular" class="pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-center">
+                <h2>Top Sellers</h2>
+                <div class="small-border bg-color-2"></div>
+              </div>
+            </div>
+            <div class="col-md-12 wow fadeIn">
+              <ol class="author_list">
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-1.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a
+                      href="author.html"
+                      style="
+                        display: block;
+                        width: 6em;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                      "
+                      >0x6D35014e8458704752D61e0e570C0A54b7f17676</a
+                    >
+                    <span>3.2 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-2.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Mamie Barnett</a>
+                    <span>2.8 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-3.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Nicholas Daniels</a>
+                    <span>2.5 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-4.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Lori Hart</a>
+                    <span>2.2 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-5.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Jimmy Wright</a>
+                    <span>1.9 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-6.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Karla Sharp</a>
+                    <span>1.6 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-7.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Gayle Hicks</a>
+                    <span>1.5 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-8.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Claude Banks</a>
+                    <span>1.3 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-9.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Franklin Greer</a>
+                    <span>0.9 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-10.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Stacy Long</a>
+                    <span>0.8 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-11.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Ida Chapman</a>
+                    <span>0.6 ETH</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="author_list_pp">
+                    <a href="author.html">
+                      <img
+                        class="lazy"
+                        src="images/author/author-12.jpg"
+                        alt=""
+                      />
+                      <i class="fa fa-check"></i>
+                    </a>
+                  </div>
+                  <div class="author_list_info">
+                    <a href="author.html">Fred Ryan</a>
+                    <span>0.5 eth</span>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <section id="section-collections" class="no-bottom">
+      <!-- <section id="section-collections" class="no-bottom">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -629,13 +911,6 @@
                             aria-valuemax="100"
                           ></div>
                         </div>
-
-                        <!-- <h4 class="small font-weight-bold">Account Setup <span
-                                            class="float-right">Complete!</span></h4>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div> -->
                       </div>
                     </div>
                   </div>
@@ -644,7 +919,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="section-items" class="no-bottom">
         <div class="container">
@@ -1326,6 +1601,10 @@ export default {
       Menu1: "잘되나확인",
       kim: "visibility: hidden",
       treeAmount: 0,
+<<<<<<< Updated upstream
+=======
+      show: false,
+>>>>>>> Stashed changes
     };
   },
   setup() {},
@@ -1338,6 +1617,10 @@ export default {
   unmounted() {},
   methods: {
     incTreeAmount(addValue) {
+<<<<<<< Updated upstream
+=======
+      this.show = !this.show;
+>>>>>>> Stashed changes
       this.treeAmount += parseInt(addValue);
     },
   },
@@ -1541,5 +1824,13 @@ a.btn {
 }
 .Radius_round {
   border-radius: 40px 40px / 40px 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input:focus {
+  outline: none;
 }
 </style>
