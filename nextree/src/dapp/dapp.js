@@ -1,4 +1,4 @@
-const ADDRESS = "0x1B5432eF675ebd85F9297ADFD2a99C874F02011A";
+const ADDRESS = "0xA0c60dD12F48084617A1e2A504E4Af6091589EFf";
 const ABI = [
 	{
 		"inputs": [],
@@ -311,6 +311,19 @@ const ABI = [
 	{
 		"inputs": [
 			{
+				"internalType": "uint256",
+				"name": "dv_fromID",
+				"type": "uint256"
+			}
+		],
+		"name": "divide_cards",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "string",
 				"name": "_donator",
 				"type": "string"
@@ -394,6 +407,19 @@ const ABI = [
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "inventory",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
 			}
 		],
 		"stateMutability": "view",

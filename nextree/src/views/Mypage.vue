@@ -40,6 +40,8 @@
                   </div>
                   <div class="de-flex-col">
                     <a href="/rankUp" class="mybtn-main">합성</a>
+                    <a href="#" class="mybtn-main" @click="balanceOfBatch">인벤토리</a>
+
                   </div>
                 </div>
               </div>
@@ -131,7 +133,9 @@
                             </div>
 
                             <div class="nft__item_like">
-                              <i class="fa fa-tree"></i><span>50</span>
+                              <i class="fa fa-tree"></i>
+                              
+                              <span> <input v-bind:value="baby_trees"> </span>
                             </div>
                           </div>
                         </div>
@@ -627,6 +631,8 @@
 import Web3 from "web3";
 import dapptest from "../dapp/dapp";
 
+
+
 export default {
   name: "Mypage",
   components: {},
@@ -643,14 +649,20 @@ export default {
       platinum_img: "/images/svg/platinum.svg",
       diamond_img: "/images/svg/diamond.svg",
       key_img: "/images/svg/key.svg",
+      baby_trees: "1",
     };
   },
   watch: {},
   setup() {},
   created() {
     this.userAvatar();
+    this.dappstart();
+    
   },
-  mounted() {},
+  mounted() {
+    this.balanceOfBatch();
+
+  },
   unmounted() {},
   methods: {
     eraser() {
@@ -691,6 +703,27 @@ export default {
         .call()
         .then(function (result) {
           console.log(result);
+         var baby_amount = result[0];
+          console.log(baby_amount);
+
+          
+         var iron_amount = result[1];
+         var bronze_amount = result[2];
+         var silver_amount = result[3];
+         var gold_amount = result[4];
+         var platinum_amount = result[5];
+         var diamond_amount = result[6];
+          console.log(diamond_amount);
+
+
+         this.baby_trees = result[0];
+
+          console.log(this.baby_trees);
+
+
+
+
+
         });
     },
     tokenURIs() {
