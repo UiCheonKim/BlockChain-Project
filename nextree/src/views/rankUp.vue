@@ -92,13 +92,31 @@
       재료카드
     </button>
     <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <li><a class="dropdown-item" href="#">베이비</a></li>
-      <li><a class="dropdown-item" href="#">아이언</a></li>
-      <li><a class="dropdown-item" href="#">브론즈</a></li>
-      <li><a class="dropdown-item" href="#">실버</a></li>
-      <li><a class="dropdown-item" href="#">골드</a></li>
-      <li><a class="dropdown-item" href="#">플래티넘</a></li>
+      <input type="radio" id="baby" value="0" v-model="picked">
+<label for="baby"> 베이비 </label>
+<br>
+      <input type="radio" id="iron" value="1" v-model="picked">
+<label for="iron"> 아이언 </label>
+<br>
 
+      <input type="radio" id="bronze" value="2" v-model="picked">
+<label for="bronze"> 브론즈 </label>
+<br>
+
+      <input type="radio" id="silver" value="3" v-model="picked">
+<label for="silver"> 실버 </label>
+<br>
+
+      <input type="radio" id="gold" value="4" v-model="picked">
+<label for="gold"> 골드 </label>
+<br>
+
+      <input type="radio" id="platinum" value="5" v-model="picked">
+<label for="platinum"> 플래티넘 </label>
+<br>
+
+<span>선택: {{ picked }}</span>
+    
     </ul>
   </div>
   
@@ -158,6 +176,10 @@
   </div>
 </template>
 <script>
+import Web3 from "web3";
+import dapptest from "../dapp/dapp";
+
+
 export default {
   name: "",
   components: {},
@@ -167,27 +189,116 @@ export default {
       display_switch: "visibility: visible",
       show: true,
       show2: false,
+      checkedRanks: [],
+      picked: "",
     };
   },
   setup() {},
-  created() {},
+  created() {
+    console.log("created");
+    this.dappstart();
+  },
+  computed: {
+      
+    },
   mounted() {},
   unmounted() {},
   methods: {
     toggleShow() {
+
       this.show = !this.show;
       this.show2 = !this.show2;
+
+      this.merge_cards();
+
     },
+
+    async dappstart() {
+      if (window.ethereum) {
+        web3 = new Web3(window.ethereum);
+        try {
+          // Request account access if needed
+          await window.ethereum.enable();
+          this.contract = new web3.eth.Contract(dapptest.ABI, dapptest.ADDRESS);
+          console.log(this.contract);
+          console.log(this.$store.state.addr);
+        } catch (error) {}
+      }
+      // Legacy dapp browsers...
+      else if (window.web3) {
+        // Use Mist/MetaMask's provider.
+        web3 = window.web3;
+        console.log("Injected web3 detected.");
+      }
+    },
+
+
+     aaaa() {
+      console.log("asdfasf");
+    },
+    eraser() {
+      this.$store.commit("user2", "");
+    },
+    
+    donate() {
+      this.contract.methods
+        .donate()
+        .send({ from: this.$store.state.addr, value: 1000000000000000 })
+        .then(function (receipt) {
+          console.log(receipt);
+        });
+    },
+
+    balanceOf() {
+      this.contract.methods
+        .balanceOf(this.$store.state.addr, 0)
+        .call()
+        .then(function (result) {
+          console.log(result);
+        });
+    },
+    balances() {
+      this.contract.methods
+        .balances(this.$store.state.addr)
+        .call()
+        .then(function (result) {
+          console.log(result);
+        });
+    },
+
+    getRandomNumber() {
+
+      this.contract.methods
+        .getRandomNumber()
+        .send({ from: this.$store.state.addr })
+        .then(function (result) {
+          console.log(result);
+
+        });
+
+    },
+
+    merge_cards() {
+
+      this.contract.methods
+        .merge_cards(this.picked)
+        .send({ from: this.$store.state.addr })
+        .then(function (receipt) {
+          console.log(receipt);
+        }).on('error', function(){
+          console.log("실패");
+      
+    });
+
+    },
+
+ 
+  
   },
 };
-
-
 </script>
 
-
-
 <style>
-.sidebox {
-  visibility: hidden !important;
-}
+
 </style>
+
