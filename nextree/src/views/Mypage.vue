@@ -100,7 +100,7 @@
                                     aria-label="Close"
                                   ></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body card-Rotation">
                                   <img
                                     v-bind:src="baby_img"
                                     class="lazy nft__item_preview"
@@ -184,7 +184,7 @@
                                     aria-label="Close"
                                   ></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body card-Rotation">
                                   <img
                                     v-bind:src="iron_img"
                                     class="lazy nft__item_preview"
@@ -264,7 +264,7 @@
                                     aria-label="Close"
                                   ></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body card-Rotation">
                                   <img
                                     v-bind:src="bronze_img"
                                     class="lazy nft__item_preview"
@@ -348,7 +348,7 @@
                                     aria-label="Close"
                                   ></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body card-Rotation">
                                   <img
                                     v-bind:src="silver_img"
                                     class="lazy nft__item_preview"
@@ -431,7 +431,7 @@
                                     aria-label="Close"
                                   ></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body card-Rotation">
                                   <img
                                     v-bind:src="gold_img"
                                     class="lazy nft__item_preview"
@@ -487,13 +487,13 @@
                               class="lazy nft__item_preview"
                               alt=""
                               data-bs-toggle="modal"
-                              data-bs-target="#exampleModal0"
+                              data-bs-target="#exampleModal6"
                             />
                           </div>
 
                           <div
                             class="modal fade"
-                            id="exampleModal0"
+                            id="exampleModal6"
                             tabindex="-1"
                             aria-labelledby="exampleModalLabel0"
                             aria-hidden="true"
@@ -514,7 +514,7 @@
                                     aria-label="Close"
                                   ></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body card-Rotation">
                                   <img
                                     v-bind:src="platinum_img"
                                     class="lazy nft__item_preview"
