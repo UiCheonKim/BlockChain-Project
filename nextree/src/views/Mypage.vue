@@ -59,7 +59,7 @@
                   <div class="tab-1">
                     <div class="row">
                       <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue01 == true">
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -124,8 +124,9 @@
                           </div>
 
                           <div class="nft__item_info">
-                            <a href="item-details.html">
-                              <h4>Baby Tree</h4>
+                            <a href="">
+                              <h4 
+                              >Baby Tree</h4>
                             </a>
 
                             <div class="nft__item_price">
@@ -144,7 +145,7 @@
 
 
                         <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue02 == true">
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -208,7 +209,7 @@
                           </div>
 
                           <div class="nft__item_info">
-                            <a href="item-details.html">
+                            <a href="">
                               <h4>Iron tree</h4>
                             </a>
                             <div class="nft__item_price">
@@ -224,7 +225,7 @@
                       </div>
                       <!-- nft item begin -->
                        <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue03 == true">
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -287,7 +288,7 @@
                             </div>
                           </div>
                           <div class="nft__item_info">
-                            <a href="item-details.html">
+                            <a href="">
                               <h4>Bronze Tree</h4>
                             </a>
                             <div class="nft__item_price">
@@ -307,10 +308,10 @@
 
                       
 
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue04 == true">
                         <div class="nft__item">
                           <div class="author_list_pp">
-                            <a href="author.html">
+                            <a href="#">
                               <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
@@ -372,7 +373,7 @@
                           </div>
 
                           <div class="nft__item_info">
-                            <a href="item-details.html">
+                            <a href="#">
                               <h4>Silver Tree</h4>
                             </a>
 
@@ -390,10 +391,10 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue05 == true">
                         <div class="nft__item">
                           <div class="author_list_pp">
-                            <a href="author.html">
+                            <a href="#">
                               <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
@@ -455,7 +456,7 @@
                           </div>
 
                           <div class="nft__item_info">
-                            <a href="item-details.html">
+                            <a href="#">
                               <h4>Gold Tree</h4>
                             </a>
 
@@ -473,7 +474,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue06 == true">
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -538,7 +539,7 @@
                           </div>
 
                           <div class="nft__item_info">
-                            <a href="item-details.html">
+                            <a href="#">
                               <h4>Platinum Tree</h4>
                             </a>
 
@@ -561,7 +562,7 @@
                   
                     
                       <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue07">
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue07 == true">
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -627,7 +628,7 @@
                           </div>
 
                           <div class="nft__item_info">
-                            <a href="item-details.html">
+                            <a href="#">
                               <h4>Diamond Tree</h4>
                             </a>
                             <div class="nft__item_price">
@@ -922,7 +923,13 @@ export default {
       diamond_trees:  0,
       inventory_List: [],
 
-      isTrue07: false,
+      isTrue01: true,
+      isTrue02: true,
+      isTrue03: true,
+      isTrue04: true,
+      isTrue05: true,
+      isTrue06: true,
+      isTrue07: true,
     };
   },
   watch: {
@@ -999,8 +1006,23 @@ export default {
         this.platinum_trees = platinum_amount;
         this.diamond_trees = diamond_amount;
 
-        if (diamond_amount != "0") 
-        {this.isTrue07 == "true"};
+
+
+        if (baby_amount == "0") 
+        {this.isTrue01 = false};
+        if (iron_amount == "0") 
+        {this.isTrue02 = false};
+        if (bronze_amount == "0") 
+        {this.isTrue03 = false};
+        if (silver_amount == "0") 
+        {this.isTrue04 = false};
+        if (gold_amount == "0") 
+        {this.isTrue05 = false};
+        if (platinum_amount == "0") 
+        {this.isTrue06 = false};
+        if (diamond_amount == "0") 
+        {this.isTrue07 = false};
+   
 
    
 
