@@ -7,6 +7,10 @@
       download="sample.json"
       >download</a
     >
+    <input type="text" v-model="message1" />
+    <input type="text" v-model="message2" />
+
+    <button @click="corgi()">데이터 이동!!</button>
   </div>
 </template>
 <script>
@@ -14,14 +18,19 @@ export default {
   name: "",
   components: {},
   data() {
-    return {};
+    return {
+      message1: "",
+      message2: "",
+    };
   },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
   methods: {
-    corgi() {},
+    corgi() {
+      
+    },
   },
 };
 </script>
