@@ -13,6 +13,7 @@
   overflow: hidden;
 }
 .service_1_single .content {
+  height: 280px;
   padding: 44px 50px 62px;
   background: #ffffff;
   border-top-left-radius: 5px;
@@ -47,7 +48,7 @@
 }
 .service_1_img .hover_box {
   position: absolute;
-  top: 300px;
+  top: 350px;
   left: -50px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -149,7 +150,6 @@
   color: var(--thm-black);
   font-size: 50px;
   font-weight: 700;
-  font-family: var(--heading-font);
   line-height: 1em;
 }
 
@@ -163,7 +163,6 @@
   color: var(--thm-black);
   font-size: 40px;
   font-weight: 700;
-  font-family: var(--heading-font);
   line-height: 1em;
 }
 

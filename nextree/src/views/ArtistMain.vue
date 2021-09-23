@@ -42,9 +42,10 @@
                 </div>
               </div>
               <div class="content">
-                <h3>Kimbohee</h3>
+                <h3>Kim Bo-Hie</h3>
                 <p>
-                  Lorem ipsum is simply are many variations of pass of majority.
+                  She expresses strong vitality with the theme of ‘nature’, an
+                  object that everyone can appreciate. Green is the main.
                 </p>
               </div>
             </div>
@@ -63,9 +64,10 @@
                 </div>
               </div>
               <div class="content">
-                <h3>Kimseokki</h3>
+                <h3>Kim Seok-Ki</h3>
                 <p>
-                  Lorem ipsum is simply are many variations of pass of majority.
+                  He founded the Five-Bangsansu based on Eastern philosophy, and
+                  expresses the colorful colors of nature.
                 </p>
               </div>
             </div>
@@ -86,7 +88,8 @@
               <div class="content">
                 <h3>Bhavna Misra</h3>
                 <p>
-                  Lorem ipsum is simply are many variations of pass of majority.
+                  She makes meaningful art represented in portraits, wildlife,
+                  nature, and everything else.
                 </p>
               </div>
             </div>
@@ -107,7 +110,8 @@
               <div class="content">
                 <h3>Peggy Davis</h3>
                 <p>
-                  Lorem ipsum is simply are many variations of pass of majority.
+                  Using bright colors, she depicts trees and flowers in her work
+                  and is recognized in her community as "The Happy Painter".
                 </p>
               </div>
             </div>
@@ -122,70 +126,198 @@
           <h4>이 달의 작품</h4>
           <p>*뽑기권으로 뽑을 수 있습니다.</p>
         </div>
-        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-          <div class="box">
-            <a href="#">
-              <img
-                src="http://www.arthub.co.kr/admin/admin_board_01/data/2011/10/Towards,oriental%20color%20on%20canvas,150x300cm,2011.jpg"
-              />
+        <div class="gallery">
+          <div class="gallery__column">
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://cdn.seogwipo.co.kr/news/photo/201207/80444_55398_234.jpg"
+                  alt="Portrait by Jessica Felicio"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Kim Bo-Hie
+                </figcaption>
+              </figure>
             </a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-          <div class="box">
-            <a href="#">
-              <img
-                src="http://www.arthub.co.kr/admin/admin_board_01/data/2011/10/Towards,%20oriental%20color%20on%20canvas,%20200x200cm(each)2,%202011.jpg"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-          <div class="box">
-            <a href="#">
-              <img src="@/assets/artist/img_1.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-          <div class="box">
-            <a href="#">
-              <img src="@/assets/artist/img_2.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-          <div class="box">
-            <a href="#">
-              <img
-                src="https://m.media-amazon.com/images/I/91f6rEndnRL._SL1500_.jpg"
-              />
-            </a>
-          </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-          <div class="box">
-            <a href="#">
-              <img
-                src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/big-blue-tree-peggy-davis.jpg"
-              />
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="http://www.arthub.co.kr/admin/admin_board_01/data/2011/10/Towards,oriental%20color%20on%20canvas,90.5x116.5cm,2011(2).jpg"
+                  alt="Portrait by Oladimeji Odunsi"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Kim Bo-Hie
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="http://www.arthub.co.kr/admin/admin_board_01/data/2011/10/Towards,%20oriental%20color%20on%20canvas,%20200x200cm(each)1,%202011.jpg"
+                  alt="Portrait by Alex Perez"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Kim Bo-Hie
+                </figcaption>
+              </figure>
             </a>
           </div>
-        </div>
-        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-          <div class="box">
-            <a href="#"
-              >>
-              <img
-                src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/whooos-sitting-there-peggy-davis.jpg"
-              />
+
+          <div class="gallery__column">
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="@/assets/artist/img_1.jpg"
+                  alt="Portrait by Noah Buscher"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Kim Seok-Ki
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="@/assets/artist/img_2.jpg"
+                  alt="Portrait by Ivana Cajina"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Kim Seok-Ki
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="http://artko.kr/files/cafe/wskim/2019/0516/1136/thumb_201905161136490001.jpg"
+                  alt="Portrait by Sam Burriss"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Kim Seok-Ki
+                </figcaption>
+              </figure>
+            </a>
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="@/assets/artist/img_3.jpg"
+                  alt="Portrait by Noah Buscher"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Kim Seok-Ki
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <div class="gallery__column">
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://i.pinimg.com/originals/a8/28/a4/a828a47f43ba91f246b5ae42fe212dfb.jpg"
+                  alt="Portrait by Mari Lezhava"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Bhavna Misra
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://bhavnamisra.files.wordpress.com/2019/10/bhavna-misra-20-x-16-in-oil-poppy-fields.jpg?w=440&h=300&crop=1"
+                  alt="Portrait by Ethan Haddox"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Bhavna Misra
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://images.saatchiart.com/saatchi/803262/art/8067021/7134014-QZWVMKJE-7.jpg"
+                  alt="Portrait by Amir Geshani"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Bhavna Misra
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <div class="gallery__column">
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/big-blue-tree-peggy-davis.jpg"
+                  alt="Portrait by Guilian Fremaux"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Peggy Davis
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0223/4033/products/D3104_1024x1024.jpg?v=1600771563"
+                  alt="Portrait by Jasmin Chew"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Peggy Davis
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://images.fineartamerica.com/images-medium-large/tree-of-life-peggy-bowie-davis.jpg"
+                  alt="Portrait by Jasmin Chew"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Peggy Davis
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/hiding-out-peggy-davis.jpg"
+                  alt="Portrait by Dima DallAcqua"
+                  class="gallery__image"
+                />
+                <figcaption class="gallery__caption">
+                  Painting by Peggy Davis
+                </figcaption>
+              </figure>
             </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- content close -->
   </div>
 </template>
 <script>
@@ -247,4 +379,7 @@ export default {
 .gal-item a:hover:after {
   opacity: 1;
 }
+</style>
+<style lang="scss">
+@import "../css/artist/scss/main.scss";
 </style>
