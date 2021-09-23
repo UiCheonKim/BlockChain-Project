@@ -1,4 +1,4 @@
-const ADDRESS = "0x2739AF6F19cdE48C4bffD7f4b96737Af116A6B0b";
+const ADDRESS = "0x1B5432eF675ebd85F9297ADFD2a99C874F02011A";
 const ABI = [
 	{
 		"inputs": [],
@@ -309,7 +309,13 @@ const ABI = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_donator",
+				"type": "string"
+			}
+		],
 		"name": "donate",
 		"outputs": [],
 		"stateMutability": "payable",
@@ -329,6 +335,25 @@ const ABI = [
 				"internalType": "uint256",
 				"name": "balance",
 				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "donor_Name",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
 			}
 		],
 		"stateMutability": "view",

@@ -341,6 +341,7 @@
                       class="Radius text-center"
                       placeholder="Type Name, ID"
                       style="float: left; width: auto"
+                      v-model="donor_Name"
                     />
                     <!-- name v-model 지정해야함 -->
                   </div>
@@ -1280,6 +1281,10 @@
 </template>
 <script>
 import Modal from "../components/Modal";
+import Web3 from "web3";
+import dapptest from "../dapp/dapp";
+
+
 export default {
   name: "",
   components: { Modal },
@@ -1289,10 +1294,14 @@ export default {
       kim: "visibility: hidden",
       treeAmount: 0,
       showModal: false,
+      donor_Name: "",
     };
   },
   setup() {},
-  created() {},
+   created() {
+    console.log("created");
+    this.dappstart();
+  },
   mounted() {
     setTimeout(() => {
       this.kim = "visibility:visible ";
@@ -1302,6 +1311,36 @@ export default {
   methods: {
     incTreeAmount(addValue) {
       this.treeAmount += parseInt(addValue);
+    },
+    async dappstart() {
+      if (window.ethereum) {
+        web3 = new Web3(window.ethereum);
+        try {
+          // Request account access if needed
+          await window.ethereum.enable();
+          this.contract = new web3.eth.Contract(dapptest.ABI, dapptest.ADDRESS);
+          console.log(this.contract);
+          console.log(this.$store.state.addr);
+        } catch (error) {}
+      }
+      // Legacy dapp browsers...
+      else if (window.web3) {
+        // Use Mist/MetaMask's provider.
+        web3 = window.web3;
+        console.log("Injected web3 detected.");
+      }
+    },
+
+    donate() {
+      var donation_Value =  this.treeAmount * 500000000000000 ;
+      
+
+      this.contract.methods
+        .donate(this.donor_Name)
+        .send({ from: this.$store.state.addr, value: donation_Value })
+        .then(function (receipt) {
+          console.log(receipt);
+        });
     },
   },
 };
