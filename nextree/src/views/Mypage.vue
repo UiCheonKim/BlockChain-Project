@@ -577,13 +577,13 @@
                               v-bind:src="diamond_img"
                               class="lazy nft__item_preview"
                               data-bs-toggle="modal"
-                              data-bs-target="#exampleModal6"
+                              data-bs-target="#exampleModal7"
                               alt=""
                             />
                           </div>
                           <div
                             class="modal fade"
-                            id="exampleModal6"
+                            id="exampleModal7"
                             tabindex="-1"
                             aria-labelledby="exampleModalLabel3"
                             aria-hidden="true"
