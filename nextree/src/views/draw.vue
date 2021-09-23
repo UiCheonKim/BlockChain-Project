@@ -22,15 +22,46 @@
     </section> -->
     <section>
       <div class="row sequence">
-        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox">
+        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow ">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
               <p class="plan-tagline"></p>
             </div>
-            <div></div>
+            <div>
+
+
+               <a
+                href="#"
+                class="btn-main large-btn "
+                style=""
+                @click="donate"
+
+                >Donate</a
+              >
+
+              <a
+                href="#"
+                class="btn-main large-btn "
+                style=""
+                @click="balanceOf"
+
+                >balanceOf</a
+              >
+
+              <a
+                href="#"
+                class="btn-main large-btn "
+                style=""
+                @click="withdraw"
+
+                >withdraw</a
+              >
+
+            </div>
 
             <div class="bottom">
+              
               <ul>
                 <!-- <li><i class="fa fa-check"></i>Up to 2 devices</li>
               <li><i class="fa fa-check"></i>Daily reminder</li>
@@ -108,11 +139,14 @@
           ></div> -->
 
             <div class="action" style="margin-top: 0px; padding: 20px 0px">
+             
+
               <a
                 href="#"
                 class="btn-main large-btn font24"
-                v-bind:style="display_switch"
                 style=""
+                @click="getRandomNumber()"
+
                 >Draw</a
               >
               <a
@@ -120,6 +154,7 @@
                 class="btn-main large-btn font24"
                 style="margin-left: 20px"
                 @click="toggleShow"
+
                 >Check</a
               >
             </div>
@@ -164,6 +199,10 @@
   </div>
 </template>
 <script>
+import Web3 from "web3";
+import dapptest from "../dapp/dapp";
+
+
 export default {
   name: "",
   components: {},
@@ -176,7 +215,13 @@ export default {
     };
   },
   setup() {},
-  created() {},
+  created() {
+    console.log("created");
+    this.dappstart();
+  },
+  computed: {
+      
+    },
   mounted() {},
   unmounted() {},
   methods: {
@@ -184,6 +229,89 @@ export default {
       this.show = !this.show;
       this.show2 = !this.show2;
     },
+
+    async dappstart() {
+      if (window.ethereum) {
+        web3 = new Web3(window.ethereum);
+        try {
+          // Request account access if needed
+          await window.ethereum.enable();
+          this.contract = new web3.eth.Contract(dapptest.ABI, dapptest.ADDRESS);
+          console.log(this.contract);
+          console.log(this.$store.state.addr);
+        } catch (error) {}
+      }
+      // Legacy dapp browsers...
+      else if (window.web3) {
+        // Use Mist/MetaMask's provider.
+        web3 = window.web3;
+        console.log("Injected web3 detected.");
+      }
+    },
+
+
+     aaaa() {
+      console.log("asdfasf");
+    },
+    eraser() {
+      this.$store.commit("user2", "");
+    },
+    
+    donate() {
+      this.contract.methods
+        .donate()
+        .send({ from: this.$store.state.addr, value: 1000000000000000 })
+        .then(function (receipt) {
+          console.log(receipt);
+        });
+    },
+
+    balanceOf() {
+      this.contract.methods
+        .balanceOf(this.$store.state.addr, 0)
+        .call()
+        .then(function (result) {
+          console.log(result);
+        });
+    },
+    balances() {
+      this.contract.methods
+        .balances(this.$store.state.addr)
+        .call()
+        .then(function (result) {
+          console.log(result);
+        });
+    },
+
+    getRandomNumber() {
+
+      this.contract.methods
+        .getRandomNumber()
+        .call()
+        .then(function (result) {
+          console.log(result);
+        });
+    },
+
+    all_tree_burn() {
+      this.contract.methods
+        .all_tree_burn()
+        .call()
+        .then(function (result) {
+          console.log(result);
+        });
+    },
+
+
+     withdraw() {
+      this.contract.methods
+        .withdraw()
+        .call()
+        .then(function (result) {
+          console.log(result);
+        });
+    },
+
   },
 };
 </script>
