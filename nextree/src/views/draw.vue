@@ -22,7 +22,7 @@
     </section> -->
     <section>
       <div class="row sequence">
-        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow ">
+        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox ">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
@@ -57,6 +57,15 @@
 
                 >withdraw</a
               >
+              <a
+                href="#"
+                class="btn-main large-btn "
+                style=""
+                @click="draw_faucet"
+
+                >draw_faucet</a
+              >
+
 
             </div>
 
@@ -77,7 +86,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 sq-item wow">
+        <div class="col-lg-4 col-md-12 col-sm-12 sq-item wow ">
           <div class="pricing-s1 mb40">
             <div class="mid text-light bg-color" style="padding: 20px 20px 0px">
               <span class="icon_key icon-mid"> </span>
@@ -88,13 +97,15 @@
               <h2 style="color: black">뽑기</h2>
               <p class="plan-tagline" style="color: black">뭐가 나올까요?</p>
             </div>
+
             <div
               class="de_countdown de_countdown_center"
               data-year="2021"
               data-month="9"
-              data-day="16"
-              data-hour="8"
+              data-day="23"
+              data-hour="13"
             ></div>
+
             <div
               v-if="show2"
               class="box-continer box-center"
@@ -153,7 +164,7 @@
                 href="#"
                 class="btn-main large-btn font24"
                 style="margin-left: 20px"
-                @click="toggleShow"
+                @click="toggleShow()"
 
                 >Check</a
               >
@@ -226,8 +237,12 @@ export default {
   unmounted() {},
   methods: {
     toggleShow() {
+
       this.show = !this.show;
       this.show2 = !this.show2;
+
+      this.draw();
+
     },
 
     async dappstart() {
@@ -287,26 +302,33 @@ export default {
 
       this.contract.methods
         .getRandomNumber()
-        .call()
+        .send({ from: this.$store.state.addr })
         .then(function (result) {
           console.log(result);
+
         });
+
     },
 
-    all_tree_burn() {
+    draw() {
+
       this.contract.methods
-        .all_tree_burn()
-        .call()
-        .then(function (result) {
-          console.log(result);
-        });
+        .draw()
+        .send({ from: this.$store.state.addr })
+        .then(function (receipt) {
+          console.log(receipt);
+        }).on('error', function(){
+          console.log("뽑기 실패");
+      
+    });
+
     },
 
-
-     withdraw() {
+ 
+    draw_faucet() {
       this.contract.methods
-        .withdraw()
-        .call()
+        .draw_faucet()
+        .send({ from: this.$store.state.addr })
         .then(function (result) {
           console.log(result);
         });
