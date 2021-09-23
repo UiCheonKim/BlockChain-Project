@@ -40,8 +40,8 @@
                   </div>
                   <div class="de-flex-col">
                     <a href="/rankUp" class="mybtn-main">합성</a>
-                    <a href="#" class="mybtn-main" @click="balanceOfBatch">인벤토리</a>
-                    <a href="#" class="mybtn-main" @click="inventory">인벤토리2</a>
+                    <!-- <a href="#" class="mybtn-main" @click="balanceOfBatch">인벤토리</a> -->
+                    <!-- <a href="#" class="mybtn-main" @click="inventory">인벤토리2</a> -->
 
                   </div>
                 </div>
@@ -136,7 +136,7 @@
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
                               
-                              <span> <input type="number" v-model.number="baby_trees"> {{baby_trees}} </span>
+                              <span> {{baby_trees}} </span>
                             </div>
                           </div>
                         </div>
@@ -216,7 +216,8 @@
                               이겨내요.
                             </div>
                             <div class="nft__item_like">
-                              <i class="fa fa-tree"></i><span>80</span>
+                              <i class="fa fa-tree"></i>
+                              <span> {{iron_trees}} </span>
                             </div>
                           </div>
                         </div>
@@ -294,7 +295,9 @@
                               고민을 들어줘요.
                             </div>
                             <div class="nft__item_like">
-                              <i class="fa fa-tree"></i><span>97</span>
+                              <i class="fa fa-tree"></i>
+                                                       <span> {{bronze_trees}} </span>
+
                             </div>
                           </div>
                         </div>
@@ -314,17 +317,17 @@
                           </div>
                           <div class="nft__item_wrap">
                             <img
-                              v-bind:src="baby_img"
+                              v-bind:src="silver_img"
                               class="lazy nft__item_preview"
                               alt=""
                               data-bs-toggle="modal"
-                              data-bs-target="#exampleModal0"
+                              data-bs-target="#exampleModal3"
                             />
                           </div>
 
                           <div
                             class="modal fade"
-                            id="exampleModal0"
+                            id="exampleModal3"
                             tabindex="-1"
                             aria-labelledby="exampleModalLabel0"
                             aria-hidden="true"
@@ -347,7 +350,7 @@
                                 </div>
                                 <div class="modal-body">
                                   <img
-                                    v-bind:src="baby_img"
+                                    v-bind:src="silver_img"
                                     class="lazy nft__item_preview"
                                     alt=""
                                   />
@@ -370,18 +373,18 @@
 
                           <div class="nft__item_info">
                             <a href="item-details.html">
-                              <h4>Baby Tree</h4>
+                              <h4>Silver Tree</h4>
                             </a>
 
                             <div class="nft__item_price">
-                              베이비 트리는 활발하고 유쾌해서 친구들과 노는 것을
-                              제일 좋아해요.
+                             실버 트리는 우아하고 고풍스러운 매력을 지녔어요.
+                              춤을 잘 춘답니다.
                             </div>
 
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
                               
-                              <span> <input type="number" v-model.number="baby_trees"> {{baby_trees}} </span>
+                              <span>  {{silver_trees}} </span>
                             </div>
                           </div>
                         </div>
@@ -397,17 +400,17 @@
                           </div>
                           <div class="nft__item_wrap">
                             <img
-                              v-bind:src="baby_img"
+                              v-bind:src="gold_img"
                               class="lazy nft__item_preview"
                               alt=""
                               data-bs-toggle="modal"
-                              data-bs-target="#exampleModal0"
+                              data-bs-target="#exampleModal4"
                             />
                           </div>
 
                           <div
                             class="modal fade"
-                            id="exampleModal0"
+                            id="exampleModal4"
                             tabindex="-1"
                             aria-labelledby="exampleModalLabel0"
                             aria-hidden="true"
@@ -430,7 +433,7 @@
                                 </div>
                                 <div class="modal-body">
                                   <img
-                                    v-bind:src="baby_img"
+                                    v-bind:src="gold_img"
                                     class="lazy nft__item_preview"
                                     alt=""
                                   />
@@ -453,18 +456,18 @@
 
                           <div class="nft__item_info">
                             <a href="item-details.html">
-                              <h4>Baby Tree</h4>
+                              <h4>Gold Tree</h4>
                             </a>
 
                             <div class="nft__item_price">
-                              베이비 트리는 활발하고 유쾌해서 친구들과 노는 것을
-                              제일 좋아해요.
+                              골드 트리가 등장하면 주변이 환해져요. 웃음이 밝은 친구에요.
                             </div>
 
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
                               
-                              <span> <input type="number" v-model.number="baby_trees"> {{baby_trees}} </span>
+                              <span>  
+                              {{gold_trees}} </span>
                             </div>
                           </div>
                         </div>
@@ -480,7 +483,7 @@
                           </div>
                           <div class="nft__item_wrap">
                             <img
-                              v-bind:src="baby_img"
+                              v-bind:src="platinum_img"
                               class="lazy nft__item_preview"
                               alt=""
                               data-bs-toggle="modal"
@@ -513,7 +516,7 @@
                                 </div>
                                 <div class="modal-body">
                                   <img
-                                    v-bind:src="baby_img"
+                                    v-bind:src="platinum_img"
                                     class="lazy nft__item_preview"
                                     alt=""
                                   />
@@ -536,18 +539,18 @@
 
                           <div class="nft__item_info">
                             <a href="item-details.html">
-                              <h4>Baby Tree</h4>
+                              <h4>Platinum Tree</h4>
                             </a>
 
                             <div class="nft__item_price">
-                              베이비 트리는 활발하고 유쾌해서 친구들과 노는 것을
-                              제일 좋아해요.
+                              플래티넘 트리는 활발하고 자신이 금과는 다른 특별하다고 믿고 있어요. 항상 자신감이 넘쳐요.
                             </div>
 
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
                               
-                              <span> <input type="number" v-model.number="baby_trees"> {{baby_trees}} </span>
+                              <span> 
+                                {{platinum_trees}} </span>
                             </div>
                           </div>
                         </div>
@@ -558,7 +561,7 @@
                   
                     
                       <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue07">
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -567,7 +570,7 @@
                             </a>
                           </div>
 
-                          <div class="nft__item_wrap">
+                          <div class="nft__item_wrap" >
                             <!-- <a href="item-details.html"> -->
                             <img
                               v-bind:src="diamond_img"
@@ -628,10 +631,10 @@
                               <h4>Diamond Tree</h4>
                             </a>
                             <div class="nft__item_price">
-                              다이아몬드 트리는 가장 귀한한 트리답게 눈이 부셔요! 본 사람이 정말 드물어요.
+                              다이아몬드 트리는 가장 귀한 트리답게 눈이 부셔요! 
                             </div>
                             <div class="nft__item_like">
-                              <i class="fa fa-tree"></i><span>73</span>
+                              <i class="fa fa-tree"></i><span id="trees_input">{{diamond_trees}}</span>
                             </div>
                           </div>
                         </div>
@@ -918,6 +921,8 @@ export default {
       platinum_trees:  0,
       diamond_trees:  0,
       inventory_List: [],
+
+      isTrue07: false,
     };
   },
   watch: {
@@ -956,6 +961,7 @@ export default {
         web3 = window.web3;
         console.log("Injected web3 detected.");
       }
+      this.balanceOfBatch();
     },
       async balanceOfBatch() {
        await this.contract.methods
@@ -973,8 +979,8 @@ export default {
         )
         .call()
         .then((result) => {
-          console.log(result);
-         var baby_amount =  result[0];
+        console.log(result);
+        var baby_amount =  result[0];
         console.log(baby_amount);
         console.log(typeof baby_amount);
 
@@ -992,6 +998,9 @@ export default {
         this.gold_trees = gold_amount;
         this.platinum_trees = platinum_amount;
         this.diamond_trees = diamond_amount;
+
+        if (diamond_amount != "0") 
+        {this.isTrue07 == "true"};
 
    
 

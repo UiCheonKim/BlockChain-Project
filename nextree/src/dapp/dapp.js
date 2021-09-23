@@ -1,5 +1,5 @@
-const ADDRESS = "0xA0c60dD12F48084617A1e2A504E4Af6091589EFf";
-const ABI = [
+const ADDRESS = "0x84f2fec58Cf8B5d3b70Bec00d0933550c12662dD";
+const ABI =[
 	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
@@ -413,7 +413,13 @@ const ABI = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_who",
+				"type": "address"
+			}
+		],
 		"name": "inventory",
 		"outputs": [
 			{
