@@ -215,7 +215,7 @@
             <!-- <h2>{{ report_year }}-{{ report_month }} Report</h2> -->
             <h2>2021-01 Report</h2>
             <div class="alert alert-" role="alert">
-              <h4 class="alert-heading"> 새해에도 꺼지지 않는 불씨... </h4>
+              <h4 class="alert-heading"> 새해에도 꺼지지 않는 불씨 🔥 </h4>
               <p>
                 지난 1월 한 달 동안, 1,600건의 산불 화재로 2만7,358에이커(2000년 이래 11번째로 큰 규모)가 소실되었는데, 이것은 17.1에이커/화재로 화재의 빈도가 그 수치가 상당한 편이었다.
               </p>
@@ -233,29 +233,37 @@
 
               <div class="post-text">
                 <p>
-                  화재 원인과 화재 강도는 크게 두 가지이다. "겨울철 산은 불을 지를 정도로 매우 건조할 수 있지만, 불꽃이 튀지 않으면 불이 나지 않습니다,"라고 전문가들은 말했다. 올해, 가벼운 겨울 눈더미, 기록적인 더위, 그리고 가뭄과 함께, 바람이 불기 시작했다. "모든 것은 순환적입니다,"라고 그는 말했다. "화재된 에이커만 빼고요. 매년 그 평균은 올라갑니다."
-
-322마일 표지에서, 연기가 가드레일 뒤에서 피어올랐다. 그 뒤에는 개인 소유의 땅이 있었다. 네 개의 다른 소방 그룹이 나타났고, 크라우치가 베이커 시골 소방서에 도착했을 때, 고속도로를 따라 어두운 화산재를 남기고 불을 껐다. 바람이 북서쪽으로 불고 있었다.
-
-크라우치는 베이커 시골 소방서장인 션 리에게 걸어갔고, 션 리는 고속도로 옆에 두꺼운 빨간 호스를 들고 있었다. 그들은 비탈길을 내려와 불 뒤꿈치에 깔려 찌그러지고 탄산화된 차를 바라보았다. 두 명의 소방관이 조심스럽게 그 주위를 걸어다녔다. 운전자는 거의 다치지 않은 채 길가에 서 있었다. 그는 의사의 치료를 거부했었다. 그의 라디오에서, 크라우치는 "1에이커 정도 되고, 가드레일을 따라 길고 날씬해 보입니다."라고 말했다. 그는 다시 차를 바라보았다. "때로는 명백합니다."라고 그가 웃으며 말했다. ♦
-                </p>
+                  화재 원인은 크게 두 가지이다. "겨울철 산은 불을 지를 정도로 매우 건조할 수 있지만, 불꽃이 튀지 않으면 불이 나지 않습니다,"라고 전문가들은 말했다. 
+                  산불의 3요소는 연료․공기․열이다. 일단 불이 나면 상승기류로 인해 비화된다. 진행속도는 험준한 경사지가 완만한 곳보다 8배 빠르고, 기상조건(강우량․풍속․온도․습도)도 중요 변수다. 
+                  산림청의 10년간(2002~2011년) 산불 통계를 보면 산불은 봄철(59%)에 집중돼 있다. 봄철이 되면 왜 산불이 많이 날까?
+</p>
 
                 <blockquote>
-                  Design can be art. Design can be simple. That’s why it’s so
-                  complicated. Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam.
-                </blockquote>
+                미국에는 ‘디아블로’(Diablo Wind)라는 바람이 있다. 
+                협곡에서 발생한 바람이 산맥을 넘어오면서 고온건조한 강한 바람으로 바뀐다.
+                이 바람이 불면 북캘리포니아 지역은 화재비상이 걸린다.
+                얼마나 악명이 높으면 ‘악마바람’이라는 이름이 붙었을까. 
+               </blockquote>
 
                 <p>
-                  Sunt duis laboris ex et quis laborum laborum cillum mollit
-                  voluptate culpa consequat ex cupidatat dolor eiusmod proident
-                  proident cillum pariatur sint adipisicing in nostrud do dolore
-                  consectetur quis incididunt minim consectetur. Exercitation
-                  elit proident dolor est id eiusmod dolor dolor incididunt ad
-                  voluptate laboris cupidatat est est sint veniam sint officia
-                  sint incididunt est sit ut tempor commodo pariatur ut proident
-                  et do.
+                  지난 2019년 4월, 강원도에도 고성·속초와 강릉·동해·인제 일대를 덮친 대형 산불이 일어난다.
+                  당시에도 전신주에 달린 개폐기와 연결된 전선이 강풍에 심하게 흔들리다 불이 붙은 것으로 추정된다. 
+                  이 불꽃은 당일 최대 순간풍속이 초속 35.6m에 달했던 강풍을 타고 근처 야산으로 옮겨붙었으며, 
+                  고성 토성면 천진리와 속초시 장사동 등 두 갈래로 번지면서 급속히 확산됐다. 
+                  여기에 불똥이 수백m씩 날아가 옮겨붙는 비화현상까지 겹치면서 피해 지역이 급격히 늘었다. 
+                  이에 속초소방서는 신고 접수 10여 분 만에 진화 장비와 인력을 투입했지만,
+                  산불이 강풍을 타고 급속히 번지면서 초기 진화에는 실패했다. 
+                  특히 산불이 1시간도 채 되지 않아 속초 도심과 해안으로까지 번지며 심각한 상황에 이르자, 
+                  자치단체는 주민들에게 대피령을 내렸다. 
+                </p>
+
+                <p>
+                  지난달 한 달 동안 진행된 이번 캠페인은 걸음을 기부로 연결하는 사회공헌 플랫폼 'ABC'를 통해 이뤄졌다.
+                  초기 참여자 4천951명이 참여해 당초 목표로 했던 3억보를 넘겨 7억3천만보 이상을 기록했다.
+                  ABC는 소나무 및 기존 강원 생태에 알맞는 묘목을 구매해 지난해 큰 산불이 났던 강원도 피해지역의 숲 조성사업에 전달하였다.
+                  이번 기부는 지난해 ABC에서 직접 모금하여 4월 강원도 산불 지역에 지원금 2억원을 전달한 것에 이어 연속성 있는 사회공헌 활동을 위해 기획됐다.
+                  ABC와 NexTree 협력 대표는 "코로나19 사태로 비대면 방식으로 진행되는 사회공헌 봉사활동이지만 그룹 사회공헌 슬로건인 '따뜻한 빛'을 실천하기 위해 많은 참여자들의 적극적인 참여로 기부금을 마련할 수 있었다"고 말했다.
+                  앞으로도 블록체인 산업이 활성화 되는 만큼 NexTree 같은 환경에 힘쓰는 혁신적인 플랫폼이 더 많이 등장했으면 좋겠다고 환경보전사업과 관련한 희망의 메시지를 전달했다. 
                 </p>
 
                 <span class="post-date">August 1, 2020</span>
@@ -313,16 +321,13 @@ ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회�
             <!-- <h2>{{ report_year }}-{{ report_month }} Report</h2> -->
             <h2>2021-02 Report</h2>
             <div class="alert alert-" role="alert">
-              <h4 class="alert-heading">With Us!</h4>
+              <h4 class="alert-heading"> 지구가 더 편히 숨쉬도록 🌳 </h4>
               <p>
-                Aww yeah, you successfully read this important message. This
-                example text is going to run a bit longer so that you can see
-                how spacing within an alert works with this kind of content.
+                지난 1월 한 달 동안, 1,600건의 산불 화재로 2만7,358에이커(2000년 이래 11번째로 큰 규모)가 소실되었는데, 이것은 17.1에이커/화재로 화재의 빈도가 그 수치가 상당한 편이었다.
               </p>
               <hr />
               <p class="mb-0">
-                Whenever you need to, be sure to use margin utilities to keep
-                things nice and tidy.
+                이번 보고서는 ABC NGO와 함께 좀 처럼 줄어들지 않는 산불화재에 대한 원인을 분석하고, 이에 대한 대비책 및 피해 지역에 대한 후원 현황을 알려드리는데 집중하였습니다. 
               </p>
             </div>
             <div class="blog-read">
@@ -334,31 +339,37 @@ ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회�
 
               <div class="post-text">
                 <p>
-                  Quis sunt quis do laboris eiusmod in sint dolore sit pariatur
-                  consequat commodo aliqua nulla ad dolor aliquip incididunt
-                  voluptate est aliquip adipisicing ea cupidatat nostrud
-                  incididunt aliquip dolore. Sed minim nisi duis laborum est
-                  labore nisi amet elit adipisicing proident do consectetur
-                  dolor labore sit nisi ad proident esse ad velit nisi irure
-                  reprehenderit ut et dolor labore veniam quis.
-                </p>
+                  화재 원인은 크게 두 가지이다. "겨울철 산은 불을 지를 정도로 매우 건조할 수 있지만, 불꽃이 튀지 않으면 불이 나지 않습니다,"라고 전문가들은 말했다. 
+                  산불의 3요소는 연료․공기․열이다. 일단 불이 나면 상승기류로 인해 비화된다. 진행속도는 험준한 경사지가 완만한 곳보다 8배 빠르고, 기상조건(강우량․풍속․온도․습도)도 중요 변수다. 
+                  산림청의 10년간(2002~2011년) 산불 통계를 보면 산불은 봄철(59%)에 집중돼 있다. 봄철이 되면 왜 산불이 많이 날까?
+</p>
 
                 <blockquote>
-                  Design can be art. Design can be simple. That’s why it’s so
-                  complicated. Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam.
-                </blockquote>
+                미국에는 ‘디아블로’(Diablo Wind)라는 바람이 있다. 
+                협곡에서 발생한 바람이 산맥을 넘어오면서 고온건조한 강한 바람으로 바뀐다.
+                이 바람이 불면 북캘리포니아 지역은 화재비상이 걸린다.
+                얼마나 악명이 높으면 ‘악마바람’이라는 이름이 붙었을까. 
+               </blockquote>
 
                 <p>
-                  Sunt duis laboris ex et quis laborum laborum cillum mollit
-                  voluptate culpa consequat ex cupidatat dolor eiusmod proident
-                  proident cillum pariatur sint adipisicing in nostrud do dolore
-                  consectetur quis incididunt minim consectetur. Exercitation
-                  elit proident dolor est id eiusmod dolor dolor incididunt ad
-                  voluptate laboris cupidatat est est sint veniam sint officia
-                  sint incididunt est sit ut tempor commodo pariatur ut proident
-                  et do.
+                  지난 2019년 4월, 강원도에도 고성·속초와 강릉·동해·인제 일대를 덮친 대형 산불이 일어난다.
+                  당시에도 전신주에 달린 개폐기와 연결된 전선이 강풍에 심하게 흔들리다 불이 붙은 것으로 추정된다. 
+                  이 불꽃은 당일 최대 순간풍속이 초속 35.6m에 달했던 강풍을 타고 근처 야산으로 옮겨붙었으며, 
+                  고성 토성면 천진리와 속초시 장사동 등 두 갈래로 번지면서 급속히 확산됐다. 
+                  여기에 불똥이 수백m씩 날아가 옮겨붙는 비화현상까지 겹치면서 피해 지역이 급격히 늘었다. 
+                  이에 속초소방서는 신고 접수 10여 분 만에 진화 장비와 인력을 투입했지만,
+                  산불이 강풍을 타고 급속히 번지면서 초기 진화에는 실패했다. 
+                  특히 산불이 1시간도 채 되지 않아 속초 도심과 해안으로까지 번지며 심각한 상황에 이르자, 
+                  자치단체는 주민들에게 대피령을 내렸다. 
+                </p>
+
+                <p>
+                  지난달 한 달 동안 진행된 이번 캠페인은 걸음을 기부로 연결하는 사회공헌 플랫폼 'ABC'를 통해 이뤄졌다.
+                  초기 참여자 4천951명이 참여해 당초 목표로 했던 3억보를 넘겨 7억3천만보 이상을 기록했다.
+                  ABC는 소나무 및 기존 강원 생태에 알맞는 묘목을 구매해 지난해 큰 산불이 났던 강원도 피해지역의 숲 조성사업에 전달하였다.
+                  이번 기부는 지난해 ABC에서 직접 모금하여 4월 강원도 산불 지역에 지원금 2억원을 전달한 것에 이어 연속성 있는 사회공헌 활동을 위해 기획됐다.
+                  ABC와 NexTree 협력 대표는 "코로나19 사태로 비대면 방식으로 진행되는 사회공헌 봉사활동이지만 그룹 사회공헌 슬로건인 '따뜻한 빛'을 실천하기 위해 많은 참여자들의 적극적인 참여로 기부금을 마련할 수 있었다"고 말했다.
+                  앞으로도 블록체인 산업이 활성화 되는 만큼 NexTree 같은 환경에 힘쓰는 혁신적인 플랫폼이 더 많이 등장했으면 좋겠다고 환경보전사업과 관련한 희망의 메시지를 전달했다. 
                 </p>
 
                 <span class="post-date">August 1, 2020</span>
@@ -380,12 +391,12 @@ ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회�
                 <span
                   ><i class="fa fa-envelope-o fa-lg"></i
                   ><a href="mailto:contact@example.com"
-                    >contact@example.com</a
+                    >ABC NGO@example.com</a
                   ></span
                 >
                 <span
                   ><i class="fa fa-file-pdf-o fa-lg"></i
-                  ><a href="#">Download Brochure</a></span
+                  ><a href="#">Download info</a></span
                 >
               </address>
 
@@ -394,11 +405,9 @@ ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회�
             <div class="widget widget-text mt-5">
               <h4>ABC NGO</h4>
               <div class="small-border"></div>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni
+              ABC NGO는 사회 정의와 산림 정책에 대한 숲 사람들의 권리를 옹호하는 NGO와 토착민 단체들의 국제 연합이다.
+ABC는 2000년 전 세계 19개 NGO와 원주민 기구에 의해 설립되었다. 그것은 원래 1995년에 설립된 NGO 산림 작업 그룹의 후속이다.
+ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회적 정의의 산림 정책의 필요성, 산림 손실의 근본적인 원인을 해결할 필요성과 같은 문제에 대한 공동 옹호 캠페인을 조직한다.
             </div>
           </div>
         </div>
@@ -418,16 +427,13 @@ ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회�
             <!-- <h2>{{ report_year }}-{{ report_month }} Report</h2> -->
             <h2>2021-03 Report</h2>
             <div class="alert alert-" role="alert">
-              <h4 class="alert-heading">With Us!</h4>
+              <h4 class="alert-heading"> 생명의 계절, 모두에게 생기를 🍀 </h4>
               <p>
-                Aww yeah, you successfully read this important message. This
-                example text is going to run a bit longer so that you can see
-                how spacing within an alert works with this kind of content.
+                지난 1월 한 달 동안, 1,600건의 산불 화재로 2만7,358에이커(2000년 이래 11번째로 큰 규모)가 소실되었는데, 이것은 17.1에이커/화재로 화재의 빈도가 그 수치가 상당한 편이었다.
               </p>
               <hr />
               <p class="mb-0">
-                Whenever you need to, be sure to use margin utilities to keep
-                things nice and tidy.
+                이번 보고서는 ABC NGO와 함께 좀 처럼 줄어들지 않는 산불화재에 대한 원인을 분석하고, 이에 대한 대비책 및 피해 지역에 대한 후원 현황을 알려드리는데 집중하였습니다. 
               </p>
             </div>
             <div class="blog-read">
@@ -439,31 +445,37 @@ ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회�
 
               <div class="post-text">
                 <p>
-                  Quis sunt quis do laboris eiusmod in sint dolore sit pariatur
-                  consequat commodo aliqua nulla ad dolor aliquip incididunt
-                  voluptate est aliquip adipisicing ea cupidatat nostrud
-                  incididunt aliquip dolore. Sed minim nisi duis laborum est
-                  labore nisi amet elit adipisicing proident do consectetur
-                  dolor labore sit nisi ad proident esse ad velit nisi irure
-                  reprehenderit ut et dolor labore veniam quis.
-                </p>
+                  화재 원인은 크게 두 가지이다. "겨울철 산은 불을 지를 정도로 매우 건조할 수 있지만, 불꽃이 튀지 않으면 불이 나지 않습니다,"라고 전문가들은 말했다. 
+                  산불의 3요소는 연료․공기․열이다. 일단 불이 나면 상승기류로 인해 비화된다. 진행속도는 험준한 경사지가 완만한 곳보다 8배 빠르고, 기상조건(강우량․풍속․온도․습도)도 중요 변수다. 
+                  산림청의 10년간(2002~2011년) 산불 통계를 보면 산불은 봄철(59%)에 집중돼 있다. 봄철이 되면 왜 산불이 많이 날까?
+</p>
 
                 <blockquote>
-                  Design can be art. Design can be simple. That’s why it’s so
-                  complicated. Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam.
-                </blockquote>
+                미국에는 ‘디아블로’(Diablo Wind)라는 바람이 있다. 
+                협곡에서 발생한 바람이 산맥을 넘어오면서 고온건조한 강한 바람으로 바뀐다.
+                이 바람이 불면 북캘리포니아 지역은 화재비상이 걸린다.
+                얼마나 악명이 높으면 ‘악마바람’이라는 이름이 붙었을까. 
+               </blockquote>
 
                 <p>
-                  Sunt duis laboris ex et quis laborum laborum cillum mollit
-                  voluptate culpa consequat ex cupidatat dolor eiusmod proident
-                  proident cillum pariatur sint adipisicing in nostrud do dolore
-                  consectetur quis incididunt minim consectetur. Exercitation
-                  elit proident dolor est id eiusmod dolor dolor incididunt ad
-                  voluptate laboris cupidatat est est sint veniam sint officia
-                  sint incididunt est sit ut tempor commodo pariatur ut proident
-                  et do.
+                  지난 2019년 4월, 강원도에도 고성·속초와 강릉·동해·인제 일대를 덮친 대형 산불이 일어난다.
+                  당시에도 전신주에 달린 개폐기와 연결된 전선이 강풍에 심하게 흔들리다 불이 붙은 것으로 추정된다. 
+                  이 불꽃은 당일 최대 순간풍속이 초속 35.6m에 달했던 강풍을 타고 근처 야산으로 옮겨붙었으며, 
+                  고성 토성면 천진리와 속초시 장사동 등 두 갈래로 번지면서 급속히 확산됐다. 
+                  여기에 불똥이 수백m씩 날아가 옮겨붙는 비화현상까지 겹치면서 피해 지역이 급격히 늘었다. 
+                  이에 속초소방서는 신고 접수 10여 분 만에 진화 장비와 인력을 투입했지만,
+                  산불이 강풍을 타고 급속히 번지면서 초기 진화에는 실패했다. 
+                  특히 산불이 1시간도 채 되지 않아 속초 도심과 해안으로까지 번지며 심각한 상황에 이르자, 
+                  자치단체는 주민들에게 대피령을 내렸다. 
+                </p>
+
+                <p>
+                  지난달 한 달 동안 진행된 이번 캠페인은 걸음을 기부로 연결하는 사회공헌 플랫폼 'ABC'를 통해 이뤄졌다.
+                  초기 참여자 4천951명이 참여해 당초 목표로 했던 3억보를 넘겨 7억3천만보 이상을 기록했다.
+                  ABC는 소나무 및 기존 강원 생태에 알맞는 묘목을 구매해 지난해 큰 산불이 났던 강원도 피해지역의 숲 조성사업에 전달하였다.
+                  이번 기부는 지난해 ABC에서 직접 모금하여 4월 강원도 산불 지역에 지원금 2억원을 전달한 것에 이어 연속성 있는 사회공헌 활동을 위해 기획됐다.
+                  ABC와 NexTree 협력 대표는 "코로나19 사태로 비대면 방식으로 진행되는 사회공헌 봉사활동이지만 그룹 사회공헌 슬로건인 '따뜻한 빛'을 실천하기 위해 많은 참여자들의 적극적인 참여로 기부금을 마련할 수 있었다"고 말했다.
+                  앞으로도 블록체인 산업이 활성화 되는 만큼 NexTree 같은 환경에 힘쓰는 혁신적인 플랫폼이 더 많이 등장했으면 좋겠다고 환경보전사업과 관련한 희망의 메시지를 전달했다. 
                 </p>
 
                 <span class="post-date">August 1, 2020</span>
@@ -485,12 +497,12 @@ ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회�
                 <span
                   ><i class="fa fa-envelope-o fa-lg"></i
                   ><a href="mailto:contact@example.com"
-                    >contact@example.com</a
+                    >ABC NGO@example.com</a
                   ></span
                 >
                 <span
                   ><i class="fa fa-file-pdf-o fa-lg"></i
-                  ><a href="#">Download Brochure</a></span
+                  ><a href="#">Download info</a></span
                 >
               </address>
 
@@ -499,11 +511,9 @@ ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회�
             <div class="widget widget-text mt-5">
               <h4>ABC NGO</h4>
               <div class="small-border"></div>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni
+              ABC NGO는 사회 정의와 산림 정책에 대한 숲 사람들의 권리를 옹호하는 NGO와 토착민 단체들의 국제 연합이다.
+ABC는 2000년 전 세계 19개 NGO와 원주민 기구에 의해 설립되었다. 그것은 원래 1995년에 설립된 NGO 산림 작업 그룹의 후속이다.
+ABC는 국제 산림 정책 회의에 참석하여 원주민의 권리, 사회적 정의의 산림 정책의 필요성, 산림 손실의 근본적인 원인을 해결할 필요성과 같은 문제에 대한 공동 옹호 캠페인을 조직한다.
             </div>
           </div>
         </div>
