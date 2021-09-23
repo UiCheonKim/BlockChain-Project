@@ -13,6 +13,7 @@ import rankUp from "../views/rankUp.vue";
 import Status from "../views/Status.vue";
 import banners from "../views/banners.vue";
 import cards from "../views/cards.vue";
+import ArtistMain from "../views/ArtistMain.vue";
 
 const routes = [
   {
@@ -89,6 +90,12 @@ const routes = [
     path: "/cards",
     name: "cards",
     component: cards,
+  },
+
+  {
+    path: "/artistmain",
+    name: "ArtistMain",
+    component: ArtistMain,
   },
 
   // {
