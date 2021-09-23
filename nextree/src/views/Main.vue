@@ -261,185 +261,95 @@
             </div>
           </div>
         </div> -->
+      <!-- ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+
       <section id="donation-section" class="pb-6">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-center">
-                <h2>Donate</h2>
+                <h1>Donate</h1>
                 <div class="small-border bg-color-2"></div>
               </div>
-              <div class="container">
-                <div class="row Radius BG-ytb align-items-center">
-                  <div class="col-md-4">
-                    <div class="videoTeduri">
-                      <!-- <iframe
-                        class="Radius_round"
-                        width="560"
-                        height="349"
-                        src="https://www.youtube.com/embed/ucZl6vQ_8Uo"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      >
-                      </iframe> -->
+            </div>
 
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요 나무심어요 나무심어요 나무심어요 나무심어요
-                      나무심어요
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <h4 class="text-center">Join Us!</h4>
-                    <div class="row gy-3 justify-content-around">
-                      <div
-                        class="
-                          col-4
-                          p-2
-                          border
-                          tree-btn
-                          Radius
-                          ms-2
-                          text-center
-                        "
-                        type="button"
-                        @click="incTreeAmount(1)"
-                      >
-                        <img src="../images/items/Tree1.png" class="rounded" />
-                        <h6>1 Tree</h6>
-                      </div>
-                      <div
-                        class="
-                          col-4
-                          p-2
-                          border
-                          tree-btn
-                          Radius
-                          ms-2
-                          text-center
-                        "
-                        type="button"
-                        @click="incTreeAmount(5)"
-                      >
-                        <img src="../images/items/Tree2.png" class="rounded" />
-                        <h6>5 Tree</h6>
-                      </div>
-
-                      <div
-                        class="
-                          col-4
-                          p-2
-                          border
-                          tree-btn
-                          Radius
-                          ms-2
-                          text-center
-                        "
-                        type="button"
-                        @click="incTreeAmount(10)"
-                      >
-                        <img src="../images/items/Tree3.png" class="rounded" />
-                        <h6>10 Tree</h6>
-                      </div>
-                      <div
-                        class="
-                          col-4
-                          p-2
-                          border
-                          tree-btn
-                          Radius
-                          ms-2
-                          text-center
-                        "
-                        type="button"
-                        @click="incTreeAmount(50)"
-                      >
-                        <img src="../images/items/Tree4.png" class="rounded" />
-                        <h6>50 Tree</h6>
-                      </div>
-                      <input
-                        type="number"
-                        class="Radius text-center"
-                        placeholder="Order Amount"
-                        v-model="treeAmount"
-                      />
-
-                      <button class="tree-btn Radius" @click="donate()">
-                        Donate
-                      </button>
-                    </div>
-                  </div>
-                  <div class="col-md-4 float-sm-start">
-                    <lottie-player
-                      src="json/earth3.json"
-                      background="transparent"
-                      speed="1.2"
-                      style="width: 500px; height: 500px"
-                      autoplay
-                      loop
-                    ></lottie-player>
-
-                    <!-- <h4>text Area</h4>
-                    <h5>project name</h5>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was popularised in the
-                      1960s with the release of Letraset sheets containing Lorem
-                      Ipsum passages.
-                    </p> -->
-                  </div>
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+              <div style="padding-left: 30px">
+                <lottie-player
+                  src="json/earth3.json"
+                  background="transparent"
+                  speed="1.2"
+                  style="width: 300px; height: 500px"
+                  autoplay
+                  loop
+                ></lottie-player>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-sm-30 BG-ytb">
+              <h4 class="text-center pt-5">Join Us!</h4>
+              <div class="row gy-3 justify-content-around">
+                <div
+                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  type="button"
+                  @click="incTreeAmount(1)"
+                >
+                  <img src="../images/items/Tree1.png" class="rounded" />
+                  <h6>1 Tree</h6>
                 </div>
-                <!-- ♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡ -->
-                <div class="row gy-3 justify-content-around mb-5">
-                  <input
-                    type="number"
-                    class="text-center mb-2 Radius"
-                    placeholder="Order Amount"
-                    v-model="treeAmount"
-                  />
-                  <button class="tree-btn Radius" @click="donate()">
-                    Donate
-                  </button>
+                <div
+                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  type="button"
+                  @click="incTreeAmount(5)"
+                >
+                  <img src="../images/items/Tree2.png" class="rounded" />
+                  <h6>5 Tree</h6>
                 </div>
+
+                <div
+                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  type="button"
+                  @click="incTreeAmount(10)"
+                >
+                  <img src="../images/items/Tree3.png" class="rounded" />
+                  <h6>10 Tree</h6>
+                </div>
+                <div
+                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  type="button"
+                  @click="incTreeAmount(50)"
+                >
+                  <img src="../images/items/Tree4.png" class="rounded" />
+                  <h6>50 Tree</h6>
+                </div>
+                <input
+                  type="number"
+                  class="Radius text-center"
+                  placeholder="Order Amount"
+                  v-model="treeAmount"
+                />
+
+                <button class="tree-btn Radius" @click="donate()">
+                  Donate
+                </button>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-sm-30">
-              <lottie-player
-                v-show="show"
-                src="json/earth3.json"
-                background="transparent"
-                speed="1.2"
-                style="width: 500px; height: 500px"
-                autoplay
-                loop
-              ></lottie-player>
+              <div style="padding-left: 70px">
+                <lottie-player
+                  src="json/earth3.json"
+                  background="transparent"
+                  speed="1.2"
+                  style="width: 300px; height: 500px"
+                  autoplay
+                  loop
+                ></lottie-player>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
       <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
 
       <section id="section-intro" class="no-top no-bottom">
@@ -449,7 +359,7 @@
               <inline style="padding-top: 14em">asdf</inline>
               <hr class="section_line" />
             </div> -->
-            <div
+            <!-- <div
               style="
                 display: flex;
                 text-align: center;
@@ -459,8 +369,13 @@
             >
               <h2 style="font-size: 2em">What We Do?</h2>
               <hr class="section_line" />
-              <!-- <button style="width: 6em; height: 2em">More</button> -->
-              <button class="btn-main">More</button>
+              <button type="button" class="btnmore success">More</button>
+            </div> -->
+            <div class="col-lg-12">
+              <div class="text-center">
+                <h1>What we Do?</h1>
+                <div class="small-border bg-color-2"></div>
+              </div>
             </div>
             <!-- <div class="section_line">What We Do?</div> -->
             <div class="col-lg-4 col-md-6 mb-sm-30">
@@ -512,7 +427,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-center">
-                <h2>Top Sellers</h2>
+                <h1>Top Sellers</h1>
                 <div class="small-border bg-color-2"></div>
               </div>
             </div>
@@ -868,12 +783,12 @@
         </div>
       </section> -->
 
-      <section id="section-items" class="no-bottom">
+      <section id="section-items" class="no-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-center">
-                <h2>New Items</h2>
+                <h1>New Items</h1>
                 <div class="small-border bg-color-2"></div>
               </div>
             </div>
@@ -1156,220 +1071,12 @@
         </div>
       </section>
 
-      <section id="section-popular" class="pb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="text-center">
-                <h2>Top Sellers</h2>
-                <div class="small-border bg-color-2"></div>
-              </div>
-            </div>
-            <div class="col-md-12 wow fadeIn">
-              <ol class="author_list">
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-1.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Monica Lucas</a>
-                    <span>3.2 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-2.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Mamie Barnett</a>
-                    <span>2.8 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-3.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Nicholas Daniels</a>
-                    <span>2.5 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-4.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Lori Hart</a>
-                    <span>2.2 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-5.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Jimmy Wright</a>
-                    <span>1.9 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-6.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Karla Sharp</a>
-                    <span>1.6 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-7.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Gayle Hicks</a>
-                    <span>1.5 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-8.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Claude Banks</a>
-                    <span>1.3 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-9.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Franklin Greer</a>
-                    <span>0.9 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-10.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Stacy Long</a>
-                    <span>0.8 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-11.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Ida Chapman</a>
-                    <span>0.6 ETH</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="author_list_pp">
-                    <a href="author.html">
-                      <img
-                        class="lazy"
-                        src="images/author/author-12.jpg"
-                        alt=""
-                      />
-                      <i class="fa fa-check"></i>
-                    </a>
-                  </div>
-                  <div class="author_list_info">
-                    <a href="author.html">Fred Ryan</a>
-                    <span>0.5 eth</span>
-                  </div>
-                </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="section-category" class="no-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-center">
-                <h2>Browse by category</h2>
+                <h1>FAQ & Category</h1>
                 <div class="small-border bg-color-2"></div>
               </div>
             </div>
@@ -1377,10 +1084,53 @@
               class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight"
               data-wow-delay=".1s"
             >
-              <a href="explore.html" class="icon-box style-2 rounded">
+              <a
+                class="icon-box style-2 rounded"
+                data-bs-toggle="modal"
+                data-bs-target="#faqModal"
+              >
                 <i class="fa fa-image"></i>
-                <span>Art</span>
+                <span>FAQ</span>
               </a>
+            </div>
+            <div
+              class="modal fade"
+              id="faqModal"
+              tabindex="-1"
+              aria-labelledby="faqModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="faqModalLabel">FAQ</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Official social accounts Instagram: @teamtrees, Twitter:
+                    @teamtreesofficl, Reddit: r/teamtrees, Facebook:
+                    facebook.com/teamtreesofficial How did #TeamTrees® get
+                    started? #TeamTrees started in May 2019 when the internet
+                    challenged MrBeast to plant 20 million trees to celebrate
+                    hitting the 20M subscriber milestone on YouTube. At his
+                    audience’s suggestion, MrBeast teamed up with fellow
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div
               class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight"
@@ -1388,7 +1138,7 @@
             >
               <a href="explore.html" class="icon-box style-2 rounded">
                 <i class="fa fa-music"></i>
-                <span>Music</span>
+                <span>Donation Status</span>
               </a>
             </div>
             <div
@@ -1397,7 +1147,7 @@
             >
               <a href="explore.html" class="icon-box style-2 rounded">
                 <i class="fa fa-search"></i>
-                <span>Domain Names</span>
+                <span>About us</span>
               </a>
             </div>
             <div
@@ -1406,7 +1156,7 @@
             >
               <a href="explore.html" class="icon-box style-2 rounded">
                 <i class="fa fa-globe"></i>
-                <span>Virtual Worlds</span>
+                <span>Artist</span>
               </a>
             </div>
             <div
@@ -1415,7 +1165,7 @@
             >
               <a href="explore.html" class="icon-box style-2 rounded">
                 <i class="fa fa-vcard"></i>
-                <span>Trading Cards</span>
+                <span>NFT</span>
               </a>
             </div>
             <div
@@ -1424,7 +1174,7 @@
             >
               <a href="explore.html" class="icon-box style-2 rounded">
                 <i class="fa fa-th"></i>
-                <span>Collectibles</span>
+                <span>My Page</span>
               </a>
             </div>
           </div>
@@ -1763,6 +1513,45 @@ a.btn {
 }
 .Radius_round {
   border-radius: 40px 40px / 40px 40px;
+}
+.btnmore.success {
+  --button-bg-color: #28a745;
+  --button-hover-bg-color: #218838;
+}
+.btnmore {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background: var(--button-bg-color);
+  color: var(--button-color);
+
+  margin: 0;
+  padding: 0.5rem 2rem;
+
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 4px;
+
+  display: inline-block;
+  width: auto;
+  height: 3em;
+
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+.btnmore:hover,
+.btnmore:focus {
+  background: var(--button-hover-bg-color);
+  outline: 0;
 }
 
 input::-webkit-outer-spin-button,
