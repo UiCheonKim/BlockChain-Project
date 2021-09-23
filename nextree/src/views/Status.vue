@@ -63,7 +63,7 @@
                     <div class="treeNum_inc" style="--tonum: 4500"></div> -->
                     <span
                       class="timer"
-                      data-to="26471"
+                      data-to="937254"
                       data-speed="3000"
                       id="treeNum_inc"
                       >0</span
@@ -92,7 +92,7 @@
               >
                 <div class="de_count">
                   <h3>
-                    <span class="timer" data-to="937254" data-speed="3000">0</span> 명
+                    <span class="timer" data-to="26471" data-speed="3000">0</span> 명
                   </h3>
                   <h5 class="id-color">총 참여자 수</h5>
                 </div>
