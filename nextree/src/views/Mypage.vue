@@ -24,7 +24,7 @@
                     <i class="fa fa-check"></i>
                     <div class="profile_name">
                       <h4>
-                        Monica Lucas
+                        Monica Lucas {{inventory_List}}
                         <span class="profile_username"></span>
                         <span id="wallet" class="profile_wallet">{{
                           this.$store.state.addr
@@ -41,6 +41,7 @@
                   <div class="de-flex-col">
                     <a href="/rankUp" class="mybtn-main">합성</a>
                     <a href="#" class="mybtn-main" @click="balanceOfBatch">인벤토리</a>
+                    <a href="#" class="mybtn-main" @click="inventory">인벤토리2</a>
 
                   </div>
                 </div>
@@ -66,7 +67,6 @@
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
-
                           <div class="nft__item_wrap">
                             <img
                               v-bind:src="baby_img"
@@ -136,12 +136,14 @@
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
                               
-                              <span> <input v-bind:value="baby_trees"> </span>
+                              <span> <input type="number" v-model.number="baby_trees"> {{baby_trees}} </span>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <!-- nft item begin -->
+
+
+                        <!-- nft item begin -->
                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="nft__item">
                           <div class="author_list_pp">
@@ -220,6 +222,7 @@
                         </div>
                       </div>
                       <!-- nft item begin -->
+                       <!-- nft item begin -->
                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="nft__item">
                           <div class="author_list_pp">
@@ -297,6 +300,10 @@
                         </div>
                       </div>
                       <!-- nft item begin -->
+                      
+
+                      
+
                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="nft__item">
                           <div class="author_list_pp">
@@ -305,22 +312,21 @@
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
-
                           <div class="nft__item_wrap">
-                            <!-- <a href="item-details.html"> -->
                             <img
-                              v-bind:src="silver_img"
+                              v-bind:src="baby_img"
                               class="lazy nft__item_preview"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModal3"
                               alt=""
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal0"
                             />
                           </div>
+
                           <div
                             class="modal fade"
-                            id="exampleModal3"
+                            id="exampleModal0"
                             tabindex="-1"
-                            aria-labelledby="exampleModalLabel3"
+                            aria-labelledby="exampleModalLabel0"
                             aria-hidden="true"
                           >
                             <div class="modal-dialog">
@@ -328,7 +334,7 @@
                                 <div class="modal-header">
                                   <h5
                                     class="modal-title"
-                                    id="exampleModalLabel3"
+                                    id="exampleModalLabel0"
                                   >
                                     card
                                   </h5>
@@ -339,9 +345,9 @@
                                     aria-label="Close"
                                   ></button>
                                 </div>
-                                <div class="modal-body card-Rotation">
+                                <div class="modal-body">
                                   <img
-                                    v-bind:src="silver_img"
+                                    v-bind:src="baby_img"
                                     class="lazy nft__item_preview"
                                     alt=""
                                   />
@@ -364,11 +370,265 @@
 
                           <div class="nft__item_info">
                             <a href="item-details.html">
-                              <h4>Silver Tree</h4>
+                              <h4>Baby Tree</h4>
+                            </a>
+
+                            <div class="nft__item_price">
+                              베이비 트리는 활발하고 유쾌해서 친구들과 노는 것을
+                              제일 좋아해요.
+                            </div>
+
+                            <div class="nft__item_like">
+                              <i class="fa fa-tree"></i>
+                              
+                              <span> <input type="number" v-model.number="baby_trees"> {{baby_trees}} </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="nft__item">
+                          <div class="author_list_pp">
+                            <a href="author.html">
+                              <img class="lazy" :src="user_avatar" alt="" />
+                              <i class="fa fa-check"></i>
+                            </a>
+                          </div>
+                          <div class="nft__item_wrap">
+                            <img
+                              v-bind:src="baby_img"
+                              class="lazy nft__item_preview"
+                              alt=""
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal0"
+                            />
+                          </div>
+
+                          <div
+                            class="modal fade"
+                            id="exampleModal0"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel0"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel0"
+                                  >
+                                    card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    v-bind:src="baby_img"
+                                    class="lazy nft__item_preview"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="nft__item_info">
+                            <a href="item-details.html">
+                              <h4>Baby Tree</h4>
+                            </a>
+
+                            <div class="nft__item_price">
+                              베이비 트리는 활발하고 유쾌해서 친구들과 노는 것을
+                              제일 좋아해요.
+                            </div>
+
+                            <div class="nft__item_like">
+                              <i class="fa fa-tree"></i>
+                              
+                              <span> <input type="number" v-model.number="baby_trees"> {{baby_trees}} </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="nft__item">
+                          <div class="author_list_pp">
+                            <a href="author.html">
+                              <img class="lazy" :src="user_avatar" alt="" />
+                              <i class="fa fa-check"></i>
+                            </a>
+                          </div>
+                          <div class="nft__item_wrap">
+                            <img
+                              v-bind:src="baby_img"
+                              class="lazy nft__item_preview"
+                              alt=""
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal0"
+                            />
+                          </div>
+
+                          <div
+                            class="modal fade"
+                            id="exampleModal0"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel0"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel0"
+                                  >
+                                    card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    v-bind:src="baby_img"
+                                    class="lazy nft__item_preview"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="nft__item_info">
+                            <a href="item-details.html">
+                              <h4>Baby Tree</h4>
+                            </a>
+
+                            <div class="nft__item_price">
+                              베이비 트리는 활발하고 유쾌해서 친구들과 노는 것을
+                              제일 좋아해요.
+                            </div>
+
+                            <div class="nft__item_like">
+                              <i class="fa fa-tree"></i>
+                              
+                              <span> <input type="number" v-model.number="baby_trees"> {{baby_trees}} </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- nft item begin -->
+                  
+                    
+                      <!-- nft item begin -->
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="nft__item">
+                          <div class="author_list_pp">
+                            <a href="author.html">
+                              <img class="lazy" :src="user_avatar" alt="" />
+                              <i class="fa fa-check"></i>
+                            </a>
+                          </div>
+
+                          <div class="nft__item_wrap">
+                            <!-- <a href="item-details.html"> -->
+                            <img
+                              v-bind:src="diamond_img"
+                              class="lazy nft__item_preview"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal6"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="modal fade"
+                            id="exampleModal6"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel3"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel3"
+                                  >
+                                    card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body card-Rotation">
+                                  <img
+                                    v-bind:src="diamond_img"
+                                    class="lazy nft__item_preview"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="nft__item_info">
+                            <a href="item-details.html">
+                              <h4>Diamond Tree</h4>
                             </a>
                             <div class="nft__item_price">
-                              실버 트리는 우아하고 고풍스러운 매력을 지녔어요.
-                              춤을 잘 춘답니다.
+                              다이아몬드 트리는 가장 귀한한 트리답게 눈이 부셔요! 본 사람이 정말 드물어요.
                             </div>
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i><span>73</span>
@@ -650,18 +910,28 @@ export default {
       platinum_img: "/images/svg/platinum.svg",
       diamond_img: "/images/svg/diamond.svg",
       key_img: "/images/svg/key.svg",
-      baby_trees: "1",
+      baby_trees:  0,
+      iron_trees:  0,
+      bronze_trees:  0,
+      silver_trees:  0,
+      gold_trees:  0,
+      platinum_trees:  0,
+      diamond_trees:  0,
+      inventory_List: [],
     };
   },
-  watch: {},
+  watch: {
+  },
   setup() {},
+  beforeCreate() {
+
+  },
   created() {
     this.userAvatar();
     this.dappstart();
     
   },
   mounted() {
-    this.balanceOfBatch();
 
   },
   unmounted() {},
@@ -687,8 +957,8 @@ export default {
         console.log("Injected web3 detected.");
       }
     },
-    balanceOfBatch() {
-      this.contract.methods
+      async balanceOfBatch() {
+       await this.contract.methods
         .balanceOfBatch(
           [
             this.$store.state.addr,
@@ -702,25 +972,48 @@ export default {
           [0, 1, 2, 3, 4, 5, 6]
         )
         .call()
-        .then(function (result) {
+        .then((result) => {
           console.log(result);
-         var baby_amount = result[0];
-          console.log(baby_amount);
+         var baby_amount =  result[0];
+        console.log(baby_amount);
+        console.log(typeof baby_amount);
 
-          
          var iron_amount = result[1];
          var bronze_amount = result[2];
          var silver_amount = result[3];
          var gold_amount = result[4];
          var platinum_amount = result[5];
          var diamond_amount = result[6];
-          console.log(diamond_amount);
+
+        this.baby_trees = baby_amount;
+        this.iron_trees = iron_amount;
+        this.bronze_trees = bronze_amount;
+        this.silver_trees = silver_amount;
+        this.gold_trees = gold_amount;
+        this.platinum_trees = platinum_amount;
+        this.diamond_trees = diamond_amount;
+
+   
 
 
-         this.baby_trees = result[0];
+        });
+    },
 
-          console.log(this.baby_trees);
 
+
+      async inventory() {
+         await this.contract.methods
+        .inventory(this.$store.state.addr)
+        .call()
+        .then( (result) => {
+          console.log(result);
+
+          this.inventory_List =  result;
+
+          console.log(this.inventory_List);
+
+          const firstValue = result[0];
+          console.log(this.firstValue);
 
 
 
