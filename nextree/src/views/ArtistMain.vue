@@ -206,9 +206,6 @@ export default {
 </script>
 <style>
 @import "../css/artist/mainStyle.css";
-body {
-  font-family: "Quicksand", sans-serif;
-}
 .gal-container {
   padding: 12px;
 }
