@@ -67,6 +67,7 @@
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
+
                           <div class="nft__item_wrap">
                             <img
                               v-bind:src="baby_img"
