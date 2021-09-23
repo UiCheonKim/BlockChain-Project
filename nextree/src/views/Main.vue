@@ -321,12 +321,33 @@
                   <img src="../images/items/Tree4.png" class="rounded" />
                   <h6>50 Tree</h6>
                 </div>
+                <div class="row mt-3">
+                <div class="col-sm-3"> Amount:</div>
+                <div class="col-sm-4">
                 <input
                   type="number"
-                  class="Radius text-center"
+                  class="Radius text-center "
                   placeholder="Order Amount"
+                  style="float:left; width:auto;"
                   v-model="treeAmount"
+                  
                 />
+                </div>
+                </div>
+                <div class="row mt-3">
+                <div class="col-sm-3"> Name: </div>
+                <div class="col-sm-4">
+                <input
+                  type="string"
+                  class="Radius text-center "
+                  placeholder="Type Name, ID"
+                  style="float:left; width:auto;"
+                
+                  
+                />
+                <!-- name v-model 지정해야함 -->
+                </div>
+                </div>
 
                 <button class="tree-btn Radius" @click="donate()">
                   Donate
