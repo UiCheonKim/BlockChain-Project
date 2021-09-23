@@ -322,31 +322,28 @@
                   <h6>50 Tree</h6>
                 </div>
                 <div class="row mt-3">
-                <div class="col-sm-3"> Amount:</div>
-                <div class="col-sm-4">
-                <input
-                  type="number"
-                  class="Radius text-center "
-                  placeholder="Order Amount"
-                  style="float:left; width:auto;"
-                  v-model="treeAmount"
-                  
-                />
-                </div>
+                  <div class="col-sm-3">Amount:</div>
+                  <div class="col-sm-4">
+                    <input
+                      type="number"
+                      class="Radius text-center"
+                      placeholder="Order Amount"
+                      style="float: left; width: auto"
+                      v-model="treeAmount"
+                    />
+                  </div>
                 </div>
                 <div class="row mt-3">
-                <div class="col-sm-3"> Name: </div>
-                <div class="col-sm-4">
-                <input
-                  type="string"
-                  class="Radius text-center "
-                  placeholder="Type Name, ID"
-                  style="float:left; width:auto;"
-                
-                  
-                />
-                <!-- name v-model 지정해야함 -->
-                </div>
+                  <div class="col-sm-3">Name:</div>
+                  <div class="col-sm-4">
+                    <input
+                      type="string"
+                      class="Radius text-center"
+                      placeholder="Type Name, ID"
+                      style="float: left; width: auto"
+                    />
+                    <!-- name v-model 지정해야함 -->
+                  </div>
                 </div>
 
                 <button class="tree-btn Radius" @click="donate()">
@@ -1107,52 +1104,23 @@
             >
               <a
                 class="icon-box style-2 rounded"
-                data-bs-toggle="modal"
-                data-bs-target="#faqModal"
+                id="show-modal"
+                @click="showModal = true"
               >
                 <i class="fa fa-image"></i>
                 <span>FAQ</span>
               </a>
             </div>
-            <div
-              class="modal fade"
-              id="faqModal"
-              tabindex="-1"
-              aria-labelledby="faqModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="faqModalLabel">FAQ</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    Official social accounts Instagram: @teamtrees, Twitter:
-                    @teamtreesofficl, Reddit: r/teamtrees, Facebook:
-                    facebook.com/teamtreesofficial How did #TeamTrees® get
-                    started? #TeamTrees started in May 2019 when the internet
-                    challenged MrBeast to plant 20 million trees to celebrate
-                    hitting the 20M subscriber milestone on YouTube. At his
-                    audience’s suggestion, MrBeast teamed up with fellow
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Modal v-if="showModal" @close="showModal = false">
+              <h3 slot="header">
+                <i
+                  class="fas fa-times closeModalBtn"
+                  @click="showModal = false"
+                ></i
+                >>
+              </h3>
+              <div slot="body"></div>
+            </Modal>
             <div
               class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight"
               data-wow-delay=".2s"
@@ -1311,14 +1279,16 @@
   </div>
 </template>
 <script>
+import Modal from "../components/Modal";
 export default {
   name: "",
-  components: {},
+  components: { Modal },
   data() {
     return {
       Menu1: "잘되나확인",
       kim: "visibility: hidden",
       treeAmount: 0,
+      showModal: false,
     };
   },
   setup() {},
