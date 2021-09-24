@@ -38,26 +38,32 @@
     font-style: normal;
   }
 
-  @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 @font-face { font-family: 'Malssami815';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff');
     font-weight: normal; font-style: normal; }
 
 
-  * {
-    --body-font: 'GmarketSansMedium';
-    --title-font: 'GmarketSansMedium';
-} */
-* {
+ 
+
+/* * {
     --body-font: "DM Sans", Helvetica, Arial, sans-serif;
     --title-font: "DM Sans", Helvetica, Arial, sans-serif;
+} */
+
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+* {
+    --body-font: 'GmarketSansMedium' !important;
+    --title-font: 'GmarketSansMedium'  !important;
+} 
 
 .orange {
     background: linear-gradient(to bottom, #FFB319, #FF2442) !important;
