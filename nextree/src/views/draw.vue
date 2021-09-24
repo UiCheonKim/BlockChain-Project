@@ -265,8 +265,9 @@ export default {
 
     toggleShow() {
 
-      this.draw();
-    
+      this.show = !this.show;
+      this.show2 = !this.show2;
+
     },
 
     async dappstart() {

@@ -83,6 +83,7 @@
                         기부를 통해 아티스트의 NFT와 나무 NFT도 얻을수 있습니다.
                       </p>
                       <div class="spacer-10"></div>
+                      
                       <a
                         href="#donation-section"
                         class="btn-main wow fadeInUp lead"
@@ -284,8 +285,31 @@
                 ></lottie-player>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-sm-30 BG-ytb">
-              <h4 class="text-center pt-5">Join Us!</h4>
+
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+
+
+            <ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active"  href="#donation-section" 
+                @click="toggleShow()"
+    >상시 기부</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#donation-section"
+                @click="toggleShow2()"
+    >이벤트 기부</a>
+  </li>
+</ul>
+
+
+<div id="myTabContent" class="tab-content ">
+  
+  <div class="tab-pane fade active show" id="home"
+              v-if="show3"
+   >
+       <div class="col-lg-12 col-md-6 mb-sm-20 event_donation1">
+              <h4 class="text-center pt-5">Join Us ! </h4>
               <div class="row gy-3 justify-content-around">
                 <div
                   class="col-4 p-2 border tree-btn Radius ms-2 text-center"
@@ -346,11 +370,91 @@
                   </div>
                 </div>
 
-                <button class="tree-btn Radius" @click="donate()">
+                <button class="tree-btn tree-btn2 Radius" @click="donate()">
                   Donate
                 </button>
               </div>
             </div>
+           </div>
+            </div>
+
+  <div class="tab-pane fade show" id="profile" v-if="show4">
+
+     <div class="col-lg-12 col-md-6 mb-sm-20 event_donation2">
+              <h4 class="text-center pt-5">Join Us ! </h4>
+              <div class="row gy-3 justify-content-around">
+                <div
+                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  type="button"
+                  @click="incTreeAmount(1)"
+                >
+                  <img src="../images/items/Tree1.png" class="rounded" />
+                  <h6>1 Tree</h6>
+                </div>
+                <div
+                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  type="button"
+                  @click="incTreeAmount(5)"
+                >
+                  <img src="../images/items/Tree2.png" class="rounded" />
+                  <h6>5 Tree</h6>
+                </div>
+
+                <div
+                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  type="button"
+                  @click="incTreeAmount(10)"
+                >
+                  <img src="../images/items/Tree3.png" class="rounded" />
+                  <h6>10 Tree</h6>
+                </div>
+                <div
+                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  type="button"
+                  @click="incTreeAmount(50)"
+                >
+                  <img src="../images/items/Tree4.png" class="rounded" />
+                  <h6>50 Tree</h6>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-3">Amount:</div>
+                  <div class="col-sm-4">
+                    <input
+                      type="number"
+                      class="Radius text-center"
+                      placeholder="Order Amount"
+                      style="float: left; width: auto"
+                      v-model="treeAmount"
+                    />
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-3">Name:</div>
+                  <div class="col-sm-4">
+                    <input
+                      type="string"
+                      class="Radius text-center"
+                      placeholder="Type Name, ID"
+                      style="float: left; width: auto"
+                      v-model="donor_Name"
+                    />
+                    <!-- name v-model 지정해야함 -->
+                  </div>
+                </div>
+
+                <button class="tree-btn Radius tree-btn2" @click="donate()">
+                  Donate
+                </button>
+              </div>
+            </div>
+
+  </div>
+
+</div>
+
+
+
+         
             <div class="col-lg-4 col-md-6 mb-sm-30">
               <div style="padding-left: 70px">
                 <lottie-player
@@ -1294,6 +1398,9 @@ export default {
       treeAmount: 0,
       showModal: false,
       donor_Name: "",
+      show3: true,
+      show4: false,
+
     };
   },
   setup() {},
@@ -1308,6 +1415,20 @@ export default {
   },
   unmounted() {},
   methods: {
+      toggleShow() {
+
+      this.show3 = true;
+      this.show4 = false;
+
+    },
+
+      toggleShow2() {
+
+      this.show3 =  false;
+      this.show4 = true;
+
+    },
+
     incTreeAmount(addValue) {
       this.treeAmount += parseInt(addValue);
     },
@@ -1554,6 +1675,9 @@ a.btn {
 .tree-btn {
   background-color: #f4ff5f;
 }
+.tree-btn2 {
+width:130px !important;}
+
 .Radius {
   border-radius: 40px 80px / 80px 40px;
 }
