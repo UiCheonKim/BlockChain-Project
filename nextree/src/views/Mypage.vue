@@ -23,9 +23,10 @@
                     <img :src="user_avatar" />
                     <i class="fa fa-check"></i>
                     <div class="profile_name">
-                      <h4>
-                        Monica Lucas [<span style="color: red">1000</span>
-                        trees, <span style="color: blue">2</span> Eth]
+                    <a href="/" class="mybtn-main">Donated</a>
+                      <h4> 
+                        {{client_Name}}[<span style="color: green">{{tree_Num}}</span>
+                        trees, <span style="color: blue">{{eth_Num}}</span> Eth]
                         <span class="profile_username"></span>
                         <span id="wallet" class="profile_wallet">{{
                           this.$store.state.addr
@@ -935,6 +936,9 @@ export default {
       platinum_trees: 0,
       diamond_trees: 0,
       inventory_List: [],
+      client_Name: "",
+      tree_Num: "",
+      eth_Num: "",
 
       isTrue01: true,
       isTrue02: true,
@@ -976,7 +980,12 @@ export default {
         console.log("Injected web3 detected.");
       }
       this.balanceOfBatch();
+      this.get_User_Info01();
+      this.get_User_Info02();
+      this.get_User_Info03();
+
     },
+
     async balanceOfBatch() {
       await this.contract.methods
         .balanceOfBatch(
@@ -1048,10 +1057,51 @@ export default {
 
           console.log(this.inventory_List);
 
-          const firstValue = result[0];
-          console.log(this.firstValue);
         });
     },
+
+    async get_User_Info01() {
+      await this.contract.methods
+        .donor_Name(this.$store.state.addr)
+        .call()
+        .then((result) => {
+          console.log(result);
+
+          this.client_Name = result;
+
+          // console.log(this.this.client_Name);
+
+        });
+    },
+    async get_User_Info02() {
+      await this.contract.methods
+        .donation_balanceOf(this.$store.state.addr)
+        .call()
+        .then((result) => {
+          console.log(result);
+
+          this.eth_Num = result / 10**18;
+
+          // console.log(this.this.eth_Num);/
+
+        });
+    },
+    async get_User_Info03() {
+      await this.contract.methods
+        .my_Planted(this.$store.state.addr)
+        .call()
+        .then((result) => {
+          console.log(result);
+
+          this.tree_Num = result;
+
+          console.log(this.this.tree_Num);
+
+        });
+    },
+
+
+
     tokenURIs() {
       this.contract.methods
         .tokenURIs(0)

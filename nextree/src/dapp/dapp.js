@@ -1,4 +1,4 @@
-const ADDRESS = "0x84f2fec58Cf8B5d3b70Bec00d0933550c12662dD";
+const ADDRESS = "0x8d7Fb24fbBBa3e2a8248df4cccf2a20E700cAAD0";
 const ABI =[
 	{
 		"inputs": [],
@@ -533,6 +533,25 @@ const ABI =[
 				"type": "address"
 			}
 		],
+		"name": "my_Planted",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
 		"name": "order",
 		"outputs": [
 			{
@@ -798,6 +817,19 @@ const ABI =[
 			}
 		],
 		"name": "ticket_Chekcer",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "total_Planted",
 		"outputs": [
 			{
 				"internalType": "uint256",
