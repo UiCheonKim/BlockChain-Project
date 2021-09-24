@@ -665,11 +665,104 @@
                           </div>
                         </div>
                       </div>
+
+                      <!-- nft item begin -->
+                      <div
+                        class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                        v-if="isTrue08 == true"
+                      >
+                        <div class="nft__item">
+                          <div class="author_list_pp">
+                            <a href="author.html">
+                              <img class="lazy" :src="user_avatar" alt="" />
+                              <i class="fa fa-check"></i>
+                            </a>
+                          </div>
+                          <div class="nft__item_wrap">
+                            <img
+                              v-bind:src="key_img"
+                              class="lazy nft__item_preview"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal8"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="modal fade"
+                            id="exampleModal8"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel1"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel1"
+                                  >
+                                    card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body card-Rotation">
+                                  <img
+                                    v-bind:src="key_img"
+                                    class="lazy nft__item_preview"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="nft__item_info">
+                            <a href="">
+                              <h4>Nextree Key</h4>
+                            </a>
+                            <div class="nft__item_price">
+                              넥스트리에서 멋진 NFT 아트를 획득 할 수 있는 열쇠에요.
+                            </div>
+                            <div class="nft__item_like">
+                              <i class="fa fa-tree"></i>
+                              <span> {{ iron_trees }} </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- nft item begin -->
+
+
                     </div>
                   </div>
 
+                  
+
+
+                  
+
+
                   <div class="tab-2">
                     <div class="row">
+
+                      
                       <!-- nft item begin -->
                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="nft__item">
@@ -944,6 +1037,7 @@ export default {
       gold_trees: 0,
       platinum_trees: 0,
       diamond_trees: 0,
+      keys:0,
       inventory_List: [],
       client_Name: "",
       tree_Num: "",
@@ -956,6 +1050,8 @@ export default {
       isTrue05: true,
       isTrue06: true,
       isTrue07: true,
+      isTrue08: true,
+
     };
   },
   watch: {},
@@ -1022,6 +1118,8 @@ export default {
           var gold_amount = result[4];
           var platinum_amount = result[5];
           var diamond_amount = result[6];
+          var key_amount = result[7];
+
 
           this.baby_trees = baby_amount;
           this.iron_trees = iron_amount;
@@ -1030,6 +1128,7 @@ export default {
           this.gold_trees = gold_amount;
           this.platinum_trees = platinum_amount;
           this.diamond_trees = diamond_amount;
+          this.keys = key_amount;
 
           if (baby_amount == "0") {
             this.isTrue01 = false;
@@ -1051,6 +1150,9 @@ export default {
           }
           if (diamond_amount == "0") {
             this.isTrue07 = false;
+          }
+           if (diamond_amount == "0") {
+            this.isTrue08 = false;
           }
         });
     },
@@ -1082,7 +1184,7 @@ export default {
 
         });
     },
-    
+
     async get_User_Info02() {
       await this.contract.methods
         .donation_balanceOf(this.$store.state.addr)
