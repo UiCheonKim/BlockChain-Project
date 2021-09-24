@@ -23,12 +23,7 @@
                   <!-- logo begin -->
                   <div id="logo">
                     <a href="/">
-                      <img
-                        alt=""
-                        class="logo"
-                        style="height: 30px"
-                        src="images/logo-light.png"
-                      />
+                      <img alt="" class="logo" src="images/logo.png" />
                       <img alt="" class="logo-2" src="images/logo.png" />
                     </a>
                   </div>
