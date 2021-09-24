@@ -90,7 +90,7 @@
           <div class="pricing-s1 mb40">
             <div class="mid text-light bg-color" style="padding: 20px 20px 0px">
               <span class="icon_key icon-mid"> </span>
-              <div style="margin-top: 5px"><h4>100개</h4></div>
+              <div style="margin-top: 5px"><h4>{{key_Num}}개</h4></div>
             </div>
 
             <div class="top" style="padding: 15px 15px 0px">
@@ -223,6 +223,7 @@ export default {
       display_switch: "visibility: visible",
       show: true,
       show2: false,
+      key_Num: "",
     };
   },
   setup() {},
@@ -262,6 +263,19 @@ export default {
         web3 = window.web3;
         console.log("Injected web3 detected.");
       }
+      this.get_Keys();
+    },
+
+    async get_Keys() {
+      await this.contract.methods
+        .balanceOf(this.$store.state.addr,7)
+        .call()
+        .then((result) => {
+          console.log(result);
+
+          this.key_Num = result;
+
+        });
     },
 
 
