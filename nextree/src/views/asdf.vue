@@ -37,8 +37,9 @@ export default {
         param: [
           {
             own_addr: this.$store.state.addr,
-            own_url: this.message2,
-            // "https://ipfs.io/ipfs/QmSghxdNaqyGtfSN1RV41vHhnRn4gcXRH7aqGyjf6Xdx9Q?filename=cute.jpg",
+            // own_url: this.message2,
+            own_url:
+              "https://ipfs.io/ipfs/QmSghxdNaqyGtfSN1RV41vHhnRn4gcXRH7aqGyjf6Xdx9Q?filename=cute.jpg",
           },
         ],
       });
