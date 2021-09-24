@@ -24,7 +24,8 @@
                     <i class="fa fa-check"></i>
                     <div class="profile_name">
                       <h4>
-                        Monica Lucas {{inventory_List}}
+                        Monica Lucas [<span style="color: red">1000</span>
+                        trees, <span style="color: blue">2</span> Eth]
                         <span class="profile_username"></span>
                         <span id="wallet" class="profile_wallet">{{
                           this.$store.state.addr
@@ -34,6 +35,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="profile_follow de-flex">
                   <div class="de-flex-col">
                     <a href="/Draw" class="mybtn-main">뽑기</a>
@@ -42,7 +44,6 @@
                     <a href="/rankUp" class="mybtn-main">합성</a>
                     <!-- <a href="#" class="mybtn-main" @click="balanceOfBatch">인벤토리</a> -->
                     <!-- <a href="#" class="mybtn-main" @click="inventory">인벤토리2</a> -->
-
                   </div>
                 </div>
               </div>
@@ -59,7 +60,10 @@
                   <div class="tab-1">
                     <div class="row">
                       <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue01 == true">
+                      <div
+                        class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                        v-if="isTrue01 == true"
+                      >
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -125,8 +129,7 @@
 
                           <div class="nft__item_info">
                             <a href="">
-                              <h4 
-                              >Baby Tree</h4>
+                              <h4>Baby Tree</h4>
                             </a>
 
                             <div class="nft__item_price">
@@ -136,16 +139,18 @@
 
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
-                              
-                              <span> {{baby_trees}} </span>
+
+                              <span> {{ baby_trees }} </span>
                             </div>
                           </div>
                         </div>
                       </div>
 
-
-                        <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue02 == true">
+                      <!-- nft item begin -->
+                      <div
+                        class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                        v-if="isTrue02 == true"
+                      >
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -218,14 +223,17 @@
                             </div>
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
-                              <span> {{iron_trees}} </span>
+                              <span> {{ iron_trees }} </span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <!-- nft item begin -->
-                       <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue03 == true">
+                      <!-- nft item begin -->
+                      <div
+                        class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                        v-if="isTrue03 == true"
+                      >
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -297,18 +305,17 @@
                             </div>
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
-                                                       <span> {{bronze_trees}} </span>
-
+                              <span> {{ bronze_trees }} </span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <!-- nft item begin -->
-                      
 
-                      
-
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue04 == true">
+                      <div
+                        class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                        v-if="isTrue04 == true"
+                      >
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="#">
@@ -378,20 +385,23 @@
                             </a>
 
                             <div class="nft__item_price">
-                             실버 트리는 우아하고 고풍스러운 매력을 지녔어요.
+                              실버 트리는 우아하고 고풍스러운 매력을 지녔어요.
                               춤을 잘 춘답니다.
                             </div>
 
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
-                              
-                              <span>  {{silver_trees}} </span>
+
+                              <span> {{ silver_trees }} </span>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue05 == true">
+                      <div
+                        class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                        v-if="isTrue05 == true"
+                      >
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="#">
@@ -461,20 +471,23 @@
                             </a>
 
                             <div class="nft__item_price">
-                              골드 트리가 등장하면 주변이 환해져요. 웃음이 밝은 친구에요.
+                              골드 트리가 등장하면 주변이 환해져요. 웃음이 밝은
+                              친구에요.
                             </div>
 
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
-                              
-                              <span>  
-                              {{gold_trees}} </span>
+
+                              <span> {{ gold_trees }} </span>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue06 == true">
+                      <div
+                        class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                        v-if="isTrue06 == true"
+                      >
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -544,25 +557,26 @@
                             </a>
 
                             <div class="nft__item_price">
-                              플래티넘 트리는 활발하고 자신이 금과는 다른 특별하다고 믿고 있어요. 항상 자신감이 넘쳐요.
+                              플래티넘 트리는 활발하고 자신이 금과는 다른
+                              특별하다고 믿고 있어요. 항상 자신감이 넘쳐요.
                             </div>
 
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
-                              
-                              <span> 
-                                {{platinum_trees}} </span>
+
+                              <span> {{ platinum_trees }} </span>
                             </div>
                           </div>
                         </div>
                       </div>
 
+                      <!-- nft item begin -->
 
                       <!-- nft item begin -->
-                  
-                    
-                      <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" v-if="isTrue07 == true">
+                      <div
+                        class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                        v-if="isTrue07 == true"
+                      >
                         <div class="nft__item">
                           <div class="author_list_pp">
                             <a href="author.html">
@@ -571,7 +585,7 @@
                             </a>
                           </div>
 
-                          <div class="nft__item_wrap" >
+                          <div class="nft__item_wrap">
                             <!-- <a href="item-details.html"> -->
                             <img
                               v-bind:src="diamond_img"
@@ -632,10 +646,11 @@
                               <h4>Diamond Tree</h4>
                             </a>
                             <div class="nft__item_price">
-                              다이아몬드 트리는 가장 귀한 트리답게 눈이 부셔요! 
+                              다이아몬드 트리는 가장 귀한 트리답게 눈이 부셔요!
                             </div>
                             <div class="nft__item_like">
-                              <i class="fa fa-tree"></i><span id="trees_input">{{diamond_trees}}</span>
+                              <i class="fa fa-tree"></i
+                              ><span id="trees_input">{{ diamond_trees }}</span>
                             </div>
                           </div>
                         </div>
@@ -896,8 +911,6 @@
 import Web3 from "web3";
 import dapptest from "../dapp/dapp";
 
-
-
 export default {
   name: "Mypage",
   components: {},
@@ -914,13 +927,13 @@ export default {
       platinum_img: "/images/svg/platinum.svg",
       diamond_img: "/images/svg/diamond.svg",
       key_img: "/images/svg/key.svg",
-      baby_trees:  0,
-      iron_trees:  0,
-      bronze_trees:  0,
-      silver_trees:  0,
-      gold_trees:  0,
-      platinum_trees:  0,
-      diamond_trees:  0,
+      baby_trees: 0,
+      iron_trees: 0,
+      bronze_trees: 0,
+      silver_trees: 0,
+      gold_trees: 0,
+      platinum_trees: 0,
+      diamond_trees: 0,
       inventory_List: [],
 
       isTrue01: true,
@@ -932,20 +945,14 @@ export default {
       isTrue07: true,
     };
   },
-  watch: {
-  },
+  watch: {},
   setup() {},
-  beforeCreate() {
-
-  },
+  beforeCreate() {},
   created() {
     this.userAvatar();
     this.dappstart();
-    
   },
-  mounted() {
-
-  },
+  mounted() {},
   unmounted() {},
   methods: {
     eraser() {
@@ -970,8 +977,8 @@ export default {
       }
       this.balanceOfBatch();
     },
-      async balanceOfBatch() {
-       await this.contract.methods
+    async balanceOfBatch() {
+      await this.contract.methods
         .balanceOfBatch(
           [
             this.$store.state.addr,
@@ -986,69 +993,63 @@ export default {
         )
         .call()
         .then((result) => {
-        console.log(result);
-        var baby_amount =  result[0];
-        console.log(baby_amount);
-        console.log(typeof baby_amount);
+          console.log(result);
+          var baby_amount = result[0];
+          console.log(baby_amount);
+          console.log(typeof baby_amount);
 
-         var iron_amount = result[1];
-         var bronze_amount = result[2];
-         var silver_amount = result[3];
-         var gold_amount = result[4];
-         var platinum_amount = result[5];
-         var diamond_amount = result[6];
+          var iron_amount = result[1];
+          var bronze_amount = result[2];
+          var silver_amount = result[3];
+          var gold_amount = result[4];
+          var platinum_amount = result[5];
+          var diamond_amount = result[6];
 
-        this.baby_trees = baby_amount;
-        this.iron_trees = iron_amount;
-        this.bronze_trees = bronze_amount;
-        this.silver_trees = silver_amount;
-        this.gold_trees = gold_amount;
-        this.platinum_trees = platinum_amount;
-        this.diamond_trees = diamond_amount;
+          this.baby_trees = baby_amount;
+          this.iron_trees = iron_amount;
+          this.bronze_trees = bronze_amount;
+          this.silver_trees = silver_amount;
+          this.gold_trees = gold_amount;
+          this.platinum_trees = platinum_amount;
+          this.diamond_trees = diamond_amount;
 
-
-
-        if (baby_amount == "0") 
-        {this.isTrue01 = false};
-        if (iron_amount == "0") 
-        {this.isTrue02 = false};
-        if (bronze_amount == "0") 
-        {this.isTrue03 = false};
-        if (silver_amount == "0") 
-        {this.isTrue04 = false};
-        if (gold_amount == "0") 
-        {this.isTrue05 = false};
-        if (platinum_amount == "0") 
-        {this.isTrue06 = false};
-        if (diamond_amount == "0") 
-        {this.isTrue07 = false};
-   
-
-   
-
-
+          if (baby_amount == "0") {
+            this.isTrue01 = false;
+          }
+          if (iron_amount == "0") {
+            this.isTrue02 = false;
+          }
+          if (bronze_amount == "0") {
+            this.isTrue03 = false;
+          }
+          if (silver_amount == "0") {
+            this.isTrue04 = false;
+          }
+          if (gold_amount == "0") {
+            this.isTrue05 = false;
+          }
+          if (platinum_amount == "0") {
+            this.isTrue06 = false;
+          }
+          if (diamond_amount == "0") {
+            this.isTrue07 = false;
+          }
         });
     },
 
-
-
-      async inventory() {
-         await this.contract.methods
+    async inventory() {
+      await this.contract.methods
         .inventory(this.$store.state.addr)
         .call()
-        .then( (result) => {
+        .then((result) => {
           console.log(result);
 
-          this.inventory_List =  result;
+          this.inventory_List = result;
 
           console.log(this.inventory_List);
 
           const firstValue = result[0];
           console.log(this.firstValue);
-
-
-
-
         });
     },
     tokenURIs() {
