@@ -225,7 +225,7 @@ export default {
       display_switch: "visibility: visible",
       show: true,
       show2: false,
-      key_Num: "",
+      key_Num: "0",
       now: "0000:00:00:00:00:00",
       nowYear: "2022",
       nowMonth: "9",
@@ -265,12 +265,8 @@ export default {
 
     toggleShow() {
 
-     
-
       this.draw();
-
     
-
     },
 
     async dappstart() {
@@ -354,15 +350,16 @@ export default {
 
     draw() {
 
-      this.show = !this.show;
-      this.show2 = !this.show2;
-
 
       this.contract.methods
         .draw()
         .send({ from: this.$store.state.addr })
         .then((receipt) => {
           console.log(receipt);
+          
+      this.show = !this.show;
+      this.show2 = !this.show2;
+
         }).on('error', function(){
           console.log("뽑기 실패");
       

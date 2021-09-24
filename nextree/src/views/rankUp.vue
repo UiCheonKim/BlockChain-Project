@@ -115,13 +115,13 @@
 <label for="platinum"> 플래티넘 </label>
 <br>
 
-<span>선택: {{ picked }}</span>
+<!-- <span>선택: {{ picked }}</span> -->
     
     </ul>
   </div>
   
   
-  <button type="button" class="btn btn-primary font24" @click="toggleShow" > 랭크업! </button>
+  <button type="button" class="btn btn-primary font24" @click="merge_cards" > 랭크업! </button>
 
  
 </div>
@@ -206,9 +206,7 @@ export default {
   methods: {
     toggleShow() {
 
-      this.show = !this.show;
-      this.show2 = !this.show2;
-
+      
       this.merge_cards();
 
     },
@@ -283,8 +281,13 @@ export default {
       this.contract.methods
         .merge_cards(this.picked)
         .send({ from: this.$store.state.addr })
-        .then(function (receipt) {
+        .then( (receipt) => {
           console.log(receipt);
+
+          this.show = !this.show;
+          this.show2 = !this.show2;
+
+
         }).on('error', function(){
           console.log("실패");
       
