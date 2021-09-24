@@ -80,7 +80,7 @@
               >
                 <div class="de_count">
                   <h3>
-                    <span class="timer fs-3" data-to="40212" data-speed="3000"
+                    <span class="timer fs-3" data-to="4021" data-speed="3000"
                       >0</span
                     >
                     ETH
@@ -110,12 +110,12 @@
               >
                 <div class="de_count">
                   <h3>
-                    <span class="timer fs-3" data-to="308080" data-speed="3000"
+                    <span class="timer fs-3" data-to="14750" data-speed="3000"
                       >0</span
                     >
                     원
                   </h3>
-                  <h5 class="id-color">총 금액</h5>
+                  <h5 class="id-color">총 금액(M)</h5>
                 </div>
               </div>
 
