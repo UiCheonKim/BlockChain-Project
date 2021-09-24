@@ -250,9 +250,8 @@ export default {
       this.countdown("countdown", 4, 0);
     },
 
-      this.show = !this.show;
-      this.show2 = !this.show2;
-
+    toggleShow() {
+      this.draw();
     },
 
     async dappstart() {
@@ -324,9 +323,9 @@ export default {
       this.contract.methods
         .getRandomNumber()
         .send({ from: this.$store.state.addr })
-        .then(function (result) {
+        .then((result) => {
           console.log(result);
-          this.countdown("countdown", 4, 0);
+          this.start();
         });
     },
 
