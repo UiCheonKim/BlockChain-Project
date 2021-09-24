@@ -23,17 +23,25 @@
                     <img :src="user_avatar" />
                     <i class="fa fa-check"></i>
                     <div class="profile_name">
-                      <button class="mybtn-donated" disabled>Donated</button>
+                      
                    
                       <h4> 
-                        {{client_Name}}[<span style="color: green">{{tree_Num}}</span>
-                        trees, <span style="color: blue">{{eth_Num}}</span> Eth]
+                        
                         <span class="profile_username"></span>
+                        
                         <span id="wallet" class="profile_wallet">{{
                           this.$store.state.addr
                         }}</span>
                         <button id="btn_copy" title="Copy Text">Copy</button>
                       </h4>
+                      <button class="mybtn-donated" disabled>Name </button> {{client_Name}}
+                      <br>
+                      <button class="mybtn-donated" disabled>Donated</button>
+                      [<span style="color: green">
+                        
+                        {{tree_Num}}</span>
+
+                        Trees / <span style="color: blue">{{eth_Num}}</span> Eth]
                     </div>
                   </div>
                 </div>

@@ -33,7 +33,7 @@
 
 .profile_name {
   margin-left: 20px;
-  margin-top: 40px;
+  margin-top: 20px;
   display: block;
   width: 100%;
 }
@@ -103,8 +103,8 @@
   padding: 6px 20px;
   font-size: 16px;
   border: none;
-  background-image: linear-gradient(75deg, #74f2ce, #7cffcb);
-  background-size: 150% !important;
+  background-image: linear-gradient(75deg, #74f2ce, #7ee8fa);
+  background-size: 100% !important;
   background-position: left !important;
   transition: 300ms background-position ease-in-out !important;
   -o-transition: 0.7s;
@@ -113,6 +113,8 @@
   -webkit-transition: 0.7s;
   transition: 0.7s;
   outline: none;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 .mybtn-main:hover {
