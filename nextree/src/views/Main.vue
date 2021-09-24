@@ -92,7 +92,7 @@
                       >
                       <a
                         style="margin-left: 1em"
-                        href="explore.html"
+                        href="Status"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
                         >자세히보기</a
@@ -166,8 +166,9 @@
                       다음 세대를 위한 나무 심기.
                     </h1>
                     <p class="wow fadeInUp lead text-white" data-wow-delay="1s">
-                      넥스트리는 지금 우리에게 뿐만 아니라 다음 세대도 푸른 숲에서 신선한 공기를
-                      마시며 동물들과 뛰어놀 수 있는 밝은 세상을 꿈꿉니다.
+                      넥스트리는 지금 우리에게 뿐만 아니라 다음 세대도 푸른
+                      숲에서 신선한 공기를 마시며 동물들과 뛰어놀 수 있는 밝은
+                      세상을 꿈꿉니다.
                     </p>
                     <div class="spacer-10"></div>
                     <a
@@ -178,7 +179,7 @@
                     >
                     <a
                       style="margin-left: 1em"
-                      href="/about"
+                      href="Status"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
                       >자세히보기</a
@@ -344,8 +345,8 @@
                   <img src="../images/items/Tree4.png" class="rounded" />
                   <h6>50 Tree</h6>
                 </div>
-                <div class="row mt-3">
-                  <div class="col-sm-3">Amount:</div>
+                <div class="row mt-3 pt-3">
+                  <div class="col-sm-3"></div>
                   <div class="col-sm-4">
                     <input
                       type="number"
@@ -357,7 +358,7 @@
                   </div>
                 </div>
                 <div class="row mt-3">
-                  <div class="col-sm-3">Name:</div>
+                  <div class="col-sm-3"></div>
                   <div class="col-sm-4">
                     <input
                       type="string"
@@ -1387,7 +1388,6 @@ import Modal from "../components/Modal";
 import Web3 from "web3";
 import dapptest from "../dapp/dapp";
 
-
 export default {
   name: "",
   components: { Modal },
@@ -1395,7 +1395,7 @@ export default {
     return {
       Menu1: "잘되나확인",
       kim: "visibility: hidden",
-      treeAmount: 0,
+      treeAmount: null,
       showModal: false,
       donor_Name: "",
       show3: true,
@@ -1404,7 +1404,7 @@ export default {
     };
   },
   setup() {},
-   created() {
+  created() {
     console.log("created");
     this.dappstart();
   },
@@ -1463,14 +1463,11 @@ export default {
           this.donor_Name = result;
 
           // console.log(this.this.client_Name);
-
         });
     },
 
-
     donate() {
-      var donation_Value =  this.treeAmount * 500000000000000 ;
-      
+      var donation_Value = this.treeAmount * 500000000000000;
 
       this.contract.methods
         .donate(this.donor_Name)

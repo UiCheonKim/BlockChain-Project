@@ -45,7 +45,7 @@
     font-weight: normal; font-style: normal; }
 
 
- 
+
 
 /* * {
     --body-font: "DM Sans", Helvetica, Arial, sans-serif;
@@ -63,7 +63,7 @@
 * {
     --body-font: 'GmarketSansMedium' !important;
     --title-font: 'GmarketSansMedium'  !important;
-} 
+}
 
 .orange {
     background: linear-gradient(to bottom, #FFB319, #FF2442) !important;
@@ -685,7 +685,7 @@ header .header-col.mid .social-icons {
     display: inline-block;
     padding: 30px 18px;
     text-decoration: none;
-    color: #fff;
+    color: #222222;
     text-align: center;
     outline: none;
 }

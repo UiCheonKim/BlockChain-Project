@@ -29,50 +29,37 @@
               <p class="plan-tagline"></p>
             </div>
             <div>
+              {{ now }}
 
-{{now}}
-
-<button v-on:click="time">현재시간</button>
-               <a
-                href="#"
-                class="btn-main large-btn "
-                style=""
-                @click="donate"
-
+              <button v-on:click="time">현재시간</button>
+              <a href="#" class="btn-main large-btn" style="" @click="donate"
                 >Donate</a
               >
 
-              <a
-                href="#"
-                class="btn-main large-btn "
-                style=""
-                @click="balanceOf"
-
+              <a href="#" class="btn-main large-btn" style="" @click="balanceOf"
                 >balanceOf</a
               >
 
-              <a
-                href="#"
-                class="btn-main large-btn "
-                style=""
-                @click="withdraw"
-
+              <a href="#" class="btn-main large-btn" style="" @click="withdraw"
                 >withdraw</a
               >
               <a
                 href="#"
-                class="btn-main large-btn "
+                class="btn-main large-btn"
                 style=""
                 @click="draw_faucet"
-
-                >draw_faucet</a
+                >faucet</a
               >
-
-
+              <br />
+              <a href="#" class="btn-main large-btn" style="" @click="timershow"
+                >timershow</a
+              >
+              <a href="#" class="btn-main large-btn" style="" @click="start"
+                >start</a
+              >
             </div>
 
             <div class="bottom">
-              
               <ul>
                 <!-- <li><i class="fa fa-check"></i>Up to 2 devices</li>
               <li><i class="fa fa-check"></i>Daily reminder</li>
@@ -88,25 +75,20 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 sq-item wow ">
+        <div class="col-lg-4 col-md-12 col-sm-12 sq-item wow">
           <div class="pricing-s1 mb40">
             <div class="mid text-light bg-color" style="padding: 20px 20px 0px">
               <span class="icon_key icon-mid"> </span>
-              <div style="margin-top: 5px"><h4>{{key_Num}}개</h4></div>
+              <div style="margin-top: 5px">
+                <h4>{{ key_Num }}개</h4>
+              </div>
             </div>
 
             <div class="top" style="padding: 15px 15px 0px">
               <h2 style="color: black">뽑기</h2>
               <p class="plan-tagline" style="color: black">뭐가 나올까요?</p>
             </div>
-
-            <div
-              class="de_countdown de_countdown_center"
-              :data-year= "nowYear"
-              :data-month="nowMonth"
-              :data-day="nowDay"
-              :data-hour="nowHour"
-            ></div>
+            <div id="countdown" v-if="show3"></div>
 
             <div
               v-if="show2"
@@ -152,14 +134,11 @@
           ></div> -->
 
             <div class="action" style="margin-top: 0px; padding: 20px 0px">
-             
-
               <a
                 href="#"
                 class="btn-main large-btn font24"
                 style=""
                 @click="getRandomNumber()"
-
                 >Draw</a
               >
               <a
@@ -167,7 +146,6 @@
                 class="btn-main large-btn font24"
                 style="margin-left: 20px"
                 @click="toggleShow()"
-
                 >Check</a
               >
             </div>
@@ -215,7 +193,6 @@
 import Web3 from "web3";
 import dapptest from "../dapp/dapp";
 
-
 export default {
   name: "",
   components: {},
@@ -225,12 +202,8 @@ export default {
       display_switch: "visibility: visible",
       show: true,
       show2: false,
-      key_Num: "0",
-      now: "0000:00:00:00:00:00",
-      nowYear: "2022",
-      nowMonth: "9",
-      nowDay: "24",
-      nowHour: "23",
+      show3: false,
+      key_Num: "",
     };
   },
   setup() {},
@@ -238,32 +211,44 @@ export default {
     console.log("created");
     this.dappstart();
   },
-  computed: {
-      
-    },
+  computed: {},
   mounted() {},
   unmounted() {},
   methods: {
+    countdown(elementName, minutes, seconds) {
+      var element, endTime, hours, mins, msLeft, time;
 
-    async time() {
-    var date = new Date();
-    this.now =  await date.getFullYear() + ":" +
-    (date.getMonth() + 1) + ":" + 
-    date.getDate() + ":" +
-    date.getHours() + ":"
-    + date.getMinutes() + ":" +
-    date.getSeconds();
+      function twoDigits(n) {
+        return n <= 9 ? "0" + n : n;
+      }
 
-    this.nowYear = date.getFullYear();
-    console.log(nowYear);
+      function updateTimer() {
+        msLeft = endTime - +new Date();
+        if (msLeft < 1000) {
+          element.innerHTML = "countdown's over!";
+        } else {
+          time = new Date(msLeft);
+          hours = time.getUTCHours();
+          mins = time.getUTCMinutes();
+          element.innerHTML =
+            (hours ? hours + ":" + twoDigits(mins) : mins) +
+            ":" +
+            twoDigits(time.getUTCSeconds());
+          setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
+        }
+      }
 
-    this.nowMonth = date.getMonth() +1 ;
-    this.nowDay = date.getHours();
-    this.nowHour = date.getHours();
-   
+      element = document.getElementById(elementName);
+      endTime = +new Date() + 1000 * (60 * minutes + seconds) + 500;
+      updateTimer();
     },
 
-    toggleShow() {
+    timershow() {
+      this.show3 = !this.show3;
+    },
+    start() {
+      this.countdown("countdown", 4, 0);
+    },
 
       this.show = !this.show;
       this.show2 = !this.show2;
@@ -288,29 +273,26 @@ export default {
         console.log("Injected web3 detected.");
       }
       this.get_Keys();
-      this.time();
     },
 
     async get_Keys() {
       await this.contract.methods
-        .balanceOf(this.$store.state.addr,7)
+        .balanceOf(this.$store.state.addr, 7)
         .call()
         .then((result) => {
           console.log(result);
 
           this.key_Num = result;
-
         });
     },
 
-
-     aaaa() {
+    aaaa() {
       console.log("asdfasf");
     },
     eraser() {
       this.$store.commit("user2", "");
     },
-    
+
     donate() {
       this.contract.methods
         .donate()
@@ -338,38 +320,31 @@ export default {
     },
 
     getRandomNumber() {
-
+      this.timershow();
       this.contract.methods
         .getRandomNumber()
         .send({ from: this.$store.state.addr })
         .then(function (result) {
           console.log(result);
-
+          this.countdown("countdown", 4, 0);
         });
-
     },
 
     draw() {
-
-
       this.contract.methods
         .draw()
         .send({ from: this.$store.state.addr })
         .then((receipt) => {
           console.log(receipt);
-          
-      this.show = !this.show;
-      this.show2 = !this.show2;
-
-        }).on('error', function(){
+          this.show = !this.show;
+          this.show2 = !this.show2;
+        })
+        .on("error", function () {
           console.log("뽑기 실패");
-      
-    });
-
-   
+          this.timershow();
+        });
     },
 
- 
     draw_faucet() {
       this.contract.methods
         .draw_faucet()
@@ -378,7 +353,6 @@ export default {
           console.log(result);
         });
     },
-
   },
 };
 </script>
@@ -386,5 +360,21 @@ export default {
 <style>
 .sidebox {
   visibility: hidden !important;
+}
+#countdown {
+  position: absolute;
+  margin-top: 20px;
+  left: 40%;
+  width: 18%;
+  color: #1b232f;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 33px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+  border: 5px dotted #3df7d3;
+  border-radius: 10px;
 }
 </style>

@@ -11,7 +11,7 @@
     <header
       class="transparent"
       :class="{
-        'non-transparent header-light scroll-light': url,
+        'header-light': url,
       }"
     >
       <div class="container">
@@ -23,12 +23,7 @@
                   <!-- logo begin -->
                   <div id="logo">
                     <a href="/">
-                      <img
-                        alt=""
-                        class="logo"
-                        style="height: 30px"
-                        src="images/logo-light.png"
-                      />
+                      <img alt="" class="logo" src="images/logo.png" />
                       <img alt="" class="logo-2" src="images/logo.png" />
                     </a>
                   </div>
@@ -69,7 +64,7 @@
                     </ul> -->
                   </li>
                   <li>
-                    <a href="/artistmain">Art<span></span></a>
+                    <a href="/artistmain">Artist<span></span></a>
 
                     <!-- <ul>
                       <li><a href="author.html">Author</a></li>
@@ -80,7 +75,7 @@
                       <li><a href="login.html">Login</a></li>
                       <li><a href="/about">about</a></li>
                       <li><a href="register.html">Register</a></li>
-                      <li><a href="contact.html">Contact Us</a></li> 
+                      <li><a href="contact.html">Contact Us</a></li>
                     </ul> -->
                   </li>
                   <li>
@@ -153,7 +148,11 @@ export default {
       console.log(to.name);
       if (to.name == "Explore") this.url = false;
       else if (to.name == "about") this.url = false;
-      // else this.url = true;
+      else if (to.name == "Status") this.url = false;
+      else if (to.name == "ArtistMain") this.url = false;
+      else if (to.name == "Explore") this.url = false;
+      else if (to.name == "Mypage") this.url = false;
+      else if (to.name == "rankUp") this.url = false;
     },
   },
   methods: {

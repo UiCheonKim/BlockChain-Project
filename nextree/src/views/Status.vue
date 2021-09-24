@@ -54,7 +54,7 @@
           <div class="col-md-8 offset-md-1">
             <div class="row">
               <div
-                class="col-lg-4 col-md-6 wow fadeInRight mb30"
+                class="col-lg-3 col-md-6 wow fadeInRight mb30"
                 data-wow-delay="0s"
               >
                 <div class="de_count">
@@ -62,7 +62,7 @@
                     <!-- <span class="treeNum_inc"></span>
                     <div class="treeNum_inc" style="--tonum: 4500"></div> -->
                     <span
-                      class="timer"
+                      class="timer fs-3"
                       data-to="937254"
                       data-speed="3000"
                       id="treeNum_inc"
@@ -75,12 +75,12 @@
               </div>
 
               <div
-                class="col-lg-4 col-md-6 wow fadeInRight mb30"
+                class="col-lg-3 col-md-6 wow fadeInRight mb30"
                 data-wow-delay=".25s"
               >
                 <div class="de_count">
                   <h3>
-                    <span class="timer" data-to="40212" data-speed="3000"
+                    <span class="timer fs-3" data-to="4021" data-speed="3000"
                       >0</span
                     >
                     ETH
@@ -90,12 +90,12 @@
               </div>
 
               <div
-                class="col-lg-4 col-md-6 wow fadeInRight mb30"
+                class="col-lg-3 col-md-6 wow fadeInRight mb30"
                 data-wow-delay=".4s"
               >
                 <div class="de_count">
                   <h3>
-                    <span class="timer" data-to="26471" data-speed="3000"
+                    <span class="timer fs-3" data-to="26471" data-speed="3000"
                       >0</span
                     >
                     명
@@ -105,7 +105,27 @@
               </div>
 
               <div
-                class="col-lg-4 col-md-6 wow fadeInRight mb30"
+                class="col-lg-3 col-md-6 wow fadeInRight mb30"
+                data-wow-delay=".4s"
+              >
+                <div class="de_count">
+                  <h3>
+                    <span class="timer fs-3" data-to="14750" data-speed="3000"
+                      >0</span
+                    >
+                    원
+                  </h3>
+                  <h5 class="id-color">총 금액(M)</h5>
+                </div>
+              </div>
+
+
+
+
+
+
+              <div
+                class="col-lg-3 col-md-6 wow fadeInRight mb30"
                 data-wow-delay=".6s"
               >
                 <div class="de_count">
@@ -118,7 +138,7 @@
               </div>
 
               <div
-                class="col-lg-4 col-md-6 wow fadeInRight mb30"
+                class="col-lg-3 col-md-6 wow fadeInRight mb30"
                 data-wow-delay=".8s"
               >
                 <div class="de_count">
@@ -132,7 +152,7 @@
               </div>
 
               <div
-                class="col-lg-4 col-md-6 wow fadeInRight mb30"
+                class="col-lg-3 col-md-6 wow fadeInRight mb30"
                 data-wow-delay="1s"
               >
                 <div class="de_count">
@@ -143,6 +163,21 @@
                   <h5 class="id-color">Excepteur duis ad nostrud et.</h5> -->
                 </div>
               </div>
+<div
+                class="col-lg-3 col-md-6 wow fadeInRight mb30"
+                data-wow-delay=".8s"
+              >
+                <div class="de_count">
+                  <img src="../images/items-alt/won.png" alt="" />
+                  <!-- <h3>
+                    <span class="timer" data-to="100" data-speed="3000">0</span
+                    >+
+                  </h3>
+                  <h5 class="id-color">In sint aliquip.</h5> -->
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>

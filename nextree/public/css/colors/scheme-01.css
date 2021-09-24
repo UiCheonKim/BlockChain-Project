@@ -3,13 +3,15 @@
   --primary-color-rgb: 16, 108, 189;
 
   --secondary-color: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
-  --secondary-color-rgb: 64, 208, 230; 
+  --secondary-color-rgb: 64, 208, 230;
+
+  --third-color: red;
+  --third-color-rgb: 64, 208, 230;
 
   original--primary: #403f83;
   orignal-color-rgb: 64, 63, 131;
-  original--secondary: #8364E2;
-  orignal-color-rgb: 131, 100, 226; 
+  original--secondary: #8364e2;
+  orignal-color-rgb: 131, 100, 226;
 
-  green-gradient: linear-gradient(to bottom, #00C853, #B2FF59);
-
+  green-gradient: linear-gradient(to bottom, #00c853, #b2ff59);
 }

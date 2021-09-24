@@ -4,19 +4,21 @@
     <section
       id="subheader"
       class="text-light"
-      data-bgimage="url('images/background/mini.jpg') top"
+      style="--bg-image: url('images/background/mini.jpg')"
     >
       <div class="center-y relative text-center">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-center"></div>
+            <div class="col-md-12 text-center">
+              <h1>Artist</h1>
+              <p>To See Life, To See Nature</p>
+            </div>
             <div class="clearfix"></div>
           </div>
         </div>
       </div>
     </section>
     <!-- section close -->
-
     <!-- section begin -->
     <section class="service_one">
       <div class="container">
