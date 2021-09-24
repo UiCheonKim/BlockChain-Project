@@ -1311,6 +1311,7 @@ export default {
     incTreeAmount(addValue) {
       this.treeAmount += parseInt(addValue);
     },
+
     async dappstart() {
       if (window.ethereum) {
         web3 = new Web3(window.ethereum);
@@ -1328,7 +1329,23 @@ export default {
         web3 = window.web3;
         console.log("Injected web3 detected.");
       }
+      this.get_User_Info01();
     },
+
+    async get_User_Info01() {
+      await this.contract.methods
+        .donor_Name(this.$store.state.addr)
+        .call()
+        .then((result) => {
+          console.log(result);
+
+          this.donor_Name = result;
+
+          // console.log(this.this.client_Name);
+
+        });
+    },
+
 
     donate() {
       var donation_Value =  this.treeAmount * 500000000000000 ;

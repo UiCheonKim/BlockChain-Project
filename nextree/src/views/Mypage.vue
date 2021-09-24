@@ -1082,6 +1082,7 @@ export default {
 
         });
     },
+    
     async get_User_Info02() {
       await this.contract.methods
         .donation_balanceOf(this.$store.state.addr)
