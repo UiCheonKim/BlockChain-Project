@@ -64,7 +64,7 @@
                     </ul> -->
                   </li>
                   <li>
-                    <a href="/artistmain">Art<span></span></a>
+                    <a href="/artistmain">Artist<span></span></a>
 
                     <!-- <ul>
                       <li><a href="author.html">Author</a></li>
