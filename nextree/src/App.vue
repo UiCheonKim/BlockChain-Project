@@ -11,7 +11,7 @@
     <header
       class="transparent"
       :class="{
-        'non-transparent header-light scroll-light': url,
+        'header-light': url,
       }"
     >
       <div class="container">
@@ -80,7 +80,7 @@
                       <li><a href="login.html">Login</a></li>
                       <li><a href="/about">about</a></li>
                       <li><a href="register.html">Register</a></li>
-                      <li><a href="contact.html">Contact Us</a></li> 
+                      <li><a href="contact.html">Contact Us</a></li>
                     </ul> -->
                   </li>
                   <li>
