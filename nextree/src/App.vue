@@ -148,7 +148,11 @@ export default {
       console.log(to.name);
       if (to.name == "Explore") this.url = false;
       else if (to.name == "about") this.url = false;
-      // else this.url = true;
+      else if (to.name == "Status") this.url = false;
+      else if (to.name == "ArtistMain") this.url = false;
+      else if (to.name == "Explore") this.url = false;
+      else if (to.name == "Mypage") this.url = false;
+      else if (to.name == "rankUp") this.url = false;
     },
   },
   methods: {
