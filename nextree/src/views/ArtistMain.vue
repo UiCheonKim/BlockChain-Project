@@ -4,7 +4,7 @@
     <section
       id="subheader"
       class="text-light"
-      data-bgimage="url(../images/background/4.jpg) top"
+      data-bgimage="url('images/background/mini.jpg') top"
     >
       <div class="center-y relative text-center">
         <div class="container">
@@ -53,10 +53,12 @@
           <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="service_1_single wow fadeInUp" data-wow-delay="300ms">
               <div class="service_1_img">
-                <img
-                  src="@/assets/artist/profile/Kimseokki_profile_adobespark.png"
-                  alt="Service Image"
-                />
+                <a href="/artist">
+                  <img
+                    src="@/assets/artist/profile/Kimseokki_profile_adobespark.png"
+                    alt="Service Image"
+                  />
+                </a>
                 <div class="hover_box">
                   <nuxt-link to="/service-detail"
                     ><span class="icon-left-arrow"></span
@@ -171,11 +173,12 @@
           <div class="gallery__column">
             <a href="" target="_blank" class="gallery__link">
               <figure class="gallery__thumb">
-                <img
-                  src="@/assets/artist/img_1.jpg"
-                  alt="Portrait by Noah Buscher"
-                  class="gallery__image"
-                />
+                <a href="/detail">
+                  <img
+                    src="@/assets/artist/img_5.jpg"
+                    alt="Portrait by Noah Buscher"
+                    class="gallery__image"
+                /></a>
                 <figcaption class="gallery__caption">
                   Painting by Kim Seok-Ki
                 </figcaption>
