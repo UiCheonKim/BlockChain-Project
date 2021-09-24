@@ -91,7 +91,7 @@
                       >
                       <a
                         style="margin-left: 1em"
-                        href="explore.html"
+                        href="Status"
                         class="btn-main wow fadeInUp lead"
                         data-wow-delay="1.25s"
                         >자세히보기</a
@@ -178,7 +178,7 @@
                     >
                     <a
                       style="margin-left: 1em"
-                      href="/about"
+                      href="Status"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
                       >자세히보기</a
