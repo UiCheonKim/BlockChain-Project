@@ -11,7 +11,7 @@
           <div class="row">
             <div class="col-md-12 text-center">
               <h1>Artist</h1>
-              <p>문구는 뭐라 해야 할지 모름</p>
+              <p>To See Life, To See Nature</p>
             </div>
             <div class="clearfix"></div>
           </div>
