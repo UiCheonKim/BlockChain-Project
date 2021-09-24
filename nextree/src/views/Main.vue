@@ -162,26 +162,25 @@
                     </h6>
                     <div class="spacer-10"></div>
                     <h1 class="wow fadeInUp text-white" data-wow-delay=".75s">
-                      Create, sell or collect digital items.
+                      다음 세대를 위한 나무 심기.
                     </h1>
                     <p class="wow fadeInUp lead text-white" data-wow-delay="1s">
-                      Unit of data stored on a digital ledger, called a
-                      blockchain, that certifies a digital asset to be unique
-                      and therefore not interchangeable
+                      지금 우리에게 뿐만 아니라 다음 세대가 푸른 숲에서 신선한 공기를
+                      마실 수 있도록 함께해요.
                     </p>
                     <div class="spacer-10"></div>
                     <a
-                      href="explore.html"
+                      href="#donation-section"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
-                      >Details</a
+                      >기부하기</a
                     >
                     <a
                       style="margin-left: 1em"
-                      href="explore.html"
+                      href="/about"
                       class="btn-main wow fadeInUp lead"
                       data-wow-delay="1.25s"
-                      >Go to Metabus</a
+                      >자세히보기</a
                     >
                     <div class="mb-sm-30"></div>
                   </div>
