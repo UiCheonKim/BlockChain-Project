@@ -22,7 +22,7 @@
     </section> -->
     <section>
       <div class="row sequence">
-        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox ">
+        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
@@ -30,7 +30,9 @@
             </div>
             <div>
 
+{{now}}
 
+<button v-on:click="time">현재시간</button>
                <a
                 href="#"
                 class="btn-main large-btn "
@@ -100,10 +102,10 @@
 
             <div
               class="de_countdown de_countdown_center"
-              data-year="2021"
-              data-month="9"
-              data-day="23"
-              data-hour="13"
+              :data-year= "nowYear"
+              :data-month="nowMonth"
+              :data-day="nowDay"
+              :data-hour="nowHour"
             ></div>
 
             <div
@@ -224,6 +226,11 @@ export default {
       show: true,
       show2: false,
       key_Num: "",
+      now: "0000:00:00:00:00:00",
+      nowYear: "2022",
+      nowMonth: "9",
+      nowDay: "24",
+      nowHour: "23",
     };
   },
   setup() {},
@@ -237,12 +244,32 @@ export default {
   mounted() {},
   unmounted() {},
   methods: {
+
+    async time() {
+    var date = new Date();
+    this.now =  await date.getFullYear() + ":" +
+    (date.getMonth() + 1) + ":" + 
+    date.getDate() + ":" +
+    date.getHours() + ":"
+    + date.getMinutes() + ":" +
+    date.getSeconds();
+
+    this.nowYear = date.getFullYear();
+    console.log(nowYear);
+
+    this.nowMonth = date.getMonth() +1 ;
+    this.nowDay = date.getHours();
+    this.nowHour = date.getHours();
+   
+    },
+
     toggleShow() {
 
-      this.show = !this.show;
-      this.show2 = !this.show2;
+     
 
       this.draw();
+
+    
 
     },
 
@@ -264,6 +291,7 @@ export default {
         console.log("Injected web3 detected.");
       }
       this.get_Keys();
+      this.time();
     },
 
     async get_Keys() {
@@ -326,16 +354,21 @@ export default {
 
     draw() {
 
+      this.show = !this.show;
+      this.show2 = !this.show2;
+
+
       this.contract.methods
         .draw()
         .send({ from: this.$store.state.addr })
-        .then(function (receipt) {
+        .then((receipt) => {
           console.log(receipt);
         }).on('error', function(){
           console.log("뽑기 실패");
       
     });
 
+   
     },
 
  
