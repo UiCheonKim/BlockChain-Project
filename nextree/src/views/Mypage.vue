@@ -23,7 +23,8 @@
                     <img :src="user_avatar" />
                     <i class="fa fa-check"></i>
                     <div class="profile_name">
-                    <a href="/" class="mybtn-main">Donated</a>
+                      <button class="mybtn-donated" disabled>Donated</button>
+                   
                       <h4> 
                         {{client_Name}}[<span style="color: green">{{tree_Num}}</span>
                         trees, <span style="color: blue">{{eth_Num}}</span> Eth]

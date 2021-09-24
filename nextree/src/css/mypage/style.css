@@ -91,6 +91,30 @@
   outline: none;
 }
 
+.mybtn-donated {
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  outline: 0;
+  font-weight: 1000;
+  text-decoration: none;
+  padding: 6px 20px;
+  font-size: 16px;
+  border: none;
+  background-image: linear-gradient(75deg, #74f2ce, #7cffcb);
+  background-size: 150% !important;
+  background-position: left !important;
+  transition: 300ms background-position ease-in-out !important;
+  -o-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  outline: none;
+}
+
 .mybtn-main:hover {
   background-position: right !important;
   color: #fff;
@@ -99,6 +123,7 @@
   box-shadow: 3px 3px 30px 0px rgba(255, 68, 91, 0.5);
   background-position: right;
 }
+
 
 .nft__item_like {
   position: relative;
