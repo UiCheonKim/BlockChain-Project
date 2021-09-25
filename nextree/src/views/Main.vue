@@ -539,43 +539,41 @@
             <!-- <div class="section_line">What We Do?</div> -->
             <div class="col-lg-4 col-md-6 mb-sm-30">
               <div class="feature-box f-boxed style-3">
-                <i class="wow fadeInUp bg-color-2 i-boxed icon_wallet"></i>
+                <i class="wow fadeInUp bg-color-2 i-boxed icon_map"></i>
                 <div class="text">
-                  <h4 class="wow fadeInUp">Set up your wallet</h4>
+                  <h4 class="wow fadeInUp">Planting Trees</h4>
                   <p class="wow fadeInUp" data-wow-delay=".25s">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem.
+                    정기적으로 신뢰할만한 NGO, 환경단체와의 협력을 통해 가장
+                    필요한 곳에 나무 심기를 진행하고 있습니다.
                   </p>
                 </div>
-                <i class="wm icon_wallet"></i>
+                <i class="wm icon_map"></i>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-sm-30">
               <div class="feature-box f-boxed style-3">
-                <i
-                  class="wow fadeInUp bg-color-2 i-boxed icon_cloud-upload_alt"
-                ></i>
+                <i class="wow fadeInUp bg-color-2 i-boxed icon_film"></i>
                 <div class="text">
-                  <h4 class="wow fadeInUp">Add your NFT's</h4>
+                  <h4 class="wow fadeInUp">NFT</h4>
                   <p class="wow fadeInUp" data-wow-delay=".25s">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem.
+                    후원한 액수에 따라 일정한 나무 NFT를<br />지급 받습니다.
+                    많이 기여 할수록 더 높은 등급의 NFT를 얻을 수 있습니다.
                   </p>
                 </div>
-                <i class="wm icon_cloud-upload_alt"></i>
+                <i class="wm icon_film"></i>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-sm-30">
               <div class="feature-box f-boxed style-3">
-                <i class="wow fadeInUp bg-color-2 i-boxed icon_tags_alt"></i>
+                <i class="wow fadeInUp bg-color-2 i-boxed icon_id-2"></i>
                 <div class="text">
-                  <h4 class="wow fadeInUp">Sell your NFT's</h4>
+                  <h4 class="wow fadeInUp">New Artist</h4>
                   <p class="wow fadeInUp" data-wow-delay=".25s">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem.
+                    새로운 아티스트들에게도 기회를 주고 싶었습니다. 후원을 통해
+                    얻은 뽑기권을 통해 NFT작품을 얻을 수 있습니다.
                   </p>
                 </div>
-                <i class="wm icon_tags_alt"></i>
+                <i class="wm icon_id-2"></i>
               </div>
             </div>
           </div>
@@ -1266,7 +1264,7 @@
               class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight"
               data-wow-delay=".2s"
             >
-              <a href="explore.html" class="icon-box style-2 rounded">
+              <a href="Status" class="icon-box style-2 rounded">
                 <i class="fa fa-music"></i>
                 <span>Donation Status</span>
               </a>
@@ -1275,7 +1273,7 @@
               class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight"
               data-wow-delay=".3s"
             >
-              <a href="explore.html" class="icon-box style-2 rounded">
+              <a href="about" class="icon-box style-2 rounded">
                 <i class="fa fa-search"></i>
                 <span>About us</span>
               </a>
@@ -1284,7 +1282,7 @@
               class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight"
               data-wow-delay=".4s"
             >
-              <a href="explore.html" class="icon-box style-2 rounded">
+              <a href="Artist" class="icon-box style-2 rounded">
                 <i class="fa fa-globe"></i>
                 <span>Artist</span>
               </a>
@@ -1293,7 +1291,7 @@
               class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight"
               data-wow-delay=".5s"
             >
-              <a href="explore.html" class="icon-box style-2 rounded">
+              <a href="Explore" class="icon-box style-2 rounded">
                 <i class="fa fa-vcard"></i>
                 <span>NFT</span>
               </a>
@@ -1302,7 +1300,7 @@
               class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight"
               data-wow-delay=".6s"
             >
-              <a href="explore.html" class="icon-box style-2 rounded">
+              <a href="Mypage" class="icon-box style-2 rounded">
                 <i class="fa fa-th"></i>
                 <span>My Page</span>
               </a>
@@ -1393,20 +1391,21 @@
             <div class="col-md-12">
               <div class="de-flex">
                 <div class="de-flex-col">
-                  <a href="index.html">
-                    <img alt="" class="f-logo" src="images/logo.png" /><span
-                      class="copy"
-                      >&copy; Copyright 2021 - Team2. Kim Jung Hong Choi</span
-                    >
-                  </a>
+                  <a href="/">
+                    <img alt="" class="f-logo" src="images/logo.png" /></a
+                  ><span class="copy"
+                    >&copy; Copyright 2021 - Team2. Kim Jung Hong Choi</span
+                  >
                 </div>
                 <div class="de-flex-col">
                   <div class="social-icons">
-                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="https://github.com/UiCheonKim/BlockChain-Project"
+                      ><i class="fa fa-github fa-lg"></i
+                    ></a>
                     <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                    <!-- <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
                     <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                    <a href="#"><i class="fa fa-rss fa-lg"></i></a> -->
                   </div>
                 </div>
               </div>
