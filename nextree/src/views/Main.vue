@@ -309,11 +309,11 @@
   <div class="tab-pane fade active show" id="home"
               v-if="show3"
    >
-       <div class="col-lg-12 col-md-6 mb-sm-20 event_donation1">
+       <div class="col-lg-12 col-md-6 mb-sm-20 event_donation1 borderRR">
               <h4 class="text-center pt-5">Join Us ! </h4>
-              <div class="row gy-3 justify-content-around">
+              <div class="row gy-3 justify-content-around ">
                 <div
-                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  class="col-4 p-2 border tree-btn3 Radius ms-2 text-center"
                   type="button"
                   @click="incTreeAmount(1)"
                 >
@@ -321,7 +321,7 @@
                   <h6>1 Tree</h6>
                 </div>
                 <div
-                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  class="col-4 p-2 border tree-btn3 Radius ms-2 text-center"
                   type="button"
                   @click="incTreeAmount(5)"
                 >
@@ -330,7 +330,7 @@
                 </div>
 
                 <div
-                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  class="col-4 p-2 border tree-btn3 Radius ms-2 text-center"
                   type="button"
                   @click="incTreeAmount(10)"
                 >
@@ -338,7 +338,7 @@
                   <h6>10 Tree</h6>
                 </div>
                 <div
-                  class="col-4 p-2 border tree-btn Radius ms-2 text-center"
+                  class="col-4 p-2 border tree-btn3 Radius ms-2 text-center"
                   type="button"
                   @click="incTreeAmount(50)"
                 >
@@ -371,7 +371,7 @@
                   </div>
                 </div>
 
-                <button class="tree-btn tree-btn2 Radius" @click="donate()">
+                <button class="tree-btn3 tree-btn2 Radius" @click="donate()">
                   Donate
                 </button>
               </div>
@@ -381,7 +381,7 @@
 
   <div class="tab-pane fade show" id="profile" v-if="show4">
 
-     <div class="col-lg-12 col-md-6 mb-sm-20 event_donation2">
+     <div class="col-lg-12 col-md-6 mb-sm-20 event_donation2 borderRR">
               <h4 class="text-center pt-5">Join Us ! </h4>
               <div class="row gy-3 justify-content-around">
                 <div
@@ -418,7 +418,7 @@
                   <h6>50 Tree</h6>
                 </div>
                 <div class="row mt-3">
-                  <div class="col-sm-3">Amount:</div>
+                  <div class="col-sm-3 "></div>
                   <div class="col-sm-4">
                     <input
                       type="number"
@@ -430,7 +430,7 @@
                   </div>
                 </div>
                 <div class="row mt-3">
-                  <div class="col-sm-3">Name:</div>
+                  <div class="col-sm-3"></div>
                   <div class="col-sm-4">
                     <input
                       type="string"
@@ -1669,11 +1669,17 @@ a.btn {
 .BG-ytb {
   background-color: #ecfafc;
 }
+
 .tree-btn {
   background-color: #f4ff5f;
 }
+
 .tree-btn2 {
 width:130px !important;}
+
+.tree-btn3 {
+  background-color: rgb(255, 255, 255);
+}
 
 .Radius {
   border-radius: 40px 80px / 80px 40px;
@@ -1727,5 +1733,10 @@ input::-webkit-inner-spin-button {
 }
 input:focus {
   outline: none;
+}
+
+.borderRR{
+    border-radius: 10%;
+
 }
 </style>

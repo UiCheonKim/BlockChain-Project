@@ -225,7 +225,7 @@ export default {
       function updateTimer() {
         msLeft = endTime - +new Date();
         if (msLeft < 1000) {
-          element.innerHTML = "countdown's over!";
+          element.innerHTML = "over";
         } else {
           time = new Date(msLeft);
           hours = time.getUTCHours();
@@ -250,9 +250,8 @@ export default {
       this.countdown("countdown", 4, 0);
     },
 
-      this.show = !this.show;
-      this.show2 = !this.show2;
-
+    toggleShow() {
+      this.draw();
     },
 
     async dappstart() {
