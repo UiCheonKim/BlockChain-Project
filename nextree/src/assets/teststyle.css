@@ -4699,7 +4699,7 @@
   display: block;
   text-align: center;
   line-height: 44px;
-  /* background: url(img/icon-holder/09.png) no-repeat center center; */
+  background: url(07.png) no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -4709,7 +4709,8 @@
 }
 
 .member-info ul a:hover .fa {
-  color: #fff !important;
+  /* color: #fff !important; */
+  color: rgba(8, 248, 40, 0.637) !important;
 }
 
 .member-info ul li {
