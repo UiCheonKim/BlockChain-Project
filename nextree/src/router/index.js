@@ -14,6 +14,7 @@ import Status from "../views/Status.vue";
 import banners from "../views/banners.vue";
 import cards from "../views/cards.vue";
 import ArtistMain from "../views/ArtistMain.vue";
+import dappTest2 from "../views/dappTest2.vue";
 
 const routes = [
   {
@@ -96,6 +97,11 @@ const routes = [
     path: "/artistmain",
     name: "ArtistMain",
     component: ArtistMain,
+  },
+  {
+    path: "/dappTest2",
+    name: "dappTest2",
+    component: dappTest2,
   },
 
   // {

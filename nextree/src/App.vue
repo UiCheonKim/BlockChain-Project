@@ -153,6 +153,7 @@ export default {
       else if (to.name == "Explore") this.url = false;
       else if (to.name == "Mypage") this.url = false;
       else if (to.name == "rankUp") this.url = false;
+      else if (to.name == "Detail") this.url = false;
     },
   },
   methods: {
