@@ -23,25 +23,22 @@
                     <img :src="user_avatar" />
                     <i class="fa fa-check"></i>
                     <div class="profile_name">
-                      
-                   
-                      <h4> 
-                        
+                      <h4>
                         <span class="profile_username"></span>
-                        
+
                         <span id="wallet" class="profile_wallet">{{
                           this.$store.state.addr
                         }}</span>
                         <button id="btn_copy" title="Copy Text">Copy</button>
                       </h4>
-                      <button class="mybtn-donated" disabled>Name </button> {{client_Name}}
-                      <br>
+                      <button class="mybtn-donated" disabled>Name</button>
+                      {{ client_Name }}
+                      <br />
                       <button class="mybtn-donated" disabled>Donated</button>
-                      [<span style="color: green">
-                        
-                        {{tree_Num}}</span>
+                      [<span style="color: green"> {{ tree_Num }}</span>
 
-                        Trees / <span style="color: blue">{{eth_Num}}</span> Eth]
+                      Trees /
+                      <span style="color: blue">{{ eth_Num }}</span> Eth]
                     </div>
                   </div>
                 </div>
@@ -738,7 +735,8 @@
                               <h4>Nextree Key</h4>
                             </a>
                             <div class="nft__item_price">
-                              넥스트리에서 멋진 NFT 아트를 획득 할 수 있는 열쇠에요.
+                              넥스트리에서 멋진 NFT 아트를 획득 할 수 있는
+                              열쇠에요.
                             </div>
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
@@ -748,21 +746,11 @@
                         </div>
                       </div>
                       <!-- nft item begin -->
-
-
                     </div>
                   </div>
 
-                  
-
-
-                  
-
-
                   <div class="tab-2">
                     <div class="row">
-
-                      
                       <!-- nft item begin -->
                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="nft__item">
@@ -1037,21 +1025,20 @@ export default {
       gold_trees: 0,
       platinum_trees: 0,
       diamond_trees: 0,
-      keys:0,
+      keys: 0,
       inventory_List: [],
       client_Name: "",
       tree_Num: "",
       eth_Num: "",
 
-      isTrue01: true,
-      isTrue02: true,
-      isTrue03: true,
-      isTrue04: true,
-      isTrue05: true,
-      isTrue06: true,
-      isTrue07: true,
-      isTrue08: true,
-
+      isTrue01: false,
+      isTrue02: false,
+      isTrue03: false,
+      isTrue04: false,
+      isTrue05: false,
+      isTrue06: false,
+      isTrue07: false,
+      isTrue08: false,
     };
   },
   watch: {},
@@ -1088,7 +1075,6 @@ export default {
       this.get_User_Info01();
       this.get_User_Info02();
       this.get_User_Info03();
-
     },
 
     async balanceOfBatch() {
@@ -1120,7 +1106,6 @@ export default {
           var diamond_amount = result[6];
           var key_amount = result[7];
 
-
           this.baby_trees = baby_amount;
           this.iron_trees = iron_amount;
           this.bronze_trees = bronze_amount;
@@ -1130,29 +1115,29 @@ export default {
           this.diamond_trees = diamond_amount;
           this.keys = key_amount;
 
-          if (baby_amount == "0") {
-            this.isTrue01 = false;
+          if (baby_amount > "0") {
+            this.isTrue01 = true;
           }
-          if (iron_amount == "0") {
-            this.isTrue02 = false;
+          if (iron_amount > "0") {
+            this.isTrue02 = true;
           }
-          if (bronze_amount == "0") {
-            this.isTrue03 = false;
+          if (bronze_amount > "0") {
+            this.isTrue03 = true;
           }
-          if (silver_amount == "0") {
-            this.isTrue04 = false;
+          if (silver_amount > "0") {
+            this.isTrue04 = true;
           }
-          if (gold_amount == "0") {
-            this.isTrue05 = false;
+          if (gold_amount > "0") {
+            this.isTrue05 = true;
           }
-          if (platinum_amount == "0") {
-            this.isTrue06 = false;
+          if (platinum_amount > "0") {
+            this.isTrue06 = true;
           }
-          if (diamond_amount == "0") {
-            this.isTrue07 = false;
+          if (diamond_amount > "0") {
+            this.isTrue07 = true;
           }
-           if (diamond_amount == "0") {
-            this.isTrue08 = false;
+          if (diamond_amount > "0") {
+            this.isTrue08 = true;
           }
         });
     },
@@ -1167,7 +1152,6 @@ export default {
           this.inventory_List = result;
 
           console.log(this.inventory_List);
-
         });
     },
 
@@ -1181,7 +1165,6 @@ export default {
           this.client_Name = result;
 
           // console.log(this.this.client_Name);
-
         });
     },
 
@@ -1192,10 +1175,9 @@ export default {
         .then((result) => {
           console.log(result);
 
-          this.eth_Num = result / 10**18;
+          this.eth_Num = result / 10 ** 18;
 
           // console.log(this.this.eth_Num);/
-
         });
     },
     async get_User_Info03() {
@@ -1208,11 +1190,8 @@ export default {
           this.tree_Num = result;
 
           console.log(this.this.tree_Num);
-
         });
     },
-
-
 
     tokenURIs() {
       this.contract.methods
@@ -1263,5 +1242,13 @@ export default {
   -webkit-transition: all 0.2s ease 1.9s;
   transition: all 0.2s ease 1.9s;
   animation-iteration-count: none;
+}
+
+#wrapper.modal-open {
+  overflow: auto;
+}
+
+#wrapper.modal-open[style] {
+  padding-right: 0px !important;
 }
 </style>
