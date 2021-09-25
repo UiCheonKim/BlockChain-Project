@@ -28,9 +28,9 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-12">
-              <div class="about-content pr--50 pr_md--0 pr_sm--0">
+              <div class="about-content pr--50 pr_md--0 pr_sm--0 wow fadeInRight" data-wow-delay=".8s">
                 <h2 class="mb--0">We Act for Next Gen</h2>
-                <div class="content mt--50 mt_sm--20 mt_md--20 mt_lg--20">
+                <div class="content mt--50 mt_sm--20 mt_md--20 mt_lg--20 wow fadeInRight" data-wow-delay="1.3s">
                   <p>
                     우리는 항상 다음 세대의 지구를 생각합니다. <br />
                     과거의 맑고 깨끗한 지구는 점차 그 모습을 잃어가고 있고,
@@ -45,21 +45,26 @@
                     되찾도록 합니다.
                   </p>
 
-                  <p class="mt--30">{사업 목표, 보고서와 내용 동일하게}</p>
+                  <p class="mt--30">NexTree는 2025년까지 여러분과 함께 총 1억 그루의 나무심기를 <br>
+                   목표로 하고있습니다. 후원과 동시에 자신만의 나무 NFT를 획득하고, <br>
+                   친환경 아티스트의 작품을 얻을 기회를 얻어보세요. <br>
+                   기업, 개인 누구나 손쉽게 참여할 수 있는 방법으로 <br>
+                   더 나은 지구를 만들어가는 여정에 동참하세요.</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-12 mt_md--40 mt_sm--80">
+            <div class="col-lg-6 col-md-12 col-12 mt_md--40 mt_sm--80 wow fadeInRight" data-wow-delay="1.7s" >
               <div class="thumbnail">
                 <div class="col">
-                  <lottie-player
+                  <img src="../images/about_image.jpg" alt="" class="Radius_round">
+                  <!-- <lottie-player
                     src="json/earth.json"
                     background="transparent"
                     speed="1.2"
                     style="width: 650px; height: 500px"
                     autoplay
                     loop
-                  ></lottie-player>
+                  ></lottie-player> -->
                 </div>
 
                 <!-- <iframe
@@ -364,6 +369,9 @@ section {
   background-repeat: no-repeat;
   /* background-size: cover; */
   background-position: center;
+}
+.Radius_round {
+  border-radius: 40px 40px / 40px 40px;
 }
 </style>
 <style lang="css" scoped>
