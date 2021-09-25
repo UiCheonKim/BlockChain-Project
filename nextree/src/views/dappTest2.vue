@@ -11,7 +11,7 @@
     </div>
     <!-- <input type="text" v-model="message" placeholder="기부금액" /> -->
     <div>
-      <button @click="balanceOf()">기부된 개수 확인</button>
+      <button @click="totalsupply()">totalsupply</button>
     </div>
     <div>
       <button @click="balances()">기부 금액 확인</button>
@@ -23,6 +23,7 @@
 </template>
 <script>
 import Web3 from "web3";
+import dapptest2 from "../dapp/dapp2";
 import dapptest from "../dapp/dapp";
 
 export default {
@@ -54,7 +55,12 @@ export default {
           // Request account access if needed
           await window.ethereum.enable();
           this.contract = new web3.eth.Contract(dapptest.ABI, dapptest.ADDRESS);
+          this.contract2 = new web3.eth.Contract(
+            dapptest2.ABI,
+            dapptest2.ADDRESS
+          );
           console.log(this.contract);
+          console.log(this.contract2);
           console.log(this.$store.state.addr);
         } catch (error) {}
       }
@@ -81,9 +87,9 @@ export default {
           console.log(result);
         });
     },
-    balances() {
+    totalsupply() {
       this.contract.methods
-        .balances(this.$store.state.addr)
+        .totalSupply()
         .call()
         .then(function (result) {
           console.log(result);

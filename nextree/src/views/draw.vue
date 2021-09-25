@@ -192,6 +192,7 @@
 <script>
 import Web3 from "web3";
 import dapptest from "../dapp/dapp";
+import dapptest2 from "../dapp/dapp2";
 
 export default {
   name: "",
@@ -261,7 +262,12 @@ export default {
           // Request account access if needed
           await window.ethereum.enable();
           this.contract = new web3.eth.Contract(dapptest.ABI, dapptest.ADDRESS);
+          this.contract2 = new web3.eth.Contract(
+            dapptest2.ABI,
+            dapptest2.ADDRESS
+          );
           console.log(this.contract);
+          console.log(this.contract2);
           console.log(this.$store.state.addr);
         } catch (error) {}
       }
@@ -294,7 +300,7 @@ export default {
 
     donate() {
       this.contract.methods
-        .donate()
+        .donate("Hong")
         .send({ from: this.$store.state.addr, value: 1000000000000000 })
         .then(function (receipt) {
           console.log(receipt);
@@ -337,6 +343,23 @@ export default {
           console.log(receipt);
           this.show = !this.show;
           this.show2 = !this.show2;
+          console.log(receipt.events.Result.returnValues.artCode);
+          var drawNumber = receipt.events.Result.returnValues.artCode;
+          if (drawNumber == 1) {
+            this.contract2.methods
+              .transArt(1)
+              .send({ from: this.$store.state.addr })
+              .then(function (result) {
+                console.log(result);
+              });
+          } else if (drawNumber == 2) {
+            this.contract2.methods
+              .transArt(2)
+              .send({ from: this.$store.state.addr })
+              .then(function (result) {
+                console.log(result);
+              });
+          }
         })
         .on("error", function () {
           console.log("뽑기 실패");
