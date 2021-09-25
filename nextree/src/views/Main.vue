@@ -483,7 +483,7 @@
 
                     <button
                       class="tree-btn3 Radius tree-btn2"
-                      @click="donate()"
+                      @click="donate_Event()"
                     >
                       Donate
                     </button>
@@ -1506,6 +1506,19 @@ export default {
           console.log(receipt);
         });
     },
+
+    donate_Event() {
+      var donation_Event_Value = this.treeAmount * 500000000000000;
+
+      this.contract.methods
+        .event_Donate(this.donor_Name)
+        .send({ from: this.$store.state.addr, value: donation_Event_Value })
+        .then(function (receipt) {
+          console.log(receipt);
+        });
+    },
+
+
   },
 };
 </script>
