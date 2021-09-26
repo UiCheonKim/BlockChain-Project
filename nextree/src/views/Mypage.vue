@@ -746,6 +746,89 @@
                         </div>
                       </div>
                       <!-- nft item begin -->
+
+
+                       <!-- nft item begin -->
+                      <div
+                        class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                        v-if="isTrue09 == true"
+                      >
+                        <div class="nft__item">
+                          <div class="author_list_pp">
+                            <a href="author.html">
+                              <img class="lazy" :src="user_avatar" alt="" />
+                              <i class="fa fa-check"></i>
+                            </a>
+                          </div>
+                          <div class="nft__item_wrap">
+                            <img
+                              v-bind:src="event08_img"
+                              class="lazy nft__item_preview"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal9"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="modal fade"
+                            id="exampleModal9"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel1"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel1"
+                                  >
+                                    card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body card-Rotation">
+                                  <img
+                                    v-bind:src="event08_img"
+                                    class="lazy nft__item_preview"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="nft__item_info">
+                            <a href="">
+                              <h4>Turkey Trees</h4>
+                            </a>
+                            <div class="nft__item_price">
+                             화재로 불타버린 터키의 숲을 되살리기 위해 묘목을 기부했어요.
+                            </div>
+                            <div class="nft__item_like">
+                              <i class="fa fa-tree"></i>
+                              <span> {{ iron_trees }} </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -884,7 +967,7 @@
                   <a href="index.html">
                     <img alt="" class="f-logo" src="images/logo.png" /><span
                       class="copy"
-                      >&copy; Copyright 2021 - Gigaland by Designesia</span
+                      >&copy; Copyright 2021 - </span
                     >
                   </a>
                 </div>
@@ -929,6 +1012,8 @@ export default {
       platinum_img: "/images/svg/platinum.svg",
       diamond_img: "/images/svg/diamond.svg",
       key_img: "/images/svg/key.svg",
+      event08_img: "/images/svg/turkey.svg",
+
       baby_trees: 0,
       iron_trees: 0,
       bronze_trees: 0,
@@ -936,6 +1021,8 @@ export default {
       gold_trees: 0,
       platinum_trees: 0,
       diamond_trees: 0,
+      event08_trees: 0,
+
       keys: 0,
       client_Name: "",
       tree_Num: "",
@@ -949,6 +1036,8 @@ export default {
       isTrue06: true,
       isTrue07: true,
       isTrue08: true,
+      isTrue09: true,
+
     };
   },
   watch: {},
@@ -1016,6 +1105,8 @@ export default {
           var platinum_amount = result[5];
           var diamond_amount = result[6];
           var key_amount = result[7];
+          var event08_amount = result[8];
+
 
           this.baby_trees = baby_amount;
           this.iron_trees = iron_amount;
@@ -1025,6 +1116,8 @@ export default {
           this.platinum_trees = platinum_amount;
           this.diamond_trees = diamond_amount;
           this.keys = key_amount;
+          this.event08_trees = event08_amount;
+
 
           if (baby_amount == "0") {
             this.isTrue01 = false;
