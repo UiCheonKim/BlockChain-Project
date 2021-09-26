@@ -6,11 +6,22 @@
 
       <!-- section begin -->
       <section
-        id="profile_banner"
-        aria-label="section"
+        id="subheader"
         class="text-light"
-        data-bgimage="url(images/author_single/author_banner.jpg) top"
-      ></section>
+        style="--bg-image: url('images/background/mini.jpg')"
+      >
+        <div class="center-y relative text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1>Mypage</h1>
+                <p>Because you're worth it.</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- section close -->
 
       <section aria-label="section">

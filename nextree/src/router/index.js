@@ -6,7 +6,7 @@ import asdf from "../views/asdf.vue";
 import Mypage from "../views/Mypage.vue";
 import Artist from "../views/Artist.vue";
 import Artist2 from "../views/Artist2.vue";
-import collection from "../views/collection.vue";
+import Collection from "../views/Collection.vue";
 import about from "../views/about.vue";
 import draw from "../views/draw.vue";
 import Detail from "../views/Detail.vue";
@@ -14,7 +14,6 @@ import Detail2 from "../views/Detail2.vue";
 import rankUp from "../views/rankUp.vue";
 import Status from "../views/Status.vue";
 import banners from "../views/banners.vue";
-import cards from "../views/cards.vue";
 import ArtistMain from "../views/ArtistMain.vue";
 import dappTest2 from "../views/dappTest2.vue";
 import manager from "../views/manager.vue";
@@ -57,8 +56,8 @@ const routes = [
   },
   {
     path: "/collection",
-    name: "collection",
-    component: collection,
+    name: "Collection",
+    component: Collection,
   },
   {
     path: "/about",
@@ -100,13 +99,6 @@ const routes = [
     name: "banners",
     component: banners,
   },
-
-  {
-    path: "/cards",
-    name: "cards",
-    component: cards,
-  },
-
   {
     path: "/artistmain",
     name: "ArtistMain",
