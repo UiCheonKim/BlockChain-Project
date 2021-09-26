@@ -22,7 +22,7 @@
                 <div class="div-img-bg">
                   <div class="about-img">
                     <img
-                      src="images/artist/artist.jpg"
+                      v-bind:src="artist_img[1]"
                       class="img-responsive"
                       alt="me"
                     />
@@ -32,19 +32,8 @@
 
               <div class="col-lg-7">
                 <div class="about-descr">
-                  <p class="p-heading">
-                    “나는 자연으로 보낼 수 있는 게 아무것도 없지만, 자연에 의해
-                    감동받고, 그 아름다움이 내면으로 젖어들기를 기다립니다.
-                    그리고 다시 솟아나기 위해 그림을 그리죠.”
-                  </p>
-                  <p class="separator-text">
-                    “자연 속에는 수많은 색채들이 있습니다. 일일이 이름 붙이기도
-                    어려운 무궁무진한 초목의 색채를 우리는 오색찬란, 오색영롱,
-                    오색단풍, 오색고명 등 다섯 색으로 일축해 말하곤 합니다.
-                    동양의 전통 우주철학인 오행설(五行說)에서 오방(五方)과
-                    오채(五彩)가 시작되기 때문입니다. 한국의 자연을 오방색으로
-                    아름답게 표현하는 건 한국작가의 사명이죠.”
-                  </p>
+                  <p class="p-heading">“{{ artist_mainspeak }}”</p>
+                  <p class="separator-text">“{{ artist_subspeak }}”</p>
                 </div>
               </div>
             </div>
@@ -57,22 +46,21 @@
           <div class="containerr">
             <div class="row">
               <div class="col-md-12 col-md-offset-6 mb40 text-center">
-                <h2>Artist <span style="color: red">KIM SEOK KI</span></h2>
-                <p style="width: 100%; align: center">
-                  개인전 42회 (루브르까루젤, 갤러리B.D.M.C. 갤러리KENY.
-                  몽테송아트센터) <br />
-                  국제전 41회 (프랑스, 미국, 그리스, 벨기에, 이태리, 스페인,
-                  일본, 중국) <br />
-                  국내전 451회 (한국미협, 창조회, 후소회, 신수회, 회토회,
-                  목우회, 동질성회복전)
-                </p>
+                <h2>
+                  Artist <span style="color: red">{{ artist_name }}</span>
+                </h2>
+                <div style="width: 100%; align: center">
+                  <p :key="i" v-for="(pri, i) in artist_prize">
+                    {{ pri }}
+                  </p>
+                </div>
               </div>
               <div class="container col-md-8 col-md-offset-4 mb40">
                 <p class="header">- 2021.09 The Light of the East -</p>
                 <div class="content">
                   <div class="wrapper">
                     <div class="box vintage">
-                      <img src="@/assets/artist/img_1.jpg" alt="EMMYLOU" />
+                      <img v-bind:src="artist_paint[0]" alt="EMMYLOU" />
                       <h2>EMMYLOU</h2>
                       <p>I'll be your Emmylou and I'll be your June</p>
                     </div>
@@ -80,7 +68,7 @@
                   <div class="wrapper">
                     <div class="box w-content">
                       <img
-                        src="@/assets/artist/img_2.jpg"
+                        v-bind:src="artist_paint[1]"
                         alt="Jenny of Oldstones"
                       />
                       <div class="frame">
@@ -91,7 +79,7 @@
                   </div>
                   <div class="wrapper">
                     <div class="box postcard">
-                      <img src="@/assets/artist/img_3.jpg" alt="BOX" />
+                      <img v-bind:src="artist_paint[2]" alt="BOX" />
                       <h2>The Pursuit of</h2>
                       <p>HAPPINESS</p>
                     </div>
@@ -99,7 +87,7 @@
                   <div class="wrapper">
                     <div class="box zoom-in">
                       <img
-                        src="@/assets/artist/img_4.jpg"
+                        v-bind:src="artist_paint[3]"
                         alt="Postcards From Italy"
                       />
                       <h2>Postcards From Italy</h2>
@@ -109,7 +97,7 @@
                   <div class="wrapper">
                     <div class="box blury-card">
                       <img
-                        src="@/assets/artist/img_5.jpg"
+                        v-bind:src="artist_paint[4]"
                         alt="Blue Ridge Mountains"
                       />
                       <div class="frame">
@@ -120,7 +108,7 @@
                   </div>
                   <div class="wrapper">
                     <div class="box zoom-out">
-                      <img src="@/assets/artist/img_6.jpg" alt="Melody Noir" />
+                      <img v-bind:src="artist_paint[5]" alt="Melody Noir" />
                       <div class="frame">
                         <h2>MELODY <span>NOIR</span></h2>
                         <p>
@@ -146,14 +134,52 @@ export default {
   components: {},
   data() {
     return {
-      sampleData: "",
+      artist_img: [{}],
+      artist_resume: [{}],
+      artist_name: "",
+      artist_prize: [],
+      artist_mainspeak: "",
+      artist_subspeak: "",
+      artist_paint: [],
     };
   },
   setup() {},
   created() {},
-  mounted() {},
+  mounted() {
+    this.getartist();
+    this.getprize();
+    this.getpainttable();
+  },
   unmounted() {},
-  methods: {},
+  methods: {
+    async getartist() {
+      const artist = await this.$api("/api/getartist1", "post", {
+        param: 2,
+      });
+      this.artist_resume.push(artist[0].artist_resume);
+      this.artist_img.push(artist[0].artist_profile2);
+      this.artist_mainspeak = artist[0].artist_mainspeak;
+      this.artist_subspeak = artist[0].artist_subspeak;
+      this.artist_name = artist[0].artist_name;
+    },
+    async getprize() {
+      const prize = await this.$api("/api/getartistprize", "post", {
+        param: 2,
+      });
+      for (var i = 0; i < prize.length; i++) {
+        this.artist_prize.push(prize[i].artist_prize);
+      }
+    },
+    async getpainttable() {
+      const paint = await this.$api("/api/getartistpaint", "post", {
+        param: 2,
+      });
+      for (var i = 0; i < paint.length; i++) {
+        this.artist_paint.push(paint[i].artist_paint);
+      }
+      console.log(this.artist_paint);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

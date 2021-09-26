@@ -33,10 +33,7 @@
           <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="service_1_single wow fadeInUp" data-wow-delay="300ms">
               <div class="service_1_img">
-                <img
-                  src="@/assets/artist/profile/Kimbohee_profile_adobespark.png"
-                  alt="Service Image"
-                />
+                <img v-bind:src="mainartist_profile1[1]" alt="Service Image" />
                 <div class="hover_box">
                   <nuxt-link to="/service-detail"
                     ><span class="icon-left-arrow"></span
@@ -44,7 +41,7 @@
                 </div>
               </div>
               <div class="content">
-                <h3>Kim Bo-Hie</h3>
+                <h3>{{ mainartist_name[1] }}</h3>
                 <p>
                   She expresses strong vitality with the theme of ‘nature’, an
                   object that everyone can appreciate. Green is the main.
@@ -57,7 +54,7 @@
               <div class="service_1_img">
                 <a href="/artist">
                   <img
-                    src="@/assets/artist/profile/Kimseokki_profile_adobespark.png"
+                    v-bind:src="mainartist_profile1[2]"
                     alt="Service Image"
                   />
                 </a>
@@ -68,7 +65,7 @@
                 </div>
               </div>
               <div class="content">
-                <h3>Kim Seok-Ki</h3>
+                <h3>{{ mainartist_name[2] }}</h3>
                 <p>
                   He founded the Five-Bangsansu based on Eastern philosophy, and
                   expresses the colorful colors of nature.
@@ -79,10 +76,7 @@
           <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="service_1_single wow fadeInUp" data-wow-delay="300ms">
               <div class="service_1_img">
-                <img
-                  src="@/assets/artist/profile/Bhavna_Misra_profile_adobespark.png"
-                  alt="Service Image"
-                />
+                <img v-bind:src="mainartist_profile1[3]" alt="Service Image" />
                 <div class="hover_box">
                   <nuxt-link to="/service-detail"
                     ><span class="icon-left-arrow"></span
@@ -90,7 +84,7 @@
                 </div>
               </div>
               <div class="content">
-                <h3>Bhavna Misra</h3>
+                <h3>{{ mainartist_name[3] }}</h3>
                 <p>
                   She makes meaningful art represented in portraits, wildlife,
                   nature, and everything else.
@@ -101,10 +95,7 @@
           <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="service_1_single wow fadeInUp" data-wow-delay="300ms">
               <div class="service_1_img">
-                <img
-                  src="@/assets/artist/profile/Peggy_Davis_profile_adobespark.png"
-                  alt="Service Image"
-                />
+                <img v-bind:src="mainartist_profile1[4]" alt="Service Image" />
                 <div class="hover_box">
                   <nuxt-link to="/service-detail"
                     ><span class="icon-left-arrow"></span
@@ -112,7 +103,7 @@
                 </div>
               </div>
               <div class="content">
-                <h3>Peggy Davis</h3>
+                <h3>{{ mainartist_name[4] }}</h3>
                 <p>
                   Using bright colors, she depicts trees and flowers in her work
                   and is recognized in her community as "The Happy Painter".
@@ -331,14 +322,27 @@ export default {
   components: {},
   data() {
     return {
-      sampleData: "",
+      mainartist_name: [{}],
+      mainartist_profile1: [{}],
     };
   },
   setup() {},
   created() {},
-  mounted() {},
+  mounted() {
+    this.getartist();
+  },
   unmounted() {},
-  methods: {},
+  methods: {
+    async getartist() {
+      for (var i = 1; i < 5; i++) {
+        const artist = await this.$api("/api/getartist1", "post", {
+          param: i,
+        });
+        this.mainartist_name.push(artist[0].artist_name);
+        this.mainartist_profile1.push(artist[0].artist_profile1);
+      }
+    },
+  },
 };
 </script>
 <style>

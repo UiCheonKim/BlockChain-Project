@@ -2,19 +2,18 @@
   <div>
     <!-- content begin -->
     <div class="no-bottom no-top" id="content">
-      <div id="top"></div>
-
       <!-- section begin -->
       <section
         id="subheader"
         class="text-light"
-        data-bgimage="url(images/background/subheader.jpg) top"
+        style="--bg-image: url('images/background/mini.jpg')"
       >
         <div class="center-y relative text-center">
           <div class="container">
             <div class="row">
               <div class="col-md-12 text-center">
-                <h1>Explore</h1>
+                <h1>NFT</h1>
+                <p>NFT</p>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -22,7 +21,6 @@
         </div>
       </section>
       <!-- section close -->
-
       <!-- section begin -->
       <section aria-label="section">
         <div class="container">

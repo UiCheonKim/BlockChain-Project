@@ -15,6 +15,7 @@ import banners from "../views/banners.vue";
 import cards from "../views/cards.vue";
 import ArtistMain from "../views/ArtistMain.vue";
 import dappTest2 from "../views/dappTest2.vue";
+import manager from "../views/manager.vue";
 
 const routes = [
   {
@@ -102,6 +103,11 @@ const routes = [
     path: "/dappTest2",
     name: "dappTest2",
     component: dappTest2,
+  },
+  {
+    path: "/manager",
+    name: "manager",
+    component: manager,
   },
 
   // {

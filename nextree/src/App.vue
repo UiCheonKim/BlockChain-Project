@@ -79,11 +79,11 @@
                     </ul> -->
                   </li>
                   <li>
-                    <a>NFT<span></span></a>
-                    <ul>
+                    <a href="/Explore">NFT<span></span></a>
+                    <!-- <ul>
                       <li><a href="/Explore">Explore</a></li>
                       <li><a href="/Detail">Item Details</a></li>
-                    </ul>
+                    </ul> -->
                   </li>
                   <li>
                     <a>My Page<span></span></a>
