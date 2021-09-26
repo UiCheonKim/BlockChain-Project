@@ -740,7 +740,7 @@
                             </div>
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
-                              <span> {{ iron_trees }} </span>
+                              <span> {{ keys }} </span>
                             </div>
                           </div>
                         </div>
@@ -824,7 +824,9 @@
                             </div>
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
-                              <span> {{ iron_trees }} </span>
+                              <span> {{ event08_trees }} </span>
+      
+
                             </div>
                           </div>
                         </div>
@@ -1028,15 +1030,15 @@ export default {
       tree_Num: "",
       eth_Num: "",
 
-      isTrue01: true,
-      isTrue02: true,
-      isTrue03: true,
-      isTrue04: true,
-      isTrue05: true,
-      isTrue06: true,
-      isTrue07: true,
-      isTrue08: true,
-      isTrue09: true,
+      isTrue01: false,
+      isTrue02: false,
+      isTrue03: false,
+      isTrue04: false,
+      isTrue05: false,
+      isTrue06: false,
+      isTrue07: false,
+      isTrue08: false,
+      isTrue09: false,
 
     };
   },
@@ -1088,8 +1090,12 @@ export default {
             this.$store.state.addr,
             this.$store.state.addr,
             this.$store.state.addr,
+            this.$store.state.addr,
+            this.$store.state.addr,
+
+
           ],
-          [0, 1, 2, 3, 4, 5, 6]
+          [0, 1, 2, 3, 4, 5, 6, 7 ,8]
         )
         .call()
         .then((result) => {
@@ -1119,29 +1125,32 @@ export default {
           this.event08_trees = event08_amount;
 
 
-          if (baby_amount == "0") {
-            this.isTrue01 = false;
+          if (baby_amount !== "0") {
+            this.isTrue01 = true;
           }
-          if (iron_amount == "0") {
-            this.isTrue02 = false;
+          if (iron_amount !== "0") {
+            this.isTrue02 = true;
           }
-          if (bronze_amount == "0") {
-            this.isTrue03 = false;
+          if (bronze_amount !== "0") {
+            this.isTrue03 = true;
           }
-          if (silver_amount == "0") {
-            this.isTrue04 = false;
+          if (silver_amount !== "0") {
+            this.isTrue04 = true;
           }
-          if (gold_amount == "0") {
-            this.isTrue05 = false;
+          if (gold_amount !== "0") {
+            this.isTrue05 = true;
           }
-          if (platinum_amount == "0") {
-            this.isTrue06 = false;
+          if (platinum_amount !== "0") {
+            this.isTrue06 = true;
           }
-          if (diamond_amount == "0") {
-            this.isTrue07 = false;
+          if (diamond_amount !== "0") {
+            this.isTrue07 = true;
           }
-          if (diamond_amount == "0") {
-            this.isTrue08 = false;
+          if (key_amount !== "0") {
+            this.isTrue08 = true;
+          }
+          if (event08_amount !== "0") {
+            this.isTrue09 = true;
           }
         });
     },
