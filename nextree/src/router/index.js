@@ -5,10 +5,12 @@ import dappTest from "../views/dappTest.vue";
 import asdf from "../views/asdf.vue";
 import Mypage from "../views/Mypage.vue";
 import Artist from "../views/Artist.vue";
+import Artist2 from "../views/Artist2.vue";
 import collection from "../views/collection.vue";
 import about from "../views/about.vue";
 import draw from "../views/draw.vue";
 import Detail from "../views/Detail.vue";
+import Detail2 from "../views/Detail2.vue";
 import rankUp from "../views/rankUp.vue";
 import Status from "../views/Status.vue";
 import banners from "../views/banners.vue";
@@ -49,6 +51,11 @@ const routes = [
     component: Artist,
   },
   {
+    path: "/artist2",
+    name: "Artist2",
+    component: Artist2,
+  },
+  {
     path: "/collection",
     name: "collection",
     component: collection,
@@ -69,6 +76,12 @@ const routes = [
     path: "/detail",
     name: "Detail",
     component: Detail,
+  },
+
+  {
+    path: "/detail2",
+    name: "Detail2",
+    component: Detail2,
   },
 
   {

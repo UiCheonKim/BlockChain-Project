@@ -76,7 +76,9 @@
           <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="service_1_single wow fadeInUp" data-wow-delay="300ms">
               <div class="service_1_img">
-                <img v-bind:src="mainartist_profile1[3]" alt="Service Image" />
+                <a href="/artist2">
+                  <img v-bind:src="mainartist_profile1[3]" alt="Service Image"
+                /></a>
                 <div class="hover_box">
                   <nuxt-link to="/service-detail"
                     ><span class="icon-left-arrow"></span
@@ -218,7 +220,7 @@
           </div>
 
           <div class="gallery__column">
-            <a href="" target="_blank" class="gallery__link">
+            <a href="/detail2" target="_blank" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://i.pinimg.com/originals/a8/28/a4/a828a47f43ba91f246b5ae42fe212dfb.jpg"

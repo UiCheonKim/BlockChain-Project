@@ -22,7 +22,7 @@
                 <div class="div-img-bg">
                   <div class="about-img">
                     <img
-                      v-bind:src="artist_img[1]"
+                      src="https://1.bp.blogspot.com/-EqcQLsOIpoA/XYkzNTArSHI/AAAAAAAAZ2M/EyyxHPsXE5QKOX6e-eWow5KiwegM8AnkQCNcBGAsYHQ/s1600/Bhavna%2BMisra%2BStudio%2BShot.jpg"
                       class="img-responsive"
                       alt="me"
                     />
@@ -32,8 +32,19 @@
 
               <div class="col-lg-7">
                 <div class="about-descr">
-                  <p class="p-heading">“{{ artist_mainspeak }}”</p>
-                  <p class="separator-text">“{{ artist_subspeak }}”</p>
+                  <p class="p-heading">
+                    “I am a full-time artist and art educator based out of the
+                    San Francisco, Bay area. I paint sun-washed, colourful local
+                    landscapes that surround me and motivate me. I also work in
+                    portraiture and still life.”
+                  </p>
+                  <p class="separator-text">
+                    “ My work is an emotional response to what I observe and
+                    experience. Through my paintings that I create in oil and
+                    pastel, I attempt to present the colours in their pure
+                    brilliance without losing the balance of accuracy and
+                    expressionism.”
+                  </p>
                 </div>
               </div>
             </div>
@@ -50,25 +61,31 @@
                   Artist <span style="color: red">{{ artist_name }}</span>
                 </h2>
                 <div style="width: 100%; align: center">
-                  <p :key="i" v-for="(pri, i) in artist_prize">
-                    {{ pri }}
+                  <p>
+                    Recipient of Certificate of Commendation by City of Milpitas
+                    for Art Enrichment in community
+                    <br />Winner of San Francisco Muni Art Contest 2018 – 2019
+                    <br />Approved Artist for artist pool of Alameda County Arts
+                    Council
                   </p>
                 </div>
               </div>
               <div class="container col-md-8 col-md-offset-4 mb40">
-                <p class="header">- 2021.09 The Light of the East -</p>
+                <p class="header">- 2021.09 Colors of Compassion -</p>
                 <div class="content">
                   <div class="wrapper">
-                    <div class="box vintage">
-                      <img v-bind:src="artist_paint[0]" alt="EMMYLOU" />
-                      <h2>EMMYLOU</h2>
-                      <p>I'll be your Emmylou and I'll be your June</p>
-                    </div>
+                    <a href="/detail2">
+                      <div class="box vintage">
+                        <img src="@/assets/artist/img_8.jpg" alt="EMMYLOU" />
+                        <h2>EMMYLOU</h2>
+                        <p>I'll be your Emmylou and I'll be your June</p>
+                      </div>
+                    </a>
                   </div>
                   <div class="wrapper">
                     <div class="box w-content">
                       <img
-                        v-bind:src="artist_paint[1]"
+                        src="@/assets/artist/img_9.jpg"
                         alt="Jenny of Oldstones"
                       />
                       <div class="frame">
@@ -79,7 +96,7 @@
                   </div>
                   <div class="wrapper">
                     <div class="box postcard">
-                      <img v-bind:src="artist_paint[2]" alt="BOX" />
+                      <img src="@/assets/artist/img_10.jpg" alt="BOX" />
                       <h2>The Pursuit of</h2>
                       <p>HAPPINESS</p>
                     </div>
@@ -87,7 +104,7 @@
                   <div class="wrapper">
                     <div class="box zoom-in">
                       <img
-                        v-bind:src="artist_paint[3]"
+                        src="https://bhavnamisra.files.wordpress.com/2018/06/wildflowers-wild-dreams-signed.jpg?w=1280"
                         alt="Postcards From Italy"
                       />
                       <h2>Postcards From Italy</h2>
@@ -95,22 +112,23 @@
                     </div>
                   </div>
                   <div class="wrapper">
-                    <a href="/detail">
-                      <div class="box blury-card">
-                        <img
-                          v-bind:src="artist_paint[4]"
-                          alt="Blue Ridge Mountains"
-                        />
-                        <div class="frame">
-                          <h2>Blue Ridge</h2>
-                          <p>MOUNTAINS</p>
-                        </div>
+                    <div class="box blury-card">
+                      <img
+                        src="https://bhavnamisra.files.wordpress.com/2018/11/autumnal-conversations-2.jpg?w=1280"
+                        alt="Blue Ridge Mountains"
+                      />
+                      <div class="frame">
+                        <h2>Blue Ridge</h2>
+                        <p>MOUNTAINS</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
                   <div class="wrapper">
                     <div class="box zoom-out">
-                      <img v-bind:src="artist_paint[5]" alt="Melody Noir" />
+                      <img
+                        src="https://bhavnamisra.files.wordpress.com/2019/03/japanese-garden-full.jpg?w=1280"
+                        alt="Melody Noir"
+                      />
                       <div class="frame">
                         <h2>MELODY <span>NOIR</span></h2>
                         <p>
