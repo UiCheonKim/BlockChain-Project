@@ -835,23 +835,25 @@
                   <div class="tab-2">
                     <div class="row">
                       <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div
+                        class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myart"
+                      >
                         <div
-                          class="nft__item"
-                          :key="art.name"
+                          class="nft__item myart_item"
                           v-for="art in art_JsonList"
+                          :key="art.name"
                         >
-                          <div class="author_list_pp">
+                          <div class="author_list_pp author_position">
                             <a href="author.html">
                               <img class="lazy" :src="user_avatar" alt="" />
                               <i class="fa fa-check"></i>
                             </a>
                           </div>
                           <div class="nft__item_wrap">
-                            <a href="item-details.html">
+                            <a href="">
                               <img
-                                src="{{art.image}}"
-                                class="lazy nft__item_preview"
+                                :src="art.image"
+                                class="lazy nft__item_preview myart_image"
                                 alt=""
                               />
                             </a>
@@ -881,112 +883,6 @@
     <!-- content close -->
 
     <a href="#" id="back-to-top"></a>
-
-    <!-- footer begin -->
-    <!-- <footer class="footer-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-1">
-            <div class="widget">
-              <h5>Marketplace</h5>
-              <ul>
-                <li><a href="#">All NFTs</a></li>
-                <li><a href="#">Art</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Domain Names</a></li>
-                <li><a href="#">Virtual World</a></li>
-                <li><a href="#">Collectibles</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-1">
-            <div class="widget">
-              <h5>Resources</h5>
-              <ul>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Suggestions</a></li>
-                <li><a href="#">Discord</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Newsletter</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-1">
-            <div class="widget">
-              <h5>Community</h5>
-              <ul>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Brand Assets</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Mailing List</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-1">
-            <div class="widget">
-              <h5>Newsletter</h5>
-              <p>
-                Signup for our newsletter to get the latest news in your inbox.
-              </p>
-              <form
-                action="blank.php"
-                class="row form-dark"
-                id="form_subscribe"
-                method="post"
-                name="form_subscribe"
-              >
-                <div class="col text-center">
-                  <input
-                    class="form-control"
-                    id="txt_subscribe"
-                    name="txt_subscribe"
-                    placeholder="enter your email"
-                    type="text"
-                  />
-                  <a href="#" id="btn-subscribe"
-                    ><i class="arrow_right bg-color-secondary"></i
-                  ></a>
-                  <div class="clearfix"></div>
-                </div>
-              </form>
-              <div class="spacer-10"></div>
-              <small>Your email is safe with us. We don't spam.</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="subfooter">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="de-flex">
-                <div class="de-flex-col">
-                  <a href="index.html">
-                    <img alt="" class="f-logo" src="images/logo.png" /><span
-                      class="copy"
-                      >&copy; Copyright 2021 - </span
-                    >
-                  </a>
-                </div>
-                <div class="de-flex-col">
-                  <div class="social-icons">
-                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer> -->
-    <!-- footer close -->
   </div>
 </template>
 <script>
@@ -1000,9 +896,9 @@ export default {
     return {
       baseUri:
         "https://raw.githubusercontent.com/HongDaeEui/SolidityProject/main/nft/0000000000000000000000000000000000000000000000000000000000001000.json",
-      artInfo: "",
       art_JsonList: [],
       art_List: [],
+      reArt_List: [],
       user_avatar: "",
       baby_img: "/images/svg/baby.svg",
       iron_img: "/images/svg/iron.svg",
@@ -1193,9 +1089,15 @@ export default {
           this.art_List = result;
           console.log(this.art_List);
           for (var i = 0; i < this.art_List.length; i++) {
-            this.getJson(this.art_List[i]);
-            console.log(this.artInfo);
-            this.art_JsonList.push(this.artInfo);
+            if (this.art_List[i] != 0) {
+              this.reArt_List.push(this.art_List[i]);
+            }
+          }
+          console.log(this.reArt_List);
+          for (var list of this.reArt_List) {
+            var hex = parseInt(list).toString(16);
+            console.log(hex);
+            this.getJson(hex);
           }
         });
     },
@@ -1208,22 +1110,22 @@ export default {
           this.baseUri = result;
           this.baseUri = this.baseUri.replace(
             "{id}",
-            "0000000000000000000000000000000000000000000000000000000000000010"
+            "00000000000000000000000000000000000000000000000000000000000000ab"
           );
           console.log(this.baseUri);
         });
     },
 
-    getJson(id) {
-      var requestURL = this.baseUri.replace("10", id);
+    getJson(_id) {
+      var requestURL = this.baseUri.replace("ab", _id);
       console.log(requestURL);
       var request = new XMLHttpRequest();
       request.open("GET", requestURL);
       request.responseType = "json";
       request.send();
       request.onload = () => {
-        this.artInfo = request.response;
-        console.log(this.artInfo);
+        this.art_JsonList.push(request.response);
+        console.log(this.art_JsonList);
       };
     },
 
@@ -1254,5 +1156,26 @@ export default {
   -webkit-transition: all 0.2s ease 1.9s;
   transition: all 0.2s ease 1.9s;
   animation-iteration-count: none;
+}
+
+.myart_image {
+  width: 150px;
+  object-fit: cover;
+}
+
+.myart {
+  text-align: center;
+}
+
+.myart_item {
+  float: left;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+}
+
+.author_position {
+  left: 10%;
+  top: 5%;
 }
 </style>
