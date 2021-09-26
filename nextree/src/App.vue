@@ -135,13 +135,59 @@ export default {
     return {
       url: true,
       addr_variable: "",
-      mymetamask_addr: "need to log in to the meta mask",
+      mymetamask_addr: this.$store.state.addr,
       mymetamaskaddr_selec: false,
+      currentAccount: "",
     };
   },
+
   setup() {},
-  created() {},
-  mounted() {},
+  created() {
+    this.currentAccount = this.$store.state.addr;
+  },
+  mounted() {
+    // this.loading = setInterval(() => {
+    //   web3 = new Web3(window.web3.currentProvider);
+    //   web3.eth.getAccounts().then((array) => {
+    //     this.currentAccount = array[0];
+    //   });
+    //   if (this.currentAccount != this.addr) {
+    //     this.$store.commit("addrset", this.currentAccount);
+    //   }
+    // }, 1000);
+
+    // this.loading = setInterval(() => {
+    //   web3 = new Web3(window.web3.currentProvider);
+    //   var tmp;
+    //   web3.eth.getAccounts().then((array) => {
+    //     tmp = array[0];
+    //   });
+    //   if (tmp == undefined) {
+    //     this.$store.commit("addrset", "");
+    //   }
+    //   if (tmp != undefined) {
+    //     this.$store.commit("addrset", tmp);
+    //     this.mymetamask_addr = tmp;
+    //     this.mymetamaskaddr_selec = true;
+    //   }
+    // }, 1000);
+
+    this.loading = setInterval(() => {
+      web3 = new Web3(window.web3.currentProvider);
+      var tmp;
+      web3.eth.getAccounts().then((array) => {
+        tmp = array[0];
+        if (tmp == undefined) {
+          this.$store.commit("addrset", "");
+        }
+        if (tmp != undefined) {
+          this.$store.commit("addrset", tmp);
+          this.mymetamask_addr = this.$store.state.addr;
+          this.mymetamaskaddr_selec = true;
+        }
+      });
+    }, 1000);
+  },
   unmounted() {},
   watch: {
     $route(to, from) {
