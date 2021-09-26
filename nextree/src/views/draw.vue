@@ -22,7 +22,7 @@
     </section> -->
     <section>
       <div class="row sequence">
-        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow">
+        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox">
           <div class="pricing-s1 mb30">
             <div class="top">
               <h2></h2>
@@ -151,28 +151,52 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 sq-item wow sidebox">
-          <div class="pricing-s1 mb30">
-            <div class="top">
-              <h2></h2>
-              <p class="plan-tagline"></p>
+        <div class="col-lg-2 col-md-6 col-sm-12 sq-item wow 
+        ">
+
+        
+
+          <div class="pricing-s1 mb30 ">
+            <div class="top mid text-light bg-color">
+              <h3>안내사항</h3>
+              <p class="plan-tagline"> </p>
             </div>
-            <div class="">
-              <p class="price">
-                <span class="currency"></span>
-                <span class="m opt-1"></span>
-                <span class="y opt-2"></span>
-                <span class="month"></span>
-              </p>
-            </div>
+            
             <div class="bottom">
               <ul>
-                <!-- <li><i class="fa fa-check"></i>Up to 10 devices</li>
-              <li><i class="fa fa-check"></i>Daily reminder</li>
-              <li><i class="fa fa-check"></i>Detailed reporting</li>
-              <li><i class="fa fa-check"></i>Interactive dashboard</li>
-              <li><i class="fa fa-check"></i>Email and SMS notification</li>
-              <li><i class="fa fa-check"></i>24/7 Customer Support</li> -->
+
+<div style="text-align : center;">
+                <img src="images/items/link.png" alt="" style="width:80%; align-content:center">
+               </div>
+                <li><i class="fa fa-check"></i> 넥스트리는 뽑기에 사용되는 공정한 난수 생성을 위해 체인링크 VRF를 사용합니다. 이 과정이 약 4분 소요됩니다.  </li>
+              
+              <br>
+              <li><i class="fa fa-check"></i>획득 확률
+
+
+
+              <table class="table table-dark table-striped">
+  <tbody>
+    <tr>
+      <td colspan="2" class="table-active">이름</td>
+      <td colspan="2" class="table-active"> 확률 </td>
+    </tr>
+    <tr>
+      
+     <td colspan="2" class="">NFT 아트</td>
+      <td colspan="2"> 50% </td>
+    </tr>
+      <tr>
+  <td colspan="2" class="">아이언 트리</td>
+      <td colspan="2"> 50% </td>
+    </tr>
+  </tbody>
+</table>
+
+        
+              </li>
+              
+              
               </ul>
             </div>
 
@@ -183,7 +207,7 @@
         </div>
 
         <div class="col-lg-6 offset-lg-3 text-center">
-          <small> 상자가 열리기까지 4분이 소요됩니다.</small>
+          <!-- <small> 상자가 열리기까지 4분이 소요됩니다.</small> -->
         </div>
       </div>
     </section>
