@@ -28,6 +28,9 @@
           <div class="col-3">
             <img src="/images/svg/key.svg" alt="" />
           </div>
+            <div class="col-3">
+            <img src="/images/svg/turkey.svg" alt="" />
+          </div>
         </div>
       </div>
     </section>
