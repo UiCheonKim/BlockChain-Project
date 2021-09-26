@@ -200,6 +200,7 @@ export default {
       else if (to.name == "Mypage") this.url = false;
       else if (to.name == "rankUp") this.url = false;
       else if (to.name == "Detail") this.url = false;
+      else if (to.name == "mypage") this.url = false;
     },
   },
   methods: {
