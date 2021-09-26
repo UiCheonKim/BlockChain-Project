@@ -312,7 +312,7 @@
                   <div
                     class="col-lg-12 col-md-6 mb-sm-20 event_donation1 borderRR"
                   >
-                    <h4 class="text-center pt-5">Join Us !</h4>
+                    <h4 class="text-center pt-5">상시 기부</h4>
                     <div class="row gy-3 justify-content-around">
                       <div
                         class="
@@ -420,7 +420,7 @@
                 <div
                   class="col-lg-12 col-md-6 mb-sm-20 event_donation2 borderRR"
                 >
-                  <h4 class="text-center pt-5">Join Us !</h4>
+                  <h4 class="text-center pt-5">이벤트 기부</h4>
                   <div class="row gy-3 justify-content-around">
                     <div
                       class="col-4 p-2 border tree-btn Radius ms-2 text-center"
