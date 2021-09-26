@@ -747,8 +747,7 @@
                       </div>
                       <!-- nft item begin -->
 
-
-                       <!-- nft item begin -->
+                      <!-- nft item begin -->
                       <div
                         class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
                         v-if="isTrue09 == true"
@@ -820,13 +819,12 @@
                               <h4>Turkey Trees</h4>
                             </a>
                             <div class="nft__item_price">
-                             화재로 불타버린 터키의 숲을 되살리기 위해 묘목을 기부했어요.
+                              화재로 불타버린 터키의 숲을 되살리기 위해 묘목을
+                              기부했어요.
                             </div>
                             <div class="nft__item_like">
                               <i class="fa fa-tree"></i>
                               <span> {{ event08_trees }} </span>
-      
-
                             </div>
                           </div>
                         </div>
@@ -1039,7 +1037,6 @@ export default {
       isTrue07: false,
       isTrue08: false,
       isTrue09: false,
-
     };
   },
   watch: {},
@@ -1092,10 +1089,8 @@ export default {
             this.$store.state.addr,
             this.$store.state.addr,
             this.$store.state.addr,
-
-
           ],
-          [0, 1, 2, 3, 4, 5, 6, 7 ,8]
+          [0, 1, 2, 3, 4, 5, 6, 7, 8]
         )
         .call()
         .then((result) => {
@@ -1113,7 +1108,6 @@ export default {
           var key_amount = result[7];
           var event08_amount = result[8];
 
-
           this.baby_trees = baby_amount;
           this.iron_trees = iron_amount;
           this.bronze_trees = bronze_amount;
@@ -1123,7 +1117,6 @@ export default {
           this.diamond_trees = diamond_amount;
           this.keys = key_amount;
           this.event08_trees = event08_amount;
-
 
           if (baby_amount !== "0") {
             this.isTrue01 = true;
