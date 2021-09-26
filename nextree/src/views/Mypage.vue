@@ -753,7 +753,11 @@
                     <div class="row">
                       <!-- nft item begin -->
                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="nft__item">
+                        <div
+                          class="nft__item"
+                          :key="art.name"
+                          v-for="art in art_JsonList"
+                        >
                           <div class="author_list_pp">
                             <a href="author.html">
                               <img class="lazy" :src="user_avatar" alt="" />
@@ -763,7 +767,7 @@
                           <div class="nft__item_wrap">
                             <a href="item-details.html">
                               <img
-                                src="images/author_single/porto-3.jpg"
+                                src="{{art.image}}"
                                 class="lazy nft__item_preview"
                                 alt=""
                               />
@@ -771,109 +775,13 @@
                           </div>
                           <div class="nft__item_info">
                             <a href="item-details.html">
-                              <h4>Three Donuts</h4>
-                            </a>
-                            <div class="nft__item_price">Artist : suryanto</div>
-                            <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>97</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="nft__item">
-                          <div
-                            class="de_countdown"
-                            data-year="2021"
-                            data-month="9"
-                            data-day="16"
-                            data-hour="8"
-                          ></div>
-                          <div class="author_list_pp">
-                            <a href="author.html">
-                              <img class="lazy" :src="user_avatar" alt="" />
-                              <i class="fa fa-check"></i>
-                            </a>
-                          </div>
-                          <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                src="images/author_single/porto-1.jpg"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                          <div class="nft__item_info">
-                            <a href="item-details.html">
-                              <h4>Pinky Ocean</h4>
+                              <h4>{{ art.name }}</h4>
                             </a>
                             <div class="nft__item_price">
-                              Artist : studiocara
+                              {{ art.description }}
                             </div>
                             <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="nft__item">
-                          <div class="author_list_pp">
-                            <a href="author.html">
-                              <img class="lazy" :src="user_avatar" alt="" />
-                              <i class="fa fa-check"></i>
-                            </a>
-                          </div>
-                          <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                src="images/author_single/porto-2.jpg"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                          <div class="nft__item_info">
-                            <a href="item-details.html">
-                              <h4>The Animals</h4>
-                            </a>
-                            <div class="nft__item_price">Artist : praier</div>
-                            <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>80</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- nft item begin -->
-                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="nft__item">
-                          <div class="author_list_pp">
-                            <a href="author.html">
-                              <img class="lazy" :src="user_avatar" alt="" />
-                              <i class="fa fa-check"></i>
-                            </a>
-                          </div>
-                          <div class="nft__item_wrap">
-                            <a href="item-details.html">
-                              <img
-                                src="images/author_single/porto-4.jpg"
-                                class="lazy nft__item_preview"
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                          <div class="nft__item_info">
-                            <a href="item-details.html">
-                              <h4>Graffiti Colors</h4>
-                            </a>
-                            <div class="nft__item_price">
-                              Artist : lovert began
-                            </div>
-                            <div class="nft__item_like">
-                              <i class="fa fa-heart"></i><span>73</span>
+                              <i class="fa fa-heart"></i>
                             </div>
                           </div>
                         </div>
@@ -1007,8 +915,11 @@ export default {
   components: {},
   data() {
     return {
-      babyTree: "",
-      treeInfo: "",
+      baseUri:
+        "https://raw.githubusercontent.com/HongDaeEui/SolidityProject/main/nft/0000000000000000000000000000000000000000000000000000000000001000.json",
+      artInfo: "",
+      art_JsonList: [],
+      art_List: [],
       user_avatar: "",
       baby_img: "/images/svg/baby.svg",
       iron_img: "/images/svg/iron.svg",
@@ -1026,19 +937,18 @@ export default {
       platinum_trees: 0,
       diamond_trees: 0,
       keys: 0,
-      inventory_List: [],
       client_Name: "",
       tree_Num: "",
       eth_Num: "",
 
-      isTrue01: false,
-      isTrue02: false,
-      isTrue03: false,
-      isTrue04: false,
-      isTrue05: false,
-      isTrue06: false,
-      isTrue07: false,
-      isTrue08: false,
+      isTrue01: true,
+      isTrue02: true,
+      isTrue03: true,
+      isTrue04: true,
+      isTrue05: true,
+      isTrue06: true,
+      isTrue07: true,
+      isTrue08: true,
     };
   },
   watch: {},
@@ -1075,6 +985,7 @@ export default {
       this.get_User_Info01();
       this.get_User_Info02();
       this.get_User_Info03();
+      this.ownArtList();
     },
 
     async balanceOfBatch() {
@@ -1115,43 +1026,30 @@ export default {
           this.diamond_trees = diamond_amount;
           this.keys = key_amount;
 
-          if (baby_amount > "0") {
-            this.isTrue01 = true;
+          if (baby_amount == "0") {
+            this.isTrue01 = false;
           }
-          if (iron_amount > "0") {
-            this.isTrue02 = true;
+          if (iron_amount == "0") {
+            this.isTrue02 = false;
           }
-          if (bronze_amount > "0") {
-            this.isTrue03 = true;
+          if (bronze_amount == "0") {
+            this.isTrue03 = false;
           }
-          if (silver_amount > "0") {
-            this.isTrue04 = true;
+          if (silver_amount == "0") {
+            this.isTrue04 = false;
           }
-          if (gold_amount > "0") {
-            this.isTrue05 = true;
+          if (gold_amount == "0") {
+            this.isTrue05 = false;
           }
-          if (platinum_amount > "0") {
-            this.isTrue06 = true;
+          if (platinum_amount == "0") {
+            this.isTrue06 = false;
           }
-          if (diamond_amount > "0") {
-            this.isTrue07 = true;
+          if (diamond_amount == "0") {
+            this.isTrue07 = false;
           }
-          if (diamond_amount > "0") {
-            this.isTrue08 = true;
+          if (diamond_amount == "0") {
+            this.isTrue08 = false;
           }
-        });
-    },
-
-    async inventory() {
-      await this.contract.methods
-        .inventory(this.$store.state.addr)
-        .call()
-        .then((result) => {
-          console.log(result);
-
-          this.inventory_List = result;
-
-          console.log(this.inventory_List);
         });
     },
 
@@ -1188,33 +1086,52 @@ export default {
           console.log(result);
 
           this.tree_Num = result;
+        });
+    },
 
-          console.log(this.this.tree_Num);
+    async ownArtList() {
+      this.tokenURIs();
+      await this.contract.methods
+        .ownArtList(this.$store.state.addr)
+        .call()
+        .then((result) => {
+          this.art_List = result;
+          console.log(this.art_List);
+          for (var i = 0; i < this.art_List.length; i++) {
+            this.getJson(this.art_List[i]);
+            console.log(this.artInfo);
+            this.art_JsonList.push(this.artInfo);
+          }
         });
     },
 
     tokenURIs() {
       this.contract.methods
-        .tokenURIs(0)
+        .uri(0)
         .call()
         .then((result) => {
-          console.log(result);
-          this.babyTree = result;
-          console.log(this.babyTree);
+          this.baseUri = result;
+          this.baseUri = this.baseUri.replace(
+            "{id}",
+            "0000000000000000000000000000000000000000000000000000000000000010"
+          );
+          console.log(this.baseUri);
         });
     },
-    getJson() {
-      var requestURL = this.babyTree;
+
+    getJson(id) {
+      var requestURL = this.baseUri.replace("10", id);
       console.log(requestURL);
       var request = new XMLHttpRequest();
       request.open("GET", requestURL);
       request.responseType = "json";
       request.send();
       request.onload = () => {
-        this.treeInfo = request.response;
-        console.log(this.treeInfo);
+        this.artInfo = request.response;
+        console.log(this.artInfo);
       };
     },
+
     userAvatar() {
       this.user_avatar =
         "https://identicon-api.herokuapp.com/" +
@@ -1242,13 +1159,5 @@ export default {
   -webkit-transition: all 0.2s ease 1.9s;
   transition: all 0.2s ease 1.9s;
   animation-iteration-count: none;
-}
-
-#wrapper.modal-open {
-  overflow: auto;
-}
-
-#wrapper.modal-open[style] {
-  padding-right: 0px !important;
 }
 </style>
