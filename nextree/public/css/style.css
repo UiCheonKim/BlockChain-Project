@@ -13172,7 +13172,7 @@ a.read_more i {
     border: none;
     border-radius: 6px;
     font-size: 15px;
-    background: rgba(255, 255, 255, .1);
+    background: rgba(var(--secondary-color-rgb), .1);
     width: 120%;
     font-family: var(--title-font);
     outline: none;
@@ -13187,7 +13187,8 @@ a.read_more i {
 }
 
 header:not(.header-light) #quick_search {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: -internal-light-dark(rgb(84, 84, 84), rgb(170, 170, 170));
 }
 
 header:not(.header-light) #quick_search::-moz-input-placeholder {
