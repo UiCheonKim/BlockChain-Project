@@ -815,7 +815,7 @@
                 id="show-modal"
                 @click="showModal = true"
               >
-                <i class="fa fa-image"></i>
+                <i class="icon_question_alt2"></i>
                 <span>FAQ</span>
               </a>
             </div>
@@ -834,7 +834,7 @@
               data-wow-delay=".2s"
             >
               <a href="Status" class="icon-box style-2 rounded">
-                <i class="fa fa-music"></i>
+                <i class="icon_datareport"></i>
                 <span>Donation Status</span>
               </a>
             </div>
@@ -843,7 +843,7 @@
               data-wow-delay=".3s"
             >
               <a href="about" class="icon-box style-2 rounded">
-                <i class="fa fa-search"></i>
+                <i class="icon_search-2"></i>
                 <span>About us</span>
               </a>
             </div>
@@ -852,7 +852,7 @@
               data-wow-delay=".4s"
             >
               <a href="Artist" class="icon-box style-2 rounded">
-                <i class="fa fa-globe"></i>
+                <i class="icon_group"></i>
                 <span>Artist</span>
               </a>
             </div>
@@ -861,7 +861,7 @@
               data-wow-delay=".5s"
             >
               <a href="Explore" class="icon-box style-2 rounded">
-                <i class="fa fa-vcard"></i>
+                <i class="icon_images"></i>
                 <span>NFT</span>
               </a>
             </div>
@@ -870,7 +870,7 @@
               data-wow-delay=".6s"
             >
               <a href="Mypage" class="icon-box style-2 rounded">
-                <i class="fa fa-th"></i>
+                <i class="icon_wallet"></i>
                 <span>My Page</span>
               </a>
             </div>
@@ -894,7 +894,7 @@
                     <a href="https://github.com/UiCheonKim/BlockChain-Project"
                       ><i class="fa fa-github fa-lg"></i
                     ></a>
-                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="https://twitter.com/?lang=ko"><i class="fa fa-twitter fa-lg"></i></a>
                     <!-- <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
                     <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
                     <a href="#"><i class="fa fa-rss fa-lg"></i></a> -->

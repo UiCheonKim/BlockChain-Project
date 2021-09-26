@@ -245,13 +245,17 @@
                 <div class="member-info text-center f1">
                   <ul class="list-inline">
                     <li>
-                      <a href="#"> <i class="c4 fa fa-twitter"></i> </a>
+                      <a href="
+https://twitter.com/?lang=ko"> <i class="c4 fa fa-twitter"></i> </a>
                     </li>
                     <li>
-                      <a href="#"> <i class="c4 fa fa-facebook"></i> </a>
+                      <a href="
+https://ko-kr.facebook.com/
+"> <i class="c4 fa fa-facebook"></i> </a>
                     </li>
                     <li>
-                      <a href="#"> <i class="c4 fa fa-linkedin"></i> </a>
+                      <a href="
+https://www.instagram.com/"> <i class="c4 fa fa-linkedin"></i> </a>
                     </li>
                   </ul>
                   <h2 class="fw-7 c4">김의천</h2>
@@ -269,13 +273,14 @@
                 <div class="member-info text-center f1">
                   <ul class="list-inline">
                     <li>
-                      <a href="#"> <i class="c4 fa fa-twitter"></i> </a>
+                      <a href="https://twitter.com/?lang=ko"> <i class="c4 fa fa-twitter"></i> </a>
                     </li>
                     <li>
-                      <a href="#"> <i class="c4 fa fa-facebook"></i> </a>
+                      <a href="https://ko-kr.facebook.com/"> <i class="c4 fa fa-facebook"></i> </a>
                     </li>
                     <li>
-                      <a href="#"> <i class="c4 fa fa-linkedin"></i> </a>
+                      <a href="
+https://www.instagram.com/"> <i class="c4 fa fa-linkedin"></i> </a>
                     </li>
                   </ul>
                   <h2 class="fw-7 c4">정재승</h2>
@@ -293,13 +298,13 @@
                 <div class="member-info text-center f1">
                   <ul class="list-inline">
                     <li>
-                      <a href="#"> <i class="c4 fa fa-twitter"></i> </a>
+                      <a href="https://twitter.com/?lang=ko"> <i class="c4 fa fa-twitter"></i> </a>
                     </li>
                     <li>
-                      <a href="#"> <i class="c4 fa fa-facebook"></i> </a>
+                      <a href="https://ko-kr.facebook.com/"> <i class="c4 fa fa-facebook"></i> </a>
                     </li>
                     <li>
-                      <a href="#"> <i class="c4 fa fa-linkedin"></i> </a>
+                      <a href="https://www.instagram.com/"> <i class="c4 fa fa-linkedin"></i> </a>
                     </li>
                   </ul>
                   <h2 class="fw-7 c4">홍대의</h2>
@@ -317,13 +322,13 @@
                 <div class="member-info text-center f1">
                   <ul class="list-inline">
                     <li>
-                      <a href="#"> <i class="c4 fa fa-twitter"></i> </a>
+                      <a href="https://twitter.com/?lang=ko"> <i class="c4 fa fa-twitter"></i> </a>
                     </li>
                     <li>
-                      <a href="#"> <i class="c4 fa fa-facebook"></i> </a>
+                      <a href="https://ko-kr.facebook.com/"> <i class="c4 fa fa-facebook"></i> </a>
                     </li>
                     <li>
-                      <a href="#"> <i class="c4 fa fa-linkedin"></i> </a>
+                      <a href="https://www.instagram.com/"> <i class="c4 fa fa-linkedin"></i> </a>
                     </li>
                   </ul>
                   <h2 class="fw-7 c4">최재람</h2>

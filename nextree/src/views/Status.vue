@@ -115,7 +115,7 @@
                     >
                     원
                   </h3>
-                  <h5 class="id-color">총 금액(M)</h5>
+                  <h5 class="id-color">총 금액(백만)</h5>
                 </div>
               </div>
 

@@ -885,7 +885,7 @@
     <a href="#" id="back-to-top"></a>
 
     <!-- footer begin -->
-    <footer class="footer-light">
+    <!-- <footer class="footer-light">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-1">
@@ -987,7 +987,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- footer close -->
   </div>
 </template>

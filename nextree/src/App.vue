@@ -105,8 +105,8 @@
                       <li><a href="progress-bar.html">Progress Bar</a></li>
                       <li><a href="tabs.html">Tabs</a></li>
                       <li><a href="tooltips.html">Tooltips</a></li> -->
-                      <li><a href="/banners">Banners</a></li>
-                      <li><a href="/cards">Cards</a></li>
+                      <!-- <li><a href="/banners">Banners</a></li>
+                      <li><a href="/cards">Cards</a></li> -->
                     </ul>
                   </li>
                 </ul>

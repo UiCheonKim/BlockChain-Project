@@ -21,9 +21,9 @@
                 공식 SNS 계정
               </h3>
               <p class="medium">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
+                <a href="https://ko-kr.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/?lang=ko" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
               </p>
               <h3 class="mt-6 font-black text-spruce text-lg">
                 Nextree<sup>®</sup>는 어떻게 시작되었나요?
