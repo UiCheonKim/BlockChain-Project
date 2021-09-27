@@ -79,7 +79,7 @@
                     </ul> -->
                   </li>
                   <li>
-                    <a href="/cards">NFT<span></span></a>
+                    <a href="/collection">NFT<span></span></a>
                     <!-- <ul>
                       <li><a href="/Explore">Explore</a></li>
                       <li><a href="/Detail">Item Details</a></li>
