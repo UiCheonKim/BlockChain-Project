@@ -6,7 +6,7 @@ import asdf from "../views/asdf.vue";
 import Mypage from "../views/Mypage.vue";
 import Artist from "../views/Artist.vue";
 import Artist2 from "../views/Artist2.vue";
-import Collection from "../views/Collection.vue";
+import Collection from "../views/collection.vue";
 import about from "../views/about.vue";
 import draw from "../views/draw.vue";
 import Detail from "../views/Detail.vue";
